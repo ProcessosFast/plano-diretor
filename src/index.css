@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+
+  --color-brand-red: #D21217;
+  --color-brand-red-dark: #7D1715;
+  --color-ink: #161C26;
+  --color-ink-2: #33404F;
+  --color-muted: #6A788C;
+  --color-line: #DDE3EA;
+  --color-paper: #EEF1F6;
+  --color-paper-2: #E3E8F0;
+  --color-soft: #F5F7FA;
+
+  --color-front: #D62828;
+  --color-oper: #1F6FB2;
+  --color-back: #0E9C82;
+  --color-fran: #8257D9;
+  --color-warn: #B7791F;
+
+  --shadow-card: 0 1px 2px rgba(20,30,45,.05), 0 8px 24px rgba(20,30,45,.07);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: radial-gradient(1200px 900px at 50% 6%, #fff 0%, var(--color-paper) 55%, var(--color-paper-2) 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}

@@ -1,0 +1,1826 @@
+[
+ {
+  "id": "atacado",
+  "name": "Atacado",
+  "sections": [
+   {
+    "title": "Comercial",
+    "hint": "Gestão: Poliana Alves",
+    "chief": {
+     "role": "Gestão do Atacado · Comercial",
+     "name": "Poliana Alves"
+    },
+    "cols": [
+     {
+      "k": "TELEVENDAS",
+      "s": "Gestão: Poliana Alves",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Vendedora Líder",
+        "name": "Juliana Marcico",
+        "lead": true
+       },
+       {
+        "role": "Representante Comercial",
+        "name": "Thales Oliveira",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Antonio Junior"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Pedro Guiot"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Eliziane Silva"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Letícia Vitória"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Jessica Ramalho"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Géssica Gomes"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Jonathas Daniel"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Wellington Gomes"
+       }
+      ]
+     },
+     {
+      "k": "B2B",
+      "s": "Líder: Osmar Júnior",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Vendedor Líder",
+        "name": "Osmar Júnior",
+        "lead": true
+       },
+       {
+        "role": "Executivo B2B",
+        "name": "Nadia Pereira"
+       },
+       {
+        "role": "Executivo B2B",
+        "name": "Nidia Fujihara"
+       },
+       {
+        "role": "Executivo B2B (também listada na equipe DCS)",
+        "name": "Camila Campos"
+       },
+       {
+        "role": "Executivo B2B",
+        "name": "Ricardo Faria"
+       },
+       {
+        "role": "Executivo B2B",
+        "name": "Weider Fusco"
+       },
+       {
+        "role": "Executivo B2B",
+        "name": "Gabriella Santos"
+       },
+       {
+        "role": "Executivo B2B (também listado na equipe DCS)",
+        "name": "Michel Costa"
+       }
+      ]
+     },
+     {
+      "k": "ATACADO NORDESTE",
+      "s": "Gestão: à contratar",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Vendedor Atacado",
+        "name": "Nivia Porto"
+       },
+       {
+        "role": "Vendedor Atacado",
+        "name": "Bruno Jesus"
+       },
+       {
+        "role": "Vendedor Atacado",
+        "name": "A contratar",
+        "vago": true
+       },
+       {
+        "role": "Vendedor Atacado",
+        "name": "A contratar",
+        "vago": true
+       },
+       {
+        "role": "Vendedor Atacado",
+        "name": "A contratar",
+        "vago": true
+       },
+       {
+        "role": "Vendedor Atacado",
+        "name": "A contratar",
+        "vago": true
+       }
+      ]
+     },
+     {
+      "k": "LOJAS",
+      "s": "Canal varejo",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Lojas RJ",
+        "name": "Francianne Lago"
+       },
+       {
+        "role": "Lojas Outros Estados",
+        "name": "Carlos Júnior"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Administrativo do Atacado",
+    "hint": "Dois times de coordenação",
+    "adm": true,
+    "cols": [
+     {
+      "k": "COORDENAÇÃO",
+      "s": "Lidiane Amaro",
+      "accent": "#0f766e",
+      "ops": [
+       "Atacado B2B",
+       "Atacado BA",
+       "Lojas INT"
+      ],
+      "people": [
+       {
+        "role": "Administrativo · ADM",
+        "name": "Beatriz"
+       },
+       {
+        "role": "Administrativo · ADM",
+        "name": "Caio"
+       },
+       {
+        "role": "Faturamento · FAT",
+        "name": "Luiz"
+       }
+      ]
+     },
+     {
+      "k": "COORDENAÇÃO",
+      "s": "Maria Priscilla",
+      "accent": "#c2751a",
+      "ops": [
+       "Televendas",
+       "Lojas Rio",
+       "Ponto Focal DCS Mogi"
+      ],
+      "people": [
+       {
+        "role": "Administrativo · ADM",
+        "name": "Jefferson"
+       },
+       {
+        "role": "Administrativo · ADM",
+        "name": "Caio Felipe"
+       },
+       {
+        "role": "Estágio · EST",
+        "name": "Luisa"
+       },
+       {
+        "role": "Faturamento · FAT",
+        "name": "Thayane"
+       }
+      ]
+     }
+    ],
+    "focal": {
+     "role": "Administrativo · ADM — Ponto Focal DCS Mogi",
+     "name": "Yllan",
+     "tagline": "Apoio transversal a todo o ADM"
+    }
+   }
+  ]
+ },
+ {
+  "id": "varejo",
+  "name": "FAST Varejo",
+  "chief": {
+   "role": "Diretora Nacional de Varejo",
+   "name": "Denise"
+  },
+  "sections": [
+   {
+    "title": "Gerência Regional",
+    "hint": "Diretoria Nacional de Varejo — Denise",
+    "cols": [
+     {
+      "k": "GERÊNCIA REGIONAL",
+      "s": "Duas regionais",
+      "accent": "#C4161C",
+      "people": [
+       {
+        "role": "Gerente Regional · Lojas Rio",
+        "name": "Franciane",
+        "lead": true
+       },
+       {
+        "role": "Gerente Regional · Lojas fora do Rio",
+        "name": "Carlos",
+        "lead": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja MS",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: CT ECOJOB CONSTRUÇÕES LTDA",
+    "cols": [
+     {
+      "k": "LOJA MS",
+      "s": "Gerência: Gleisy Kelly · CT ECOJOB CONSTRUÇÕES LTDA",
+      "accent": "#C4161C",
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "Gleisy Kelly Santela da Silva",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Carlos Eduardo Moraes Camargo"
+       },
+       {
+        "role": "Ajudante de Expedição",
+        "name": "Cláudio Henrique Aparecido da Silva"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Faedes Guardiano Silveira"
+       },
+       {
+        "role": "Conferente de Expedição",
+        "name": "José Carlos Costa Bruno"
+       },
+       {
+        "role": "Vendedor",
+        "name": "José Carlos Ibanhez de Miranda"
+       },
+       {
+        "role": "Ajudante de Expedição",
+        "name": "Kauai Felipe Zeballos Genovez"
+       },
+       {
+        "role": "Operador de Empilhadeira · intermitente (cobertura de férias do conferente José Carlos Costa Bruno)",
+        "name": "Franklin"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja Campo Grande — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: RETRIBUIÇÃO COMÉRCIO DE MATERIAIS DE CONSTRUÇÃO LTDA",
+    "cols": [
+     {
+      "k": "LOJA CAMPO GRANDE · RJ",
+      "s": "RETRIBUIÇÃO COMÉRCIO DE MATERIAIS DE CONSTRUÇÃO LTDA",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "A definir",
+        "vago": true
+       },
+       {
+        "role": "Ajudante de Galpão",
+        "name": "Juan"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Felipe"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Thamires"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja Camaçari — BA",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: GYPMASTER",
+    "cols": [
+     {
+      "k": "LOJA CAMAÇARI · BA",
+      "s": "Gerência: Tayane · GYPMASTER",
+      "accent": "#0f9d6b",
+      "wide": true,
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "Tayane",
+        "lead": true
+       },
+       {
+        "role": "A definir",
+        "name": "Allan Santos Mota",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Belmiro Fiel do Carmo",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Brendo Costa de Andrade",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Claudemiro Rodrigues de Carvalho",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Flávio Santos da Silva",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Ícaro Wanderley Silva Cerqueira",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Ítalo Leonardo Neto Borges",
+        "todo": true
+       },
+       {
+        "role": "Venda de obras (FAST Obras — time de Fabio Furtado)",
+        "name": "Julia Katlen da Silva Pitombo de Mesquita",
+        "ref": true
+       },
+       {
+        "role": "A definir",
+        "name": "Keile Ferreira Almeida",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Luis Caetano Monteiro Barros",
+        "todo": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja Centro — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA CENTRO · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Nova Iguaçu — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA NOVA IGUAÇU · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Bandeirantes — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA BANDEIRANTES · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Bonsucesso — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA BONSUCESSO · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Ramos — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA RAMOS · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Caxias — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA CAXIAS · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Alcântara — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA ALCÂNTARA · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja São João de Meriti — RJ",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA SÃO JOÃO DE MERITI · RJ",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Inside Sales",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "INSIDE SALES",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Serra — ES",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA SERRA · ES",
+      "s": "Cargos a definir",
+      "accent": "#0f9d6b",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Curitiba — PR",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA CURITIBA · PR",
+      "s": "Cargos a definir",
+      "accent": "#0f9d6b",
+      "people": []
+     }
+    ]
+   },
+   {
+    "title": "Loja Feira de Santana — BA",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: A definir",
+    "cols": [
+     {
+      "k": "LOJA FEIRA DE SANTANA · BA",
+      "s": "Cargos a definir",
+      "accent": "#0f9d6b",
+      "people": []
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "obras",
+  "name": "FAST Obras & FAST Homes",
+  "sections": [
+   {
+    "title": "Comercial",
+    "hint": "Diretoria: Fabio Furtado",
+    "chief": {
+     "role": "Diretor Comercial · Contratante: RUCHE DESIGN LTDA",
+     "name": "Fabio Furtado"
+    },
+    "cols": [
+     {
+      "k": "LÍDER COMERCIAL",
+      "s": "Transita nas duas frentes",
+      "accent": "#7c4dff",
+      "ops": [
+       "FAST Homes",
+       "FAST Obras"
+      ],
+      "people": [
+       {
+        "role": "Líder Comercial · volante · Contratante: RUCHE DESIGN LTDA",
+        "name": "Erly Junior",
+        "lead": true,
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     },
+     {
+      "k": "FAST HOMES",
+      "s": "Vendas",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
+        "name": "Fabrício",
+        "emp": "RUCHE DESIGN LTDA"
+       },
+       {
+        "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
+        "name": "Wanderson",
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     },
+     {
+      "k": "FAST OBRAS",
+      "s": "Vendas por região",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Venda de obras — Norte, Nordeste e Centro-Oeste (também na Loja Camaçari — BA) · Contratante: GYPMASTER",
+        "name": "Júlia",
+        "emp": "GYPMASTER"
+       },
+       {
+        "role": "Venda de obras — Sul · Contratante: RUCHE DESIGN LTDA",
+        "name": "Barreto",
+        "emp": "RUCHE DESIGN LTDA"
+       },
+       {
+        "role": "Vendedora · Contratante: RUCHE DESIGN LTDA",
+        "name": "Mirian",
+        "emp": "RUCHE DESIGN LTDA"
+       },
+       {
+        "role": "Vendedora · Contratante: RUCHE DESIGN LTDA",
+        "name": "Thayná",
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     },
+     {
+      "k": "NOVA METÁLICA",
+      "s": "Gerência: Wagner",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Gerente Comercial · Contratante: MAXSTEEL",
+        "name": "Wagner",
+        "lead": true,
+        "emp": "MAXSTEEL"
+       },
+       {
+        "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
+        "name": "Wallace",
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     },
+     {
+      "k": "ADMINISTRATIVO",
+      "s": "Apoio à diretoria",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Assistente Administrativo · Contratante: RUCHE DESIGN LTDA",
+        "name": "Maria Izabel",
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     },
+     {
+      "k": "OPERAÇÕES SUL",
+      "s": "Transita nas duas frentes",
+      "accent": "#123A63",
+      "ops": [
+       "FAST Homes",
+       "FAST Obras"
+      ],
+      "people": [
+       {
+        "role": "Diretor de Operações Sul · Contratante: RUCHE DESIGN LTDA",
+        "name": "Gabriel",
+        "lead": true,
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "franquias",
+  "name": "FAST Franchising",
+  "sections": [
+   {
+    "title": "Franquias",
+    "hint": "Diretoria: Leandro Martins",
+    "chief": {
+     "role": "Diretor",
+     "name": "Leandro Martins"
+    },
+    "subchief": {
+     "role": "Gerente",
+     "name": "Robert Duarte"
+    },
+    "cols": [
+     {
+      "k": "GERÊNCIA",
+      "s": "Gestão da unidade",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "Robert Duarte",
+        "lead": true
+       }
+      ]
+     },
+     {
+      "k": "IMPLANTAÇÃO",
+      "s": "Onboarding de franquias",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Coordenador de Implantação · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Pedro",
+        "lead": true,
+        "emp": "FAST DRYWALL FRANCHISING LTDA"
+       }
+      ]
+     },
+     {
+      "k": "COMERCIAL",
+      "s": "Prospecção e vendas",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Ygor",
+        "emp": "FAST DRYWALL FRANCHISING LTDA"
+       },
+       {
+        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Moisés",
+        "emp": "FAST DRYWALL FRANCHISING LTDA"
+       },
+       {
+        "role": "Consultor Comercial",
+        "name": "Jucier"
+       },
+       {
+        "role": "Consultora Comercial",
+        "name": "Gabriela"
+       },
+       {
+        "role": "Consultora Comercial",
+        "name": "Beatriz"
+       }
+      ]
+     },
+     {
+      "k": "ADMINISTRATIVO",
+      "s": "Faturamento e ADM",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Auxiliar de Faturamento · ADM · Contratante: CSC",
+        "name": "Yago",
+        "emp": "CSC"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "supply",
+  "name": "Operações",
+  "sections": [
+   {
+    "title": "Operações",
+    "hint": "Setor de Compras",
+    "chief": {
+     "role": "Diretor",
+     "name": "Josiel"
+    },
+    "cols": [
+     {
+      "k": "COMPRAS",
+      "s": "Setor de Compras",
+      "accent": "#0f766e",
+      "people": [
+       {
+        "role": "Analista Administrativo",
+        "name": "Gabriel Silva dos Anjos",
+        "lead": true,
+        "emp": "Supply Chain Serviços LTDA"
+       },
+       {
+        "role": "Assistente Administrativo",
+        "name": "Bruno da Rocha Tamer",
+        "emp": "Supply Chain Serviços LTDA"
+       },
+       {
+        "role": "Assistente Administrativo",
+        "name": "Caine Ruffo Torres Cabral Azevedo",
+        "emp": "Supply Chain Serviços LTDA"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "dcs",
+  "name": "DCS-CM — Casa do Montador",
+  "sections": [
+   {
+    "title": "Operações do Varejo",
+    "hint": "Diretoria: Josiel",
+    "chief": {
+     "role": "Diretor",
+     "name": "Josiel"
+    },
+    "cols": [
+     {
+      "k": "ABASTECIMENTO LOJAS",
+      "s": "Setor de abastecimento das lojas",
+      "accent": "#161C26",
+      "people": [
+       {
+        "role": "Analista de Estoque · Contratante: Influência",
+        "name": "Wellington Lima",
+        "emp": "Influência",
+        "hl": true
+       },
+       {
+        "role": "Estagiário · Contratante: MASTERSTEEL",
+        "name": "Gabriel Nicácio",
+        "emp": "MASTERSTEEL",
+        "hl": true
+       },
+       {
+        "role": "Assistente ADM · Contratante: Influência",
+        "name": "Bruna Odilon",
+        "emp": "Influência",
+        "hl": true
+       }
+      ]
+     },
+     {
+      "k": "GERÊNCIA",
+      "s": "Operações",
+      "accent": "#123A63",
+      "people": [
+       {
+        "role": "Gerente de Operações",
+        "name": "Adriano Vieira de Santana",
+        "lead": true
+       }
+      ]
+     },
+     {
+      "k": "EQUIPE",
+      "s": "Cargos a definir",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "A definir",
+        "name": "Franklin Tatsho Leonardo Tamanaha",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "João Paulo Cavalheiro do Amaral",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Leonardo Gomes Santos",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Luiz Gustavo de Oliveira",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Renan Inácio de Souza",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Ruan Estrela dos Santos",
+        "todo": true
+       },
+       {
+        "role": "A definir",
+        "name": "Wagner Ricardo Paulino Viana de Oliveira",
+        "todo": true
+       }
+      ],
+      "wide": true
+     },
+     {
+      "k": "DCS CURITIBA",
+      "s": "Filial Curitiba · Contratante: DCS",
+      "accent": "#2c8659",
+      "people": [
+       {
+        "role": "Conferente · Contratante: DCS",
+        "name": "Irian Antony Mattos Amantino",
+        "emp": "DCS"
+       },
+       {
+        "role": "Operador de Empilhadeira · Contratante: DCS",
+        "name": "Jedison Luis Toso",
+        "emp": "DCS"
+       },
+       {
+        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "name": "Daniel de Souza",
+        "emp": "DCS"
+       },
+       {
+        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "name": "Willian Cordeiro de Paula",
+        "emp": "DCS"
+       },
+       {
+        "role": "Comercial · Contratante: DCS",
+        "name": "Marcos",
+        "emp": "DCS"
+       },
+       {
+        "role": "Comercial · Contratante: DCS",
+        "name": "Carlos Eduardo de Moraes",
+        "emp": "DCS"
+       },
+       {
+        "role": "Comercial · Contratante: DCS",
+        "name": "Fabiana de Lima dos Santos",
+        "emp": "DCS"
+       },
+       {
+        "role": "Comercial · Contratante: DCS",
+        "name": "Mário Agostini Carara",
+        "emp": "DCS"
+       }
+      ]
+     },
+     {
+      "k": "DCS TIJUCAS",
+      "s": "Filial Tijucas · Contratante: DCS",
+      "accent": "#7a4b9e",
+      "people": [
+       {
+        "role": "Encarregado · Contratante: DCS",
+        "name": "Eder",
+        "lead": true,
+        "emp": "DCS"
+       },
+       {
+        "role": "Operador de Empilhadeira · Contratante: DCS",
+        "name": "Gabryell Oliveira Ferreira",
+        "emp": "DCS"
+       },
+       {
+        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "name": "Paulo Ricardo Vigel Menezes Junior",
+        "emp": "DCS"
+       },
+       {
+        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "name": "Adilson Roberto Ribeiro",
+        "emp": "DCS"
+       }
+      ]
+     },
+     {
+      "k": "DCS MOGI",
+      "s": "Filial Mogi · Contratante: DCS",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Encarregado de Galpão · Contratante: DCS",
+        "name": "Raphael Aragão Silva",
+        "lead": true,
+        "emp": "DCS"
+       },
+       {
+        "role": "Ajudante de Galpão · Contratante: DCS",
+        "name": "Deivison Brendo da Silva Anjos",
+        "emp": "DCS"
+       },
+       {
+        "role": "Ajudante de Galpão · Contratante: DCS",
+        "name": "Matheus Lima Pereira",
+        "emp": "DCS"
+       },
+       {
+        "role": "Operador de Empilhadeira · Contratante: DCS",
+        "name": "Luciano de Oliveira",
+        "emp": "DCS"
+       },
+       {
+        "role": "Vendedora B2B (time Front Office — Poliana Alves)",
+        "name": "Camila Silva Campos",
+        "ref": true
+       },
+       {
+        "role": "Vendedor B2B (time Front Office — Poliana Alves)",
+        "name": "Michel Martins da Costa",
+        "ref": true
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais · Contratante: DCS",
+        "name": "Roberta Souza Barasino",
+        "emp": "DCS"
+       }
+      ]
+     },
+     {
+      "k": "DCS JAPERI",
+      "s": "Filial Japeri · Contratante: MASTERSTEEL",
+      "accent": "#c2751a",
+      "wide": true,
+      "people": [
+       {
+        "role": "Supervisor · Contratante: MASTERSTEEL",
+        "name": "Tiago da Costa",
+        "lead": true,
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Encarregado · Contratante: MASTERSTEEL",
+        "name": "Antonio Frias",
+        "lead": true,
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Encarregado · Contratante: MASTERSTEEL",
+        "name": "Alex Levoni",
+        "lead": true,
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Conferente · Contratante: MASTERSTEEL",
+        "name": "Ryan Mateus",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Operador de Empilhadeira · Contratante: MASTERSTEEL",
+        "name": "Reginaldo Sampaio",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Operador de Empilhadeira · Contratante: MASTERSTEEL",
+        "name": "Thiago Bezerra",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Auxiliar de Almoxarifado · Contratante: MASTERSTEEL",
+        "name": "Magno Ramos",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Ajudante · Contratante: MASTERSTEEL",
+        "name": "Marcos Vinicius",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Ajudante · Contratante: MASTERSTEEL",
+        "name": "Marcio Ramos",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Ajudante · Contratante: MASTERSTEEL",
+        "name": "Julio Cesar",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Ajudante · Contratante: MASTERSTEEL",
+        "name": "Carlos Henrique",
+        "emp": "MASTERSTEEL"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais · Contratante: MASTERSTEEL",
+        "name": "Lucimar",
+        "emp": "MASTERSTEEL"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "maxsteel",
+  "name": "MaxSteel",
+  "sections": [
+   {
+    "title": "MaxSteel",
+    "hint": "Diretoria: Thiago de Paula Vianna",
+    "chief": {
+     "role": "Diretor",
+     "name": "Thiago de Paula Vianna"
+    },
+    "cols": [
+     {
+      "k": "ADMINISTRATIVO",
+      "s": "Apoio administrativo",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Analista Senior",
+        "name": "Mayra Thayane Souza do Couto"
+       },
+       {
+        "role": "Jovem Aprendiz Administrativo",
+        "name": "Ana Clara da Conceicao Pacheco"
+       }
+      ]
+     },
+     {
+      "k": "PRODUÇÃO",
+      "s": "Encarregado: Diego Melo de Oliveira",
+      "accent": "#123A63",
+      "wide": true,
+      "people": [
+       {
+        "role": "Encarregado de Produção",
+        "name": "Diego Melo de Oliveira",
+        "lead": true
+       },
+       {
+        "role": "Auxiliar de Produção",
+        "name": "Charles Eduardo Soares Cardoso"
+       },
+       {
+        "role": "Operador de Máquinas I",
+        "name": "Gabriel da Silva Sobrinho"
+       },
+       {
+        "role": "Operador de Empilhadeira",
+        "name": "Gustavo Douglas de Souza Carvalho"
+       },
+       {
+        "role": "Operador de Máquinas I",
+        "name": "Leandro Silva de Souza",
+        "hl": true
+       },
+       {
+        "role": "Auxiliar de Produção",
+        "name": "Leilson Batista Santa Barbara"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Luciano Felizardo da Silva"
+       },
+       {
+        "role": "Operador de Empilhadeira",
+        "name": "Mario Jose Ramos da Silva",
+        "hl": true
+       },
+       {
+        "role": "Oficial de Pedreiro",
+        "name": "Osias Geraldo de Oliveira Silva"
+       },
+       {
+        "role": "Operador de Máquinas I",
+        "name": "Rafael Antonio Santos Mota"
+       },
+       {
+        "role": "Operador de Máquinas II",
+        "name": "Renan da Silva",
+        "hl": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "digital",
+  "name": "Comércio Digital",
+  "sections": [
+   {
+    "title": "Comércio Digital",
+    "hint": "Consultoria contratada: Auren",
+    "cols": [
+     {
+      "k": "AUREN CONSULTORIA",
+      "s": "Consultoria contratada · Comercial",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Vendedor · Contratante: Unity Company",
+        "name": "Ericki",
+        "emp": "Unity Company"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "unity",
+  "name": "Unity Company",
+  "sections": [
+   {
+    "title": "Unity Company",
+    "hint": "Diretoria: Nicole",
+    "chief": {
+     "role": "Diretora",
+     "name": "Nicole"
+    },
+    "cols": [
+     {
+      "k": "MARKETING",
+      "s": "Contratados pela Unity",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Supervisora de MKT",
+        "name": "Ana Teresa Borges",
+        "lead": true,
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Assistente de MKT",
+        "name": "Gabriel Innocencio",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Designer",
+        "name": "Roberta Michael",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Social Media",
+        "name": "Amanda Leão",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Social Media",
+        "name": "Vallentina Oliveira",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Social Media",
+        "name": "João Vitor",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Gestor de Tráfego Junior",
+        "name": "Wallace Proença",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Organizadora de Eventos",
+        "name": "Manuela Araújo",
+        "emp": "Unity Company"
+       }
+      ]
+     },
+     {
+      "k": "PRÉ-VENDAS",
+      "s": "Contratados pela Unity",
+      "accent": "#0891b2",
+      "people": [
+       {
+        "role": "Pré-vendas",
+        "name": "Tatiana Rodrigues",
+        "emp": "Unity Company"
+       },
+       {
+        "role": "Pré-vendas",
+        "name": "Naiara Marques",
+        "emp": "Unity Company"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "csc",
+  "name": "CSC",
+  "sections": [
+   {
+    "title": "Direção Executiva",
+    "hint": "CEO Priscila · Diretoria do CSC provisória",
+    "chief": {
+     "role": "CEO · Diretoria do CSC (provisória)",
+     "name": "Priscila"
+    },
+    "cols": [
+     {
+      "k": "ASSESSORIA DIRETA",
+      "s": "Ligação direta com a CEO",
+      "accent": "#161C26",
+      "people": [
+       {
+        "role": "Assistente · ligada diretamente à CEO Priscila",
+        "name": "Vitória",
+        "emp": "CSC"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Governança e Tecnologia",
+    "hint": "Diretoria: Guilherme",
+    "chief": {
+     "role": "Diretor de Governança e Tecnologia",
+     "name": "Guilherme"
+    },
+    "cols": [
+     {
+      "k": "ASSESSORIA DIRETA",
+      "s": "Ligação direta com a liderança",
+      "accent": "#161C26",
+      "people": [
+       {
+        "role": "Assistente · ligado diretamente a Guilherme",
+        "name": "Eric",
+        "emp": "CSC"
+       }
+      ]
+     },
+     {
+      "k": "PROCESSOS",
+      "s": "Gestão de processos",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Gerente de Processos",
+        "name": "Ariene",
+        "lead": true,
+        "emp": "CSC"
+       },
+       {
+        "role": "Consultora de Processos",
+        "name": "Letícia",
+        "emp": "CSC"
+       },
+       {
+        "role": "Estagiário",
+        "name": "Tiago",
+        "emp": "CSC"
+       }
+      ]
+     },
+     {
+      "k": "DESENVOLVIMENTO DE SOFTWARE",
+      "s": "Tecnologia e projetos",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Gerente de Projeto",
+        "name": "Marcelo Lopes",
+        "lead": true,
+        "emp": "CSC"
+       },
+       {
+        "role": "Desenvolvedor Júnior",
+        "name": "Aleph",
+        "emp": "CSC"
+       },
+       {
+        "role": "Desenvolvedor",
+        "name": "David",
+        "emp": "CSC"
+       },
+       {
+        "role": "Desenvolvedor",
+        "name": "Heitor",
+        "emp": "CSC"
+       },
+       {
+        "role": "Estagiário",
+        "name": "Pedro",
+        "emp": "CSC"
+       },
+       {
+        "role": "Assistente de Desenvolvimento em IA",
+        "name": "Clara",
+        "emp": "CSC"
+       }
+      ]
+     },
+     {
+      "k": "T.I.",
+      "s": "Gerência: Plínio",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Gerente de T.I.",
+        "name": "Plínio",
+        "lead": true
+       },
+       {
+        "role": "Analista de T.I.",
+        "name": "Cristian"
+       },
+       {
+        "role": "Analista de T.I.",
+        "name": "Wiclem"
+       },
+       {
+        "role": "Assistente",
+        "name": "Marcos"
+       },
+       {
+        "role": "Auxiliar de T.I.",
+        "name": "Beatriz"
+       },
+       {
+        "role": "Estagiário",
+        "name": "Tiago"
+       }
+      ]
+     },
+     {
+      "k": "AUDITORIA",
+      "s": "Auditoria e inventário",
+      "accent": "#0f766e",
+      "people": [
+       {
+        "role": "Gerente de Auditoria",
+        "name": "Gilberto",
+        "lead": true,
+        "emp": "CSC"
+       },
+       {
+        "group": "Inventário"
+       },
+       {
+        "role": "Supervisor de Inventário",
+        "name": "Davidson Alves",
+        "emp": "CSC"
+       },
+       {
+        "role": "Auxiliar de Inventário",
+        "name": "Cleyton Silva",
+        "emp": "CSC"
+       },
+       {
+        "group": "Auditoria"
+       },
+       {
+        "role": "Analista de Auditoria",
+        "name": "Priscila",
+        "emp": "CSC"
+       },
+       {
+        "role": "Auxiliar de Auditoria",
+        "name": "Arthur",
+        "emp": "CSC"
+       },
+       {
+        "role": "Auxiliar de Auditoria (Fretes)",
+        "name": "Gustavo",
+        "emp": "CSC"
+       },
+       {
+        "group": "Estágio"
+       },
+       {
+        "role": "Estagiário",
+        "name": "Caio",
+        "emp": "CSC"
+       },
+       {
+        "role": "Estagiário",
+        "name": "Rodrigo",
+        "emp": "CSC"
+       },
+       {
+        "role": "Estagiária",
+        "name": "Maria Julia",
+        "emp": "CSC"
+       },
+       {
+        "role": "Estagiária",
+        "name": "Lorrayne",
+        "emp": "CSC"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Financeiro, Contábil e Fiscal",
+    "hint": "Diretoria: Leonardo",
+    "cols": [
+     {
+      "k": "FINANCEIRO",
+      "s": "Gerência: Arícia",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente Financeiro",
+        "name": "Arícia",
+        "lead": true
+       },
+       {
+        "role": "Analista Financeiro Júnior",
+        "name": "Layne"
+       },
+       {
+        "role": "Analista Financeiro Júnior",
+        "name": "Milena"
+       },
+       {
+        "role": "Analista Financeiro Júnior",
+        "name": "Rodrigo"
+       },
+       {
+        "role": "Analista de Cobrança Sênior",
+        "name": "Valéria"
+       },
+       {
+        "role": "Assistente Financeiro Jr",
+        "name": "Mateus"
+       },
+       {
+        "role": "Estagiário Financeiro",
+        "name": "Robinson"
+       }
+      ]
+     },
+     {
+      "k": "CONTABILIDADE E FISCAL",
+      "s": "Gerência: Cleiton",
+      "accent": "#0f766e",
+      "people": [
+       {
+        "role": "Gerente de Contabilidade",
+        "name": "Cleiton",
+        "lead": true
+       },
+       {
+        "role": "Assistente Contábil Pleno",
+        "name": "Michael"
+       }
+      ]
+     },
+     {
+      "k": "FATURAMENTO",
+      "s": "Liderança: Bruno Brasil",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Líder de Faturamento",
+        "name": "Bruno Brasil",
+        "lead": true
+       },
+       {
+        "role": "Assistente de Faturamento",
+        "name": "Paloma"
+       },
+       {
+        "role": "Assistente de Faturamento",
+        "name": "William"
+       },
+       {
+        "role": "Auxiliar de Faturamento",
+        "name": "Kassiane"
+       },
+       {
+        "role": "Estagiária",
+        "name": "Mariana"
+       },
+       {
+        "role": "Estagiária",
+        "name": "Ana Letícia"
+       }
+      ]
+     }
+    ],
+    "chief": {
+     "role": "CFO — Diretor Financeiro",
+     "name": "Leonardo"
+    }
+   },
+   {
+    "title": "Gente e Gestão",
+    "hint": "Diretoria: a contratar",
+    "chief": {
+     "role": "Diretoria de Gente e Gestão",
+     "name": "A contratar",
+     "vago": true
+    },
+    "cols": [
+     {
+      "k": "RH",
+      "s": "Gerência: Barbara",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente de RH",
+        "name": "Barbara",
+        "lead": true
+       },
+       {
+        "role": "Coordenadora de R&S",
+        "name": "Karina",
+        "lead": true
+       },
+       {
+        "role": "Assistente de RH Pleno",
+        "name": "Giovanna"
+       },
+       {
+        "role": "Assistente de RH Pleno",
+        "name": "Julia"
+       }
+      ]
+     },
+     {
+      "k": "DEPARTAMENTO PESSOAL",
+      "s": "Gerência: Diego",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Gerente de DP",
+        "name": "Diego",
+        "lead": true
+       },
+       {
+        "role": "Assistente de DP",
+        "name": "Natanyele Medeiros"
+       },
+       {
+        "role": "Auxiliar de Departamento Pessoal",
+        "name": "Karine"
+       },
+       {
+        "role": "Auxiliar de Departamento Pessoal",
+        "name": "Rayssa"
+       }
+      ]
+     },
+     {
+      "k": "ADMINISTRATIVO",
+      "s": "Gerência: Diego",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Gerente Administrativo",
+        "name": "Diego",
+        "lead": true
+       },
+       {
+        "role": "Analista Administrativo",
+        "name": "Lucas"
+       },
+       {
+        "role": "Auxiliar Administrativo",
+        "name": "Joyce Milena"
+       },
+       {
+        "group": "Manutenção"
+       },
+       {
+        "role": "Eletricista",
+        "name": "Jonathan"
+       },
+       {
+        "role": "Auxiliar de Manutenção",
+        "name": "Gabriel"
+       },
+       {
+        "role": "Auxiliar de Manutenção",
+        "name": "João Carlos"
+       },
+       {
+        "group": "Serviços Gerais"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Marcia"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Raissa"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Tatiana"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Vitória"
+       },
+       {
+        "role": "Auxiliar de Serviços Gerais",
+        "name": "Jaqueline"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "chief": {
+   "role": "Diretoria do CSC · provisória",
+   "name": "Priscila — CEO"
+  }
+ },
+ {
+  "id": "engenharia",
+  "name": "Engenharia",
+  "sections": [
+   {
+    "title": "Engenharia",
+    "hint": "Diretoria: Glauco Andrade · Contratante: Ruche Design LTDA ME",
+    "chief": {
+     "role": "Diretor de Engenharia",
+     "name": "Glauco Andrade"
+    },
+    "cols": [
+     {
+      "k": "GERENCIAMENTO DE PROJETOS",
+      "s": "Gestão de projetos",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente de Projetos Jr",
+        "name": "Claudia",
+        "lead": true
+       }
+      ]
+     },
+     {
+      "k": "ARQUITETURA",
+      "s": "Projetos arquitetônicos",
+      "accent": "#2563eb",
+      "people": [
+       {
+        "role": "Arquiteta Jr",
+        "name": "Karla Carvalho",
+        "lead": true
+       },
+       {
+        "role": "Assistente de Arquitetura",
+        "name": "Milena"
+       }
+      ]
+     },
+     {
+      "k": "ENGENHARIA ESTRUTURAL",
+      "s": "Cálculo e projetos",
+      "accent": "#0f766e",
+      "people": [
+       {
+        "role": "Calculista",
+        "name": "A contratar",
+        "vago": true
+       },
+       {
+        "role": "Analista de Projetos",
+        "name": "Larysseh"
+       },
+       {
+        "role": "Estagiário",
+        "name": "A contratar",
+        "vago": true
+       }
+      ]
+     },
+     {
+      "k": "PROJETOS E ORÇAMENTOS",
+      "s": "Liderança: Luan da Rosa",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Téc. em Edificações · Supervisor de Orçamentos",
+        "name": "Luan da Rosa",
+        "lead": true
+       },
+       {
+        "role": "Técnico em Edificações",
+        "name": "Ana Valentina"
+       },
+       {
+        "role": "Estagiário de Engenharia",
+        "name": "Bernardo Dutra"
+       },
+       {
+        "role": "Estagiário de Engenharia",
+        "name": "Gabriel Marques"
+       },
+       {
+        "role": "Estagiário de Engenharia",
+        "name": "Pablo Vitor Medeiros"
+       },
+       {
+        "role": "Estagiário de Engenharia",
+        "name": "Matheus dos Santos"
+       }
+      ]
+     },
+     {
+      "k": "STEEL CONECTA",
+      "s": "Rede de mão de obra",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "A contratar",
+        "vago": true
+       }
+      ]
+     },
+     {
+      "k": "OPERAÇÕES FAST HOMES E OBRAS",
+      "s": "Coordenação: Renata",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Coordenadora",
+        "name": "Renata",
+        "lead": true
+       },
+       {
+        "role": "Auxiliar",
+        "name": "A contratar",
+        "vago": true
+       },
+       {
+        "role": "Apoio · Gerenciamento de Projetos",
+        "name": "Claudia",
+        "ref": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
