@@ -480,13 +480,51 @@
    },
    {
     "title": "Loja São João de Meriti — RJ",
-    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: A definir",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: INFLUÊNCIA",
     "cols": [
      {
       "k": "LOJA SÃO JOÃO DE MERITI · RJ",
-      "s": "Cargos a definir",
+      "s": "Gerência: Elaine · INFLUÊNCIA",
       "accent": "#7c4dff",
-      "people": []
+      "people": [
+       {
+        "role": "Gerente",
+        "name": "Elaine",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Douglas"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Luana"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Alessandra Rocha"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Alessandra Vanessa"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Guilherme"
+       },
+       {
+        "role": "Conferente · Galpão",
+        "name": "Marcos"
+       },
+       {
+        "role": "Ajudante · Galpão",
+        "name": "Bruno"
+       },
+       {
+        "role": "Operador de Empilhadeira · Galpão",
+        "name": "Renan"
+       }
+      ]
      }
     ]
    },
