@@ -14,7 +14,7 @@ import { useMeetingsStore } from "@/store/useMeetingsStore"
 import { useApprovalHistoryStore } from "@/store/useApprovalHistoryStore"
 import { ACTION_STATUS_LABEL, type ActionStatus, type Meeting } from "@/data/meetingsTypes"
 import { cn } from "@/lib/utils"
-import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck } from "lucide-react"
+import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck, ListChecks } from "lucide-react"
 
 const statusBadgeClass: Record<ActionStatus, string> = {
   pendente: "bg-[#FFF8E8] text-warn border-[#EFD9A6]",
@@ -53,6 +53,8 @@ export function ReunioesComite() {
           </Button>
         </div>
       </div>
+
+      <PendingActionsSection meetings={sorted} />
 
       <div className="space-y-4">
         {sorted.length === 0 && (
@@ -115,6 +117,74 @@ function ApprovalHistorySection() {
                   <div className="text-xs font-bold text-ink truncate">{e.item}</div>
                   <div className="text-[10.5px] text-muted">
                     {e.area} · {e.action === "aprovado" ? "aprovado" : "reaberto"} em {formatDateTime(e.timestamp)}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
+  const setActionStatus = useMeetingsStore((s) => s.setActionStatus)
+
+  const pending = meetings
+    .flatMap((m) => m.actionItems.map((item) => ({ item, meeting: m })))
+    .filter(({ item }) => item.status !== "concluido")
+    .sort((a, b) => {
+      if (!a.item.deadline) return 1
+      if (!b.item.deadline) return -1
+      return a.item.deadline < b.item.deadline ? -1 : 1
+    })
+
+  function cycleStatus(meetingId: string, itemId: string, current: ActionStatus) {
+    const order: ActionStatus[] = ["pendente", "andamento", "concluido"]
+    const next = order[(order.indexOf(current) + 1) % order.length]
+    setActionStatus(meetingId, itemId, next)
+  }
+
+  return (
+    <div className="mb-6">
+      <div className="flex items-center gap-2.5 mb-1">
+        <div className="w-6.5 h-6.5 shrink-0 rounded-lg bg-brand-red text-white flex items-center justify-center">
+          <ListChecks size={14} />
+        </div>
+        <div>
+          <h2 className="text-[17px] font-extrabold text-ink">Planos de Ação a Realizar</h2>
+          <p className="text-xs text-muted">
+            Todos os itens pendentes ou em andamento de todas as reuniões, num só lugar — clique no status para avançar.
+          </p>
+        </div>
+      </div>
+
+      {pending.length === 0 ? (
+        <div className="text-center text-sm text-muted py-10 border border-dashed border-line rounded-2xl mt-3">
+          Nenhum plano de ação pendente. Tudo concluído.
+        </div>
+      ) : (
+        <div className="rounded-2xl border border-line bg-white shadow-card overflow-hidden mt-3">
+          <div className="divide-y divide-line">
+            {pending.map(({ item, meeting }) => (
+              <div key={item.id} className="flex items-center gap-2.5 px-4 py-2.5">
+                <button
+                  onClick={() => cycleStatus(meeting.id, item.id, item.status)}
+                  className={cn(
+                    "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
+                    statusBadgeClass[item.status]
+                  )}
+                  title="Clique para avançar o status"
+                >
+                  {ACTION_STATUS_LABEL[item.status]}
+                </button>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs font-bold text-ink truncate">{item.description}</div>
+                  <div className="text-[10.5px] text-muted mt-0.5">
+                    <span>{meeting.title}</span>
+                    {item.responsible && <span> · Responsável: {item.responsible}</span>}
+                    {item.deadline && <span> · Prazo: {formatDate(item.deadline)}</span>}
                   </div>
                 </div>
               </div>
