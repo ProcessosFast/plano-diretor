@@ -91,7 +91,7 @@ export const CONFLITO_POLICY_PARTS: PolicyPart[] = [
     title: "Parte 6 — Transações entre Empresas do Ecossistema (Partes Relacionadas)",
     subsections: [
       {
-        paragraphs: ["Como as empresas do Ecossistema mantêm relações comerciais entre si (por exemplo, fornecimento, serviços do CSC, logística da Log Express, atacado da SUPPLY-LM e outras), essas transações são partes relacionadas e exigem cuidado redobrado para não gerar transferência indevida de resultado entre empresas ou prejuízo a sócios e credores de qualquer delas."],
+        paragraphs: ["Como as empresas do Ecossistema mantêm relações comerciais entre si (por exemplo, fornecimento, serviços do CSC, logística da Log Express, atacado da SUPPLY-LMS e outras), essas transações são partes relacionadas e exigem cuidado redobrado para não gerar transferência indevida de resultado entre empresas ou prejuízo a sócios e credores de qualquer delas."],
       },
       {
         heading: "Diretrizes obrigatórias para transações entre empresas do Grupo",

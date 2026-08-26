@@ -137,7 +137,7 @@ export function MapaReceitas() {
         </div>
         <Note>
           <b>FAST Importação (Revisão 1):</b> tratada como unidade de negócio comercial. As importações são
-          executadas pelas operacionais (MaxSteel, DCS-CM, LM/SUPPLY); cabe à FAST Importação desenvolver
+          executadas pelas operacionais (MaxSteel, DCS-CM, LMS/SUPPLY); cabe à FAST Importação desenvolver
           fornecedores e promover comercialmente as operações — daí sua receita ser de promoção/serviço, e não
           de venda direta.
           <br />

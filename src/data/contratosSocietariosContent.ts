@@ -45,7 +45,7 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
         observacoes: "A sócia única, Smart Steel Company LLC, está sediada no mesmo endereço em Aventura/FL (2980 NE 207th Street, Suite 319) que a Fast Steel Construction LLC (sócia da FAST Franchising) e é representada pelo mesmo Marcelo Ribeiro Lobo — mesmo padrão de holding americana com CNPJ brasileiro citado como pendente de validação no Plano Diretor (R1.9). Esta pessoa jurídica provavelmente corresponde à \"Holding Indústria\" que controla a MaxSteel (R1.1), ainda listada como pendente na categoria Holdings deste portal — vale confirmar com o Jurídico se são a mesma entidade.",
       },
       {
-        empresa: "SUPPLY-LM · Supply Chain Serviços",
+        empresa: "SUPPLY-LMS · Supply Chain Serviços",
         status: "completo",
         razaoSocial: "Supply Chain Serviços Ltda",
         nire: "32203252698 (JUCEES/ES)",
@@ -63,7 +63,7 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
         observacoes: "A Filial 02 (Rua 3250, nº 474, Centro, Balneário Camboriú/SC) está no mesmo endereço já registrado como filial da Casa do Montador (DCS-CM) na Alteração Contratual nº 03 — mesmo endereço físico compartilhado entre atacado (SUPPLY) e varejo (DCS), o que é coerente com o modelo do Plano Diretor de estrutura logística compartilhada entre canais.",
       },
       {
-        empresa: "SUPPLY-LM · LMS Distribuidora",
+        empresa: "SUPPLY-LMS · LMS Distribuidora",
         status: "completo",
         razaoSocial: "LMS Distribuidora Ltda (antiga LMS Distribuição de Produtos para Farmácia Ltda)",
         nire: "32203416071 (JUCEES/ES)",
@@ -75,7 +75,7 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
         administracao: "Priscilla Costa Mendes de Medeiros, isoladamente.",
         filiais: ["Rodovia ES-010, 3109, Chácara Parreiral, Serra/ES (CNPJ 57.557.525/0002-20)"],
         ultimoAto: "2ª Alteração e Consolidação Contratual — admissão de Priscilla Costa Mendes de Medeiros, retirada do sócio Thiago Szuster (venda de 100% das quotas por R$ 100.000,00), mudança de sede, inclusão do CNAE de materiais de construção e alteração da razão social para LMS Distribuidora Ltda. Assinada em 26/06/2026, registrada na JUCEES em 08/07/2026, protocolo 261368184.",
-        observacoes: "Priscilla Costa Mendes de Medeiros é a mesma administradora da FAST Franchising (Fast Drywall Franchising Ltda) — a mesma pessoa administra a franquia e agora também o \"LM\" da dupla SUPPLY-LM do atacado. A sede é idêntica à da Supply Chain Serviços (mesmo endereço em Serra/ES), confirmando que as duas empresas operam do mesmo escritório — coerente com o \"LM e SUPPLY\" descrito como as duas empresas de atacado no Plano Diretor (R1.1).",
+        observacoes: "Priscilla Costa Mendes de Medeiros é a mesma administradora da FAST Franchising (Fast Drywall Franchising Ltda) — a mesma pessoa administra a franquia e agora também o \"LMS\" da dupla SUPPLY-LMS do atacado. A sede é idêntica à da Supply Chain Serviços (mesmo endereço em Serra/ES), confirmando que as duas empresas operam do mesmo escritório — coerente com o \"LMS e SUPPLY\" descrito como as duas empresas de atacado no Plano Diretor (R1.1).",
       },
       {
         empresa: "DCS-CM · Varejo",
@@ -210,7 +210,7 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
         administracao: "Marcio Pires Machado, isoladamente.",
         enquadramento: "Microempresa (ME), Simples Nacional.",
         ultimoAto: "5ª Alteração do Contrato Social — transferência de sede do Rio de Janeiro (Maré) para Serra/ES e alteração do objeto social, com consolidação contratual. Assinada em 18/12/2023, arquivada na JUCERJA em 19/12/2023 (protocolo 2023/01023528-2) e registrada na JUCEES em 22/12/2023.",
-        observacoes: "Mesmo sócio/administrador (Marcio Pires Machado) e exatamente o mesmo endereço-sede (Rua Vitória, S/N, Quadra 12, Lote 16, Alterosas, Serra/ES) da Supply Chain Serviços Ltda (SUPPLY-LM) — as duas empresas operam do mesmo escritório e sob a mesma pessoa, o que reforça a integração operacional entre Log Express e o atacado descrita no Plano Diretor, mas também concentra em uma única pessoa a administração de duas empresas relacionadas.",
+        observacoes: "Mesmo sócio/administrador (Marcio Pires Machado) e exatamente o mesmo endereço-sede (Rua Vitória, S/N, Quadra 12, Lote 16, Alterosas, Serra/ES) da Supply Chain Serviços Ltda (SUPPLY-LMS) — as duas empresas operam do mesmo escritório e sob a mesma pessoa, o que reforça a integração operacional entre Log Express e o atacado descrita no Plano Diretor, mas também concentra em uma única pessoa a administração de duas empresas relacionadas.",
       },
     ],
   },

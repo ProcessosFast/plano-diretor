@@ -10,7 +10,7 @@ export const FRONT_OFFICE_CARDS: RevenueCard[] = [
   { title: "FAST Atacado", subtitle: "Diretoria: Poliana", accent: "front", kv: [
     { label: "Canal", value: "Atacado" },
     { label: "Receita gerada", value: "Venda de produtos (atacado)" },
-    { label: "Registra em", value: "SUPPLY-LM — operacional atacadista" },
+    { label: "Registra em", value: "SUPPLY-LMS — operacional atacadista" },
     { label: "Remuneração", value: "Comissão sobre a receita do atacado" },
   ]},
   { title: "FAST Varejo", subtitle: "Diretoria: Denise", accent: "front", kv: [
@@ -34,7 +34,7 @@ export const FRONT_OFFICE_CARDS: RevenueCard[] = [
   { title: "Atacado para Franqueados", subtitle: "Diretoria: Leandro — frente B", accent: "front", kv: [
     { label: "Canal", value: "Franquias" },
     { label: "Receita gerada", value: "Venda de produtos ao franqueado" },
-    { label: "Registra em", value: "SUPPLY-LM — operacional atacadista" },
+    { label: "Registra em", value: "SUPPLY-LMS — operacional atacadista" },
     { label: "Remuneração", value: "Comissão sobre a receita do atacado" },
   ]},
   { title: "Comércio Digital", subtitle: "Diretoria: Auren", accent: "front", kv: [
@@ -46,7 +46,7 @@ export const FRONT_OFFICE_CARDS: RevenueCard[] = [
   { title: "FAST Importação", subtitle: "Sem diretor designado — Conselho provisório", accent: "warn", kv: [
     { label: "Canal", value: "Importação" },
     { label: "Receita gerada", value: "Promoção comercial das importações" },
-    { label: "Registra em", value: "MaxSteel · DCS-CM · SUPPLY-LM — operacional que executa" },
+    { label: "Registra em", value: "MaxSteel · DCS-CM · SUPPLY-LMS — operacional que executa" },
     { label: "Remuneração", value: "Comissão / serviço a definir", pend: true },
   ], note: "Observação: Modelo Embrionário, aguardando consolidação." },
 ]
@@ -62,7 +62,7 @@ export const OPERACIONAIS_CARDS: RevenueCard[] = [
     { label: "Registra em", value: "Própria FAST Franchising (11.11)" },
     { label: "Remuneração", value: "Receita própria de franquia — não é comissão" },
   ]},
-  { title: "SUPPLY-LM", subtitle: "Operação atacadista nacional", accent: "oper", kv: [
+  { title: "SUPPLY-LMS", subtitle: "Operação atacadista nacional", accent: "oper", kv: [
     { label: "Receita", value: "Todas as vendas do canal atacado" },
     { label: "Observação", value: "Recebe demanda de FAST Atacado e do Atacado para Franqueados" },
   ]},
@@ -106,11 +106,11 @@ export interface SummaryRow {
 }
 
 export const SUMMARY_ROWS: SummaryRow[] = [
-  { canal: "Atacado", quemVende: "FAST Atacado", registraEm: "SUPPLY-LM", baseComissao: "Receita do atacado" },
+  { canal: "Atacado", quemVende: "FAST Atacado", registraEm: "SUPPLY-LMS", baseComissao: "Receita do atacado" },
   { canal: "Varejo", quemVende: "FAST Varejo", registraEm: "DCS-CM", baseComissao: "Receita do varejo" },
   { canal: "Digital", quemVende: "Comércio Digital", registraEm: "Operacional do canal (varejo/atacado)", baseComissao: "Receita digital" },
   { canal: "Obras / Homes", quemVende: "FAST Obras · FAST Homes", registraEm: "Operacional do canal atendido", baseComissao: "Receita do projeto ou da venda" },
-  { canal: "Importação", quemVende: "FAST Importação", registraEm: "MaxSteel · DCS-CM · SUPPLY-LM", baseComissao: "A definir — promoção", pend: true },
+  { canal: "Importação", quemVende: "FAST Importação", registraEm: "MaxSteel · DCS-CM · SUPPLY-LMS", baseComissao: "A definir — promoção", pend: true },
   { canal: "Franquias", quemVende: "FAST Franchising", registraEm: "Própria FAST Franchising", own: true, baseComissao: "Taxa + royalties — receita própria" },
   { canal: "Indústria", quemVende: "Demanda interna", interno: true, registraEm: "MaxSteel", baseComissao: "Venda industrial" },
 ]
@@ -123,11 +123,11 @@ export interface PendingRow {
 }
 
 export const PENDING_ROWS: PendingRow[] = [
-  { unidade: "FAST Atacado", percentual: "A definir", base: "Receita SUPPLY-LM", validacao: "Controladoria" },
+  { unidade: "FAST Atacado", percentual: "A definir", base: "Receita SUPPLY-LMS", validacao: "Controladoria" },
   { unidade: "FAST Varejo", percentual: "A definir", base: "Receita DCS-CM", validacao: "Controladoria" },
   { unidade: "FAST Obras / Homes", percentual: "A definir", base: "Receita do projeto", validacao: "Controladoria" },
   { unidade: "Comércio Digital", percentual: "A definir", base: "Receita digital", validacao: "Controladoria" },
-  { unidade: "Atacado para Franqueados", percentual: "A definir", base: "Receita SUPPLY-LM", validacao: "Controladoria" },
+  { unidade: "Atacado para Franqueados", percentual: "A definir", base: "Receita SUPPLY-LMS", validacao: "Controladoria" },
   { unidade: "FAST Importação", percentual: "A definir", base: "A definir", validacao: "Conselho / Fiscal" },
   { unidade: "FAST Franchising", percentual: "A definir", base: "Faturamento da rede", validacao: "Controladoria" },
   { unidade: "CSC · Unity · Engenharia · Log Express", percentual: "A definir", base: "Rateio (Item 10)", validacao: "Holding" },
@@ -170,7 +170,7 @@ export const RATEIO_GAP_ROWS: RateioGapRow[] = [
     item: "Log Express",
     referencia: "Plano Diretor 11.8",
     oQuePlanoDiz: "\"Remunerada por contratos internos conforme utilização dos serviços\"; despesas com transportadoras são reembolsadas pelas empresas contratantes.",
-    naoDefinido: "Critério de rateio do custo fixo da estrutura de logística (equipe, sistemas de roteirização) entre SUPPLY-LM, DCS-CM, MaxSteel e FAST Importação ainda não definido — hoje só o frete variável é claramente atribuível.",
+    naoDefinido: "Critério de rateio do custo fixo da estrutura de logística (equipe, sistemas de roteirização) entre SUPPLY-LMS, DCS-CM, MaxSteel e FAST Importação ainda não definido — hoje só o frete variável é claramente atribuível.",
   },
   {
     item: "Compartilhamento de ativos",
@@ -213,7 +213,7 @@ export const FLOW_LEFT: FlowNode[] = [
 ]
 
 export const FLOW_RIGHT: FlowNode[] = [
-  { id: "fr-supply", title: "SUPPLY-LM", subtitle: "Operação atacadista nacional" },
+  { id: "fr-supply", title: "SUPPLY-LMS", subtitle: "Operação atacadista nacional" },
   { id: "fr-dcs", title: "DCS-CM", subtitle: "Casa do Montador · varejo" },
   { id: "fr-maxsteel", title: "MaxSteel", subtitle: "Indústria · perfis de aço" },
   { id: "fr-canal", title: "Operacional do canal atendido", subtitle: "conforme o produto vendido" },

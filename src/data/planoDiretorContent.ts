@@ -52,7 +52,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "No modelo consolidado, as principais plataformas operacionais são a MaxSteel, núcleo industrial do Ecossistema; a LM/SUPPLY, responsável pelas vendas atacadistas; e a DCS/CM — Casa do Montador, responsável pelo varejo. Essas empresas são apoiadas por estruturas de importação, distribuição, tecnologia, logística, engenharia e serviços compartilhados."
+    "text": "No modelo consolidado, as principais plataformas operacionais são a MaxSteel, núcleo industrial do Ecossistema; a LMS/SUPPLY, responsável pelas vendas atacadistas; e a DCS/CM — Casa do Montador, responsável pelo varejo. Essas empresas são apoiadas por estruturas de importação, distribuição, tecnologia, logística, engenharia e serviços compartilhados."
    },
    {
     "type": "h3",
@@ -137,10 +137,10 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
      "Separar quem governa, quem controla ativos, quem vende, quem executa e quem presta suporte.",
      "Fortalecer o Conselho Consultivo e o papel da CEO na coordenação do Ecossistema.",
      "Implantar um modelo de alçadas, rituais e indicadores que reduza decisões informais e dependência excessiva dos sócios.",
-     "Consolidar a SUPPLY-LM como plataforma responsável pelas vendas atacadistas.",
+     "Consolidar a SUPPLY-LMS como plataforma responsável pelas vendas atacadistas.",
      "Consolidar a DCS-CM — Casa do Montador como plataforma responsável pelo varejo.",
      "Fortalecer a MaxSteel como núcleo industrial do Ecossistema.",
-     "Posicionar a FAST Importação como unidade de negócio comercial de desenvolvimento internacional de fornecedores, cujas importações são executadas pelas empresas operacionais (MaxSteel, DCS/CM e LM/SUPPLY).",
+     "Posicionar a FAST Importação como unidade de negócio comercial de desenvolvimento internacional de fornecedores, cujas importações são executadas pelas empresas operacionais (MaxSteel, DCS/CM e LMS/SUPPLY).",
      "Centralizar serviços administrativos, financeiros, fiscais, contábeis, jurídicos, tecnológicos e de gestão no CSC.",
      "Organizar os serviços de Engenharia, Unity Company e Log Express como empresas especializadas e independentes.",
      "Formalizar contratos internos, critérios de rateio, remuneração por serviços e níveis de serviço.",
@@ -322,7 +322,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
     "type": "ul",
     "items": [
      "Holding Indústria — controla a MaxSteel.",
-     "Holding Atacado — controla as duas empresas de atacado (LM e SUPPLY).",
+     "Holding Atacado — controla as duas empresas de atacado (LMS e SUPPLY).",
      "Holding Varejo — controla as duas empresas de varejo (DCS e CM).",
      "Holding Franquias — controla a Fast Franchising (franquias de loja e rede Steel Conecta)."
     ]
@@ -436,7 +436,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "A SUPPLY-LM é responsável pelas vendas atacadistas e pela operação associada a esse canal. A DCS-CM — Casa do Montador é responsável pelo varejo, incluindo suas filiais e lojas."
+    "text": "A SUPPLY-LMS é responsável pelas vendas atacadistas e pela operação associada a esse canal. A DCS-CM — Casa do Montador é responsável pelo varejo, incluindo suas filiais e lojas."
    },
    {
     "type": "h3",
@@ -525,7 +525,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
      ],
      [
       "3. Empresas Operacionais",
-      "MaxSteel, LM/SUPPLY e DCS/CM e respectivas estruturas operacionais."
+      "MaxSteel, LMS/SUPPLY e DCS/CM e respectivas estruturas operacionais."
      ],
      [
       "4. Empresas Comerciais — Front Office",
@@ -604,7 +604,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "callout",
-    "text": "<b>Nota da Revisão 1:</b> a FAST Importação é tratada como unidade de negócio comercial. As importações são executadas diretamente pelas empresas operacionais — MaxSteel, DCS-CM e LM/SUPPLY — cabendo à FAST Importação o desenvolvimento de fornecedores e a promoção comercial das operações de importação."
+    "text": "<b>Nota da Revisão 1:</b> a FAST Importação é tratada como unidade de negócio comercial. As importações são executadas diretamente pelas empresas operacionais — MaxSteel, DCS-CM e LMS/SUPPLY — cabendo à FAST Importação o desenvolvimento de fornecedores e a promoção comercial das operações de importação."
    },
    {
     "type": "ul",
@@ -618,7 +618,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "h3",
-    "text": "7.6 SUPPLY-LM — Operação Atacadista"
+    "text": "7.6 SUPPLY-LMS — Operação Atacadista"
    },
    {
     "type": "ul",
@@ -713,7 +713,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "Front Office do canal atacadista, atuando integrada à SUPPLY-LM. Prospecção ativa e desenvolvimento de clientes, gestão de carteira, recorrência e mix, cotações, propostas e negociações, previsão de vendas e inteligência de mercado, acompanhamento do pedido e relacionamento pós-venda."
+    "text": "Front Office do canal atacadista, atuando integrada à SUPPLY-LMS. Prospecção ativa e desenvolvimento de clientes, gestão de carteira, recorrência e mix, cotações, propostas e negociações, previsão de vendas e inteligência de mercado, acompanhamento do pedido e relacionamento pós-venda."
    },
    {
     "type": "h3",
@@ -827,7 +827,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "As Empresas Especializadas constituem o Back Office do Ecossistema FAST: estruturas independentes, com personalidade jurídica, gestão, orçamento, equipes e indicadores próprios, criadas para prestar serviços especializados às empresas operacionais e comerciais — prioritariamente SUPPLY-LM e DCS-CM, podendo também atender MaxSteel, FAST Importação, comerciais, holdings e franquias mediante contrato."
+    "text": "As Empresas Especializadas constituem o Back Office do Ecossistema FAST: estruturas independentes, com personalidade jurídica, gestão, orçamento, equipes e indicadores próprios, criadas para prestar serviços especializados às empresas operacionais e comerciais — prioritariamente SUPPLY-LMS e DCS-CM, podendo também atender MaxSteel, FAST Importação, comerciais, holdings e franquias mediante contrato."
    },
    {
     "type": "p",
@@ -894,7 +894,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
      "Acompanhamento de coletas e entregas.",
      "Auditoria de fretes e ocorrências.",
      "Indicadores de prazo, custo e nível de serviço.",
-     "Integração entre fornecedores, MaxSteel, FAST Importação, SUPPLY-LM, DCS-CM e clientes."
+     "Integração entre fornecedores, MaxSteel, FAST Importação, SUPPLY-LMS, DCS-CM e clientes."
     ]
    },
    {
@@ -944,7 +944,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "A independência das Empresas Especializadas fortalece a governança e permite avaliar com clareza a qualidade e o custo dos serviços prestados, sem que o Back Office se torne uma estrutura sem responsabilidade por prazo, qualidade e resultado. Isso permite que SUPPLY-LM foque no atacado e DCS-CM no varejo, enquanto CSC, Engenharia, Unity Company e Log Express fornecem a infraestrutura necessária para crescimento, eficiência e controle."
+    "text": "A independência das Empresas Especializadas fortalece a governança e permite avaliar com clareza a qualidade e o custo dos serviços prestados, sem que o Back Office se torne uma estrutura sem responsabilidade por prazo, qualidade e resultado. Isso permite que SUPPLY-LMS foque no atacado e DCS-CM no varejo, enquanto CSC, Engenharia, Unity Company e Log Express fornecem a infraestrutura necessária para crescimento, eficiência e controle."
    }
   ]
  },
@@ -996,7 +996,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "h3",
-    "text": "10.6 Fluxo da SUPPLY-LM (atacado)"
+    "text": "10.6 Fluxo da SUPPLY-LMS (atacado)"
    },
    {
     "type": "p",
@@ -1016,7 +1016,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
    },
    {
     "type": "p",
-    "text": "Planejamento industrial → programação da produção → compra de matéria-prima → produção → controle de qualidade → armazenagem → disponibilização ao estoque → integração com SUPPLY-LM → distribuição."
+    "text": "Planejamento industrial → programação da produção → compra de matéria-prima → produção → controle de qualidade → armazenagem → disponibilização ao estoque → integração com SUPPLY-LMS → distribuição."
    },
    {
     "type": "h3",
@@ -1510,7 +1510,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
     "type": "ul",
     "items": [
      "Holding Indústria — MaxSteel.",
-     "Holding Atacado — LM e SUPPLY (duas empresas de atacado).",
+     "Holding Atacado — LMS e SUPPLY (duas empresas de atacado).",
      "Holding Varejo — DCS e CM (duas empresas de varejo).",
      "Holding Franquias — Fast Franchising (franquias de loja e rede Steel Conecta)."
     ]
@@ -1525,7 +1525,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
      "<b>Empresas operacionais</b> (indústria, atacado, varejo e franquia): centros de receita e resultado, controladas pelas holdings — é nelas que a receita de venda é registrada.",
      "<b>Empresas comerciais — Front Office</b> (Simples Nacional): objeto de promoção e vendas; sócios são os Diretores das unidades, remunerados por comissão sobre a receita, suficiente para cobrir seus custos.",
      "<b>Empresas de apoio — Back Office</b> (Simples Nacional): CSC, Unity Company, Engenharia e Log Express, remuneradas para cobrir seus custos, sem objetivo de lucro.",
-     "<b>FAST Importação:</b> unidade de negócio comercial; as importações são executadas pelas empresas operacionais (MaxSteel, DCS-CM e LM/SUPPLY)."
+     "<b>FAST Importação:</b> unidade de negócio comercial; as importações são executadas pelas empresas operacionais (MaxSteel, DCS-CM e LMS/SUPPLY)."
     ]
    },
    {
@@ -1609,7 +1609,7 @@ export const PLANO_DIRETOR_PANELS: PdPanel[] = [
      "Figura 1 — Arquitetura societária e de governança",
      "Figura 2 — Organograma geral do Ecossistema FAST",
      "Figura 3 — Macrofluxo operacional corporativo",
-     "Figura 4 — Fluxo operacional da SUPPLY-LM (atacado)",
+     "Figura 4 — Fluxo operacional da SUPPLY-LMS (atacado)",
      "Figura 5 — Fluxo operacional da DCS/CM (varejo)",
      "Figura 6 — Fluxo industrial (MaxSteel)",
      "Figura 7 — Fluxo de importação (FAST Importação)",

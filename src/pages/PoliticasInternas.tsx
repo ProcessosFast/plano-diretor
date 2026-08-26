@@ -21,7 +21,7 @@ import type { PolicyPart } from "@/data/cscPolicyContent"
 
 const OPERACIONAIS_TABS = [
   { id: "maxsteel", label: "MaxSteel" },
-  { id: "supply", label: "SUPPLY-LM · Atacado" },
+  { id: "supply", label: "SUPPLY-LMS · Atacado" },
   { id: "dcs", label: "DCS-CM · Varejo" },
   { id: "franquias", label: "FAST Franchising" },
 ]
@@ -139,7 +139,7 @@ export function PoliticasInternas() {
       </div>
 
       {active === "importacao" && (
-        <EmptyDocPlaceholder title="FAST Importação" description="Unidade de negócio comercial de desenvolvimento internacional de fornecedores; as importações são executadas pelas operacionais (MaxSteel, DCS/CM e LM/SUPPLY). Aguardando o documento de política interna. Observação: Modelo Embrionário, aguardando consolidação." />
+        <EmptyDocPlaceholder title="FAST Importação" description="Unidade de negócio comercial de desenvolvimento internacional de fornecedores; as importações são executadas pelas operacionais (MaxSteel, DCS/CM e LMS/SUPPLY). Aguardando o documento de política interna. Observação: Modelo Embrionário, aguardando consolidação." />
       )}
       {active === "atacado-franqueados" && (
         <EmptyDocPlaceholder title="Atacado para Franqueados" description="Abastecimento comercial das unidades franqueadas (frente B da Diretoria de Leandro). Aguardando o documento de política interna." />

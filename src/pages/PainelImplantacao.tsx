@@ -87,7 +87,7 @@ function buildFronts(): Front[] {
       referencia: "Plano Diretor · Item 4",
       solicitado: SOCIETARIO_CATEGORIES.reduce((s, c) => s + c.docs.length, 0),
       realizado: SOCIETARIO_CATEGORIES.reduce((s, c) => s + c.docs.filter((d) => d.status === "completo").length, 0),
-      note: "MaxSteel, DCS-CM (Casa do Montador), SUPPLY-LM (Supply Chain Serviços + LMS Distribuidora), Engenharia (Ruche Design), CSC (CSC Serviços Empresariais), FAST Franchising (Fast Drywall Franchising), Log Express e FAST Atacado (Televendas Fast Materiais) já têm contrato social anexado; FAST Importação e as demais empresas comerciais seguem pendentes.",
+      note: "MaxSteel, DCS-CM (Casa do Montador), SUPPLY-LMS (Supply Chain Serviços + LMS Distribuidora), Engenharia (Ruche Design), CSC (CSC Serviços Empresariais), FAST Franchising (Fast Drywall Franchising), Log Express e FAST Atacado (Televendas Fast Materiais) já têm contrato social anexado; FAST Importação e as demais empresas comerciais seguem pendentes.",
     },
     {
       label: "Matriz de Riscos",

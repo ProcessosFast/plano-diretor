@@ -25,10 +25,10 @@ export const VERTICAIS: VerticalItem[] = [
   {
     ang: 250,
     hold: "Holding Atacado",
-    op: "SUPPLY-LM",
-    opsub: "Atacado — LM & SUPPLY",
+    op: "SUPPLY-LMS",
+    opsub: "Atacado — LMS & SUPPLY",
     org: "supply",
-    desc: "A Holding Atacado controla as duas empresas de atacado, LM e SUPPLY. O levantamento traz o Setor de Compras sob a Diretoria de Josiel (Cap. 4 · R1.1 / Cap. 5.3).",
+    desc: "A Holding Atacado controla as duas empresas de atacado, LMS e SUPPLY. O levantamento traz o Setor de Compras sob a Diretoria de Josiel (Cap. 4 · R1.1 / Cap. 5.3).",
   },
   {
     ang: 295,
@@ -81,7 +81,7 @@ export const FRONT: ClusterMeta = {
       t: "FAST Atacado",
       u: "Poliana Alves",
       org: "atacado",
-      d: "Diretoria Nacional de Atacado. Promove e vende o canal atacadista; a receita da venda é registrada na SUPPLY-LM (Cap. 5.5 / R1.3).",
+      d: "Diretoria Nacional de Atacado. Promove e vende o canal atacadista; a receita da venda é registrada na SUPPLY-LMS (Cap. 5.5 / R1.3).",
     },
     {
       t: "FAST Varejo",
@@ -105,7 +105,7 @@ export const FRONT: ClusterMeta = {
       t: "FAST Importações",
       u: "Conselho (provisório)",
       org: null,
-      d: "Diretoria FAST Importações — sem diretor designado; o Conselho atua provisoriamente. As importações são executadas por MaxSteel, DCS-CM e LM/SUPPLY (Cap. 5.5 / R1.2). Observação: formação embrionária, em implementação.",
+      d: "Diretoria FAST Importações — sem diretor designado; o Conselho atua provisoriamente. As importações são executadas por MaxSteel, DCS-CM e LMS/SUPPLY (Cap. 5.5 / R1.2). Observação: formação embrionária, em implementação.",
     },
   ],
   angs: [6, 26, 47, 67, 88],
