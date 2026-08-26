@@ -200,9 +200,12 @@ function ActionItemRow({
   }
 
   function cycleStatus() {
-    const order: ActionStatus[] = ["pendente", "andamento", "concluido"]
-    const next = order[(order.indexOf(item.status) + 1) % order.length]
+    const next: ActionStatus = item.status === "andamento" ? "pendente" : "andamento"
     setActionStatus(meetingId, item.id, next)
+  }
+
+  function toggleDone() {
+    setActionStatus(meetingId, item.id, item.status === "concluido" ? "pendente" : "concluido")
   }
 
   if (editing) {
@@ -225,20 +228,36 @@ function ActionItemRow({
     )
   }
 
+  const done = item.status === "concluido"
+
   return (
     <div className="flex items-center gap-2.5 border border-line rounded-lg px-3 py-2 bg-soft/40 group">
       <button
+        onClick={toggleDone}
+        className={cn(
+          "shrink-0 w-[18px] h-[18px] rounded-full border-2 flex items-center justify-center transition-colors",
+          done ? "bg-back border-back text-white" : "border-line hover:border-back"
+        )}
+        title={done ? "Marcar como pendente" : "Marcar como concluído"}
+      >
+        {done && <Check size={12} strokeWidth={3} />}
+      </button>
+      <button
         onClick={cycleStatus}
+        disabled={done}
         className={cn(
           "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
-          statusBadgeClass[item.status]
+          statusBadgeClass[item.status],
+          done && "opacity-60 cursor-default"
         )}
-        title="Clique para avançar o status"
+        title={done ? "Concluído" : "Clique para alternar Pendente / Em andamento"}
       >
         {ACTION_STATUS_LABEL[item.status]}
       </button>
       <div className="flex-1 min-w-0">
-        <div className="text-xs font-bold text-ink truncate">{item.description}</div>
+        <div className={cn("text-xs font-bold text-ink truncate", done && "line-through text-muted")}>
+          {item.description}
+        </div>
         {(meetingLabel || item.responsible || item.deadline) && (
           <div className="text-[10.5px] text-muted mt-0.5">
             {meetingLabel && <span>{meetingLabel}</span>}
