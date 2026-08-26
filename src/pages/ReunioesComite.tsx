@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dialog"
 import { useMeetingsStore } from "@/store/useMeetingsStore"
 import { useApprovalHistoryStore } from "@/store/useApprovalHistoryStore"
-import { ACTION_STATUS_LABEL, type ActionStatus, type Meeting } from "@/data/meetingsTypes"
+import { ACTION_STATUS_LABEL, type ActionItem, type ActionStatus, type Meeting } from "@/data/meetingsTypes"
 import { cn } from "@/lib/utils"
 import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck, ListChecks } from "lucide-react"
 
@@ -129,8 +129,6 @@ function ApprovalHistorySection() {
 }
 
 function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
-  const setActionStatus = useMeetingsStore((s) => s.setActionStatus)
-
   const pending = meetings
     .flatMap((m) => m.actionItems.map((item) => ({ item, meeting: m })))
     .filter(({ item }) => item.status !== "concluido")
@@ -139,12 +137,6 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
       if (!b.item.deadline) return -1
       return a.item.deadline < b.item.deadline ? -1 : 1
     })
-
-  function cycleStatus(meetingId: string, itemId: string, current: ActionStatus) {
-    const order: ActionStatus[] = ["pendente", "andamento", "concluido"]
-    const next = order[(order.indexOf(current) + 1) % order.length]
-    setActionStatus(meetingId, itemId, next)
-  }
 
   return (
     <div className="mb-6">
@@ -155,7 +147,7 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
         <div>
           <h2 className="text-[17px] font-extrabold text-ink">Planos de Ação a Realizar</h2>
           <p className="text-xs text-muted">
-            Todos os itens pendentes ou em andamento de todas as reuniões, num só lugar — clique no status para avançar.
+            Todos os itens pendentes ou em andamento de todas as reuniões, num só lugar — clique no status para avançar, no lápis para editar.
           </p>
         </div>
       </div>
@@ -168,26 +160,7 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
         <div className="rounded-2xl border border-line bg-white shadow-card overflow-hidden mt-3">
           <div className="divide-y divide-line">
             {pending.map(({ item, meeting }) => (
-              <div key={item.id} className="flex items-center gap-2.5 px-4 py-2.5">
-                <button
-                  onClick={() => cycleStatus(meeting.id, item.id, item.status)}
-                  className={cn(
-                    "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
-                    statusBadgeClass[item.status]
-                  )}
-                  title="Clique para avançar o status"
-                >
-                  {ACTION_STATUS_LABEL[item.status]}
-                </button>
-                <div className="flex-1 min-w-0">
-                  <div className="text-xs font-bold text-ink truncate">{item.description}</div>
-                  <div className="text-[10.5px] text-muted mt-0.5">
-                    <span>{meeting.title}</span>
-                    {item.responsible && <span> · Responsável: {item.responsible}</span>}
-                    {item.deadline && <span> · Prazo: {formatDate(item.deadline)}</span>}
-                  </div>
-                </div>
-              </div>
+              <ActionItemRow key={item.id} meetingId={meeting.id} item={item} meetingLabel={meeting.title} />
             ))}
           </div>
         </div>
@@ -196,11 +169,105 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
   )
 }
 
+function ActionItemRow({
+  meetingId,
+  item,
+  meetingLabel,
+}: {
+  meetingId: string
+  item: ActionItem
+  meetingLabel?: string
+}) {
+  const updateActionItem = useMeetingsStore((s) => s.updateActionItem)
+  const removeActionItem = useMeetingsStore((s) => s.removeActionItem)
+  const setActionStatus = useMeetingsStore((s) => s.setActionStatus)
+  const [editing, setEditing] = useState(false)
+  const [desc, setDesc] = useState(item.description)
+  const [responsible, setResponsible] = useState(item.responsible)
+  const [deadline, setDeadline] = useState(item.deadline)
+
+  function openEdit() {
+    setDesc(item.description)
+    setResponsible(item.responsible)
+    setDeadline(item.deadline)
+    setEditing(true)
+  }
+
+  function save() {
+    if (!desc.trim()) return
+    updateActionItem(meetingId, item.id, { description: desc, responsible, deadline })
+    setEditing(false)
+  }
+
+  function cycleStatus() {
+    const order: ActionStatus[] = ["pendente", "andamento", "concluido"]
+    const next = order[(order.indexOf(item.status) + 1) % order.length]
+    setActionStatus(meetingId, item.id, next)
+  }
+
+  if (editing) {
+    return (
+      <div className="border border-line rounded-lg px-3 py-2 bg-soft/40 space-y-2 m-px">
+        <Textarea value={desc} onChange={(e) => setDesc(e.target.value)} rows={2} />
+        <div className="grid grid-cols-2 gap-2">
+          <Input placeholder="Responsável" value={responsible} onChange={(e) => setResponsible(e.target.value)} />
+          <Input type="date" value={deadline} onChange={(e) => setDeadline(e.target.value)} />
+        </div>
+        <div className="flex gap-2 justify-end">
+          <Button variant="outline" size="sm" onClick={() => setEditing(false)}>
+            Cancelar
+          </Button>
+          <Button size="sm" onClick={save}>
+            Salvar
+          </Button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <div className="flex items-center gap-2.5 border border-line rounded-lg px-3 py-2 bg-soft/40 group">
+      <button
+        onClick={cycleStatus}
+        className={cn(
+          "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
+          statusBadgeClass[item.status]
+        )}
+        title="Clique para avançar o status"
+      >
+        {ACTION_STATUS_LABEL[item.status]}
+      </button>
+      <div className="flex-1 min-w-0">
+        <div className="text-xs font-bold text-ink truncate">{item.description}</div>
+        {(meetingLabel || item.responsible || item.deadline) && (
+          <div className="text-[10.5px] text-muted mt-0.5">
+            {meetingLabel && <span>{meetingLabel}</span>}
+            {meetingLabel && (item.responsible || item.deadline) && <span> · </span>}
+            {item.responsible && <span>Responsável: {item.responsible}</span>}
+            {item.responsible && item.deadline && <span> · </span>}
+            {item.deadline && <span>Prazo: {formatDate(item.deadline)}</span>}
+          </div>
+        )}
+      </div>
+      <div className="shrink-0 flex items-center gap-0.5 opacity-0 group-hover:opacity-100">
+        <button onClick={openEdit} className="text-muted hover:text-ink p-0.5" title="Editar item">
+          <Pencil size={13} />
+        </button>
+        <button
+          onClick={() => removeActionItem(meetingId, item.id)}
+          className="text-muted hover:text-brand-red p-0.5"
+          title="Remover item"
+        >
+          <X size={13} />
+        </button>
+      </div>
+    </div>
+  )
+}
+
 function MeetingCard({ meeting }: { meeting: Meeting }) {
   const removeMeeting = useMeetingsStore((s) => s.removeMeeting)
   const addActionItem = useMeetingsStore((s) => s.addActionItem)
-  const setActionStatus = useMeetingsStore((s) => s.setActionStatus)
-  const removeActionItem = useMeetingsStore((s) => s.removeActionItem)
   const addAta = useMeetingsStore((s) => s.addAta)
   const removeAta = useMeetingsStore((s) => s.removeAta)
   const [addingAction, setAddingAction] = useState(false)
@@ -238,12 +305,6 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
     setAtaLink("")
     setAtaObs("")
     setAddingAta(false)
-  }
-
-  function cycleStatus(itemId: string, current: ActionStatus) {
-    const order: ActionStatus[] = ["pendente", "andamento", "concluido"]
-    const next = order[(order.indexOf(current) + 1) % order.length]
-    setActionStatus(meeting.id, itemId, next)
   }
 
   return (
@@ -313,37 +374,7 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
 
         <div className="space-y-1.5">
           {meeting.actionItems.map((item) => (
-            <div
-              key={item.id}
-              className="flex items-center gap-2.5 border border-line rounded-lg px-3 py-2 bg-soft/40 group"
-            >
-              <button
-                onClick={() => cycleStatus(item.id, item.status)}
-                className={cn(
-                  "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
-                  statusBadgeClass[item.status]
-                )}
-                title="Clique para avançar o status"
-              >
-                {ACTION_STATUS_LABEL[item.status]}
-              </button>
-              <div className="flex-1 min-w-0">
-                <div className="text-xs font-bold text-ink truncate">{item.description}</div>
-                {(item.responsible || item.deadline) && (
-                  <div className="text-[10.5px] text-muted mt-0.5">
-                    {item.responsible && <span>Responsável: {item.responsible}</span>}
-                    {item.responsible && item.deadline && <span> · </span>}
-                    {item.deadline && <span>Prazo: {formatDate(item.deadline)}</span>}
-                  </div>
-                )}
-              </div>
-              <button
-                onClick={() => removeActionItem(meeting.id, item.id)}
-                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red p-0.5"
-              >
-                <X size={13} />
-              </button>
-            </div>
+            <ActionItemRow key={item.id} meetingId={meeting.id} item={item} />
           ))}
         </div>
 
