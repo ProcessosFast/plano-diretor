@@ -6,6 +6,7 @@ export interface ActionItem {
   responsible: string
   deadline: string
   status: ActionStatus
+  order: number
 }
 
 export interface Ata {

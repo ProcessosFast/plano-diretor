@@ -11,10 +11,11 @@ interface MeetingsState {
   addMeeting: (data: Omit<Meeting, "id" | "actionItems" | "atas">) => void
   updateMeeting: (id: string, data: Partial<Omit<Meeting, "id" | "actionItems" | "atas">>) => void
   removeMeeting: (id: string) => void
-  addActionItem: (meetingId: string, data: Omit<ActionItem, "id">) => void
+  addActionItem: (meetingId: string, data: Omit<ActionItem, "id" | "order">) => void
   updateActionItem: (meetingId: string, itemId: string, data: Partial<Omit<ActionItem, "id">>) => void
   removeActionItem: (meetingId: string, itemId: string) => void
   setActionStatus: (meetingId: string, itemId: string, status: ActionStatus) => void
+  reorderActionItems: (meetingId: string, fromIndex: number, toIndex: number) => void
   addAta: (meetingId: string, data: Omit<Ata, "id">) => void
   removeAta: (meetingId: string, ataId: string) => void
 }
@@ -52,11 +53,16 @@ export const useMeetingsStore = create<MeetingsState>()(
         set((s) => ({ meetings: s.meetings.filter((m) => m.id !== id) })),
 
       addActionItem: (meetingId, data) =>
-        set((s) => ({
-          meetings: s.meetings.map((m) =>
-            m.id === meetingId ? { ...m, actionItems: [...m.actionItems, { id: uid(), ...data }] } : m
-          ),
-        })),
+        set((s) => {
+          const maxOrder = Math.max(0, ...s.meetings.flatMap((m) => m.actionItems.map((a) => a.order ?? 0)))
+          return {
+            meetings: s.meetings.map((m) =>
+              m.id === meetingId
+                ? { ...m, actionItems: [...m.actionItems, { id: uid(), order: maxOrder + 1, ...data }] }
+                : m
+            ),
+          }
+        }),
 
       updateActionItem: (meetingId, itemId, data) =>
         set((s) => ({
@@ -81,6 +87,17 @@ export const useMeetingsStore = create<MeetingsState>()(
               ? { ...m, actionItems: m.actionItems.map((a) => (a.id === itemId ? { ...a, status } : a)) }
               : m
           ),
+        })),
+
+      reorderActionItems: (meetingId, fromIndex, toIndex) =>
+        set((s) => ({
+          meetings: s.meetings.map((m) => {
+            if (m.id !== meetingId) return m
+            const items = [...m.actionItems]
+            const [moved] = items.splice(fromIndex, 1)
+            items.splice(toIndex, 0, moved)
+            return { ...m, actionItems: items.map((a, i) => ({ ...a, order: i })) }
+          }),
         })),
 
       addAta: (meetingId, data) =>

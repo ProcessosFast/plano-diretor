@@ -14,7 +14,7 @@ import { useMeetingsStore } from "@/store/useMeetingsStore"
 import { useApprovalHistoryStore } from "@/store/useApprovalHistoryStore"
 import { ACTION_STATUS_LABEL, type ActionItem, type ActionStatus, type Meeting } from "@/data/meetingsTypes"
 import { cn } from "@/lib/utils"
-import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck, ListChecks } from "lucide-react"
+import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck, ListChecks, GripVertical } from "lucide-react"
 
 const statusBadgeClass: Record<ActionStatus, string> = {
   pendente: "bg-[#FFF8E8] text-warn border-[#EFD9A6]",
@@ -129,14 +129,28 @@ function ApprovalHistorySection() {
 }
 
 function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
+  const updateActionItem = useMeetingsStore((s) => s.updateActionItem)
+  const [dragIndex, setDragIndex] = useState<number | null>(null)
+  const [overIndex, setOverIndex] = useState<number | null>(null)
+
   const pending = meetings
     .flatMap((m) => m.actionItems.map((item) => ({ item, meeting: m })))
     .filter(({ item }) => item.status !== "concluido")
-    .sort((a, b) => {
-      if (!a.item.deadline) return 1
-      if (!b.item.deadline) return -1
-      return a.item.deadline < b.item.deadline ? -1 : 1
-    })
+    .sort((a, b) => (a.item.order ?? 0) - (b.item.order ?? 0))
+
+  function handleDrop(targetIndex: number) {
+    if (dragIndex === null || dragIndex === targetIndex) {
+      setDragIndex(null)
+      setOverIndex(null)
+      return
+    }
+    const reordered = [...pending]
+    const [moved] = reordered.splice(dragIndex, 1)
+    reordered.splice(targetIndex, 0, moved)
+    reordered.forEach(({ item, meeting }, i) => updateActionItem(meeting.id, item.id, { order: i }))
+    setDragIndex(null)
+    setOverIndex(null)
+  }
 
   return (
     <div className="mb-6">
@@ -147,7 +161,7 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
         <div>
           <h2 className="text-[17px] font-extrabold text-ink">Planos de Ação a Realizar</h2>
           <p className="text-xs text-muted">
-            Todos os itens pendentes ou em andamento de todas as reuniões, num só lugar — clique no status para avançar, no lápis para editar.
+            Todos os itens pendentes ou em andamento de todas as reuniões, num só lugar — arraste pelo ⠿ para reordenar, clique no status para avançar, no lápis para editar.
           </p>
         </div>
       </div>
@@ -159,8 +173,27 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
       ) : (
         <div className="rounded-2xl border border-line bg-white shadow-card overflow-hidden mt-3">
           <div className="divide-y divide-line">
-            {pending.map(({ item, meeting }) => (
-              <ActionItemRow key={item.id} meetingId={meeting.id} item={item} meetingLabel={meeting.title} />
+            {pending.map(({ item, meeting }, i) => (
+              <ActionItemRow
+                key={item.id}
+                meetingId={meeting.id}
+                item={item}
+                meetingLabel={meeting.title}
+                dnd={{
+                  draggable: true,
+                  isOver: overIndex === i && dragIndex !== i,
+                  onDragStart: () => setDragIndex(i),
+                  onDragOver: (e) => {
+                    e.preventDefault()
+                    setOverIndex(i)
+                  },
+                  onDrop: () => handleDrop(i),
+                  onDragEnd: () => {
+                    setDragIndex(null)
+                    setOverIndex(null)
+                  },
+                }}
+              />
             ))}
           </div>
         </div>
@@ -169,14 +202,25 @@ function PendingActionsSection({ meetings }: { meetings: Meeting[] }) {
   )
 }
 
+interface DndProps {
+  draggable: boolean
+  isOver: boolean
+  onDragStart: () => void
+  onDragOver: (e: React.DragEvent) => void
+  onDrop: () => void
+  onDragEnd: () => void
+}
+
 function ActionItemRow({
   meetingId,
   item,
   meetingLabel,
+  dnd,
 }: {
   meetingId: string
   item: ActionItem
   meetingLabel?: string
+  dnd?: DndProps
 }) {
   const updateActionItem = useMeetingsStore((s) => s.updateActionItem)
   const removeActionItem = useMeetingsStore((s) => s.removeActionItem)
@@ -231,7 +275,20 @@ function ActionItemRow({
   const done = item.status === "concluido"
 
   return (
-    <div className="flex items-center gap-2.5 border border-line rounded-lg px-3 py-2 bg-soft/40 group">
+    <div
+      draggable={dnd?.draggable}
+      onDragStart={dnd?.onDragStart}
+      onDragOver={dnd?.onDragOver}
+      onDrop={dnd?.onDrop}
+      onDragEnd={dnd?.onDragEnd}
+      className={cn(
+        "flex items-center gap-2.5 border rounded-lg px-3 py-2 bg-soft/40 group",
+        dnd?.isOver ? "border-brand-red border-dashed" : "border-line"
+      )}
+    >
+      {dnd && (
+        <GripVertical size={14} className="shrink-0 text-muted/60 hover:text-muted cursor-grab active:cursor-grabbing" />
+      )}
       <button
         onClick={toggleDone}
         className={cn(
@@ -287,9 +344,12 @@ function ActionItemRow({
 function MeetingCard({ meeting }: { meeting: Meeting }) {
   const removeMeeting = useMeetingsStore((s) => s.removeMeeting)
   const addActionItem = useMeetingsStore((s) => s.addActionItem)
+  const reorderActionItems = useMeetingsStore((s) => s.reorderActionItems)
   const addAta = useMeetingsStore((s) => s.addAta)
   const removeAta = useMeetingsStore((s) => s.removeAta)
   const [addingAction, setAddingAction] = useState(false)
+  const [dragIndex, setDragIndex] = useState<number | null>(null)
+  const [overIndex, setOverIndex] = useState<number | null>(null)
   const [editOpen, setEditOpen] = useState(false)
   const [desc, setDesc] = useState("")
   const [responsible, setResponsible] = useState("")
@@ -392,8 +452,30 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
         )}
 
         <div className="space-y-1.5">
-          {meeting.actionItems.map((item) => (
-            <ActionItemRow key={item.id} meetingId={meeting.id} item={item} />
+          {meeting.actionItems.map((item, i) => (
+            <ActionItemRow
+              key={item.id}
+              meetingId={meeting.id}
+              item={item}
+              dnd={{
+                draggable: true,
+                isOver: overIndex === i && dragIndex !== i,
+                onDragStart: () => setDragIndex(i),
+                onDragOver: (e) => {
+                  e.preventDefault()
+                  setOverIndex(i)
+                },
+                onDrop: () => {
+                  if (dragIndex !== null && dragIndex !== i) reorderActionItems(meeting.id, dragIndex, i)
+                  setDragIndex(null)
+                  setOverIndex(null)
+                },
+                onDragEnd: () => {
+                  setDragIndex(null)
+                  setOverIndex(null)
+                },
+              }}
+            />
           ))}
         </div>
 
