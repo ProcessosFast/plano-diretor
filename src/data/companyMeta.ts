@@ -75,7 +75,7 @@ export const FRONT: ClusterMeta = {
   color: "#C4161C",
   hubAng: 52,
   hubR: 238,
-  desc: "Interface com o mercado. Cinco empresas comerciais constituídas no Simples Nacional, com razões sociais e CNPJs distintos; cada uma é liderada por um Diretor, sócio da respectiva empresa, remunerado por comissão sobre a receita da unidade. Não integram o controle das holdings (Cap. 5.2 / 5.5 · R1.1). A Fast Franchising é tratada como empresa operacional (ver anel interno de Holdings), pois registra receita própria de franquia em vez de comissão.",
+  desc: "Interface com o mercado. Sete empresas comerciais constituídas no Simples Nacional, com razões sociais e CNPJs distintos; cada uma é liderada por um Diretor, sócio da respectiva empresa, remunerado por comissão sobre a receita da unidade. Não integram o controle das holdings (Cap. 5.2 / 5.5 · R1.1). A Fast Franchising é tratada como empresa operacional (ver anel interno de Holdings), pois registra receita própria de franquia em vez de comissão.",
   leaves: [
     {
       t: "FAST Atacado",
@@ -90,10 +90,16 @@ export const FRONT: ClusterMeta = {
       d: "Diretoria Nacional de Varejo. Promove e vende o canal varejista; a receita da venda é registrada na DCS-CM (Cap. 5.5 / R1.3).",
     },
     {
-      t: "FAST Obras & Homes",
+      t: "FAST Homes",
       u: "Fabio Furtado",
       org: "obras",
-      d: "Diretoria Comercial FAST Obras & FAST Homes. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7).",
+      d: "Diretoria Comercial FAST Homes. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Separada da FAST Obras nesta revisão; a equipe comercial ainda transita entre as duas frentes.",
+    },
+    {
+      t: "FAST Obras",
+      u: "Fabio Furtado",
+      org: "obras",
+      d: "Diretoria Comercial FAST Obras. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Separada da FAST Homes nesta revisão; a equipe comercial ainda transita entre as duas frentes.",
     },
     {
       t: "Comércio Digital",
@@ -107,9 +113,15 @@ export const FRONT: ClusterMeta = {
       org: null,
       d: "Diretoria FAST Importações — sem diretor designado; o Conselho atua provisoriamente. As importações são executadas por MaxSteel, DCS-CM e LMS/SUPPLY (Cap. 5.5 / R1.2). Observação: formação embrionária, em implementação.",
     },
+    {
+      t: "Comercial Franquias",
+      u: "A definir",
+      org: null,
+      d: "Diretoria Comercial de Franquias. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising. Observação: formação embrionária, em implementação.",
+    },
   ],
-  angs: [6, 26, 47, 67, 88],
-  radii: [385, 492, 385, 492, 385],
+  angs: [6, 20, 33, 47, 61, 74, 88],
+  radii: [385, 492, 385, 492, 385, 492, 385],
 }
 
 export const BACK: ClusterMeta = {

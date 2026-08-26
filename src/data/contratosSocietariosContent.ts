@@ -138,10 +138,12 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
         observacoes: "Poliana Alves dos Santos é a mesma pessoa listada no Mapa de Receitas e no Organograma como Diretora Nacional de Atacado — confirma que \"Televendas Fast Materiais Ltda\" é a razão social por trás da FAST Atacado. Esta mesma razão social (\"Televendas Fast Materiais LTDA ME\") já constava na Política Interna do Comercial Atacado como titular da conta bancária usada para recebimento de cupons fiscais (Banco Santander) — confirmação cruzada entre os dois documentos.",
       },
       { empresa: "FAST Varejo", status: "pendente" },
-      { empresa: "FAST Obras & FAST Homes", status: "pendente" },
+      { empresa: "FAST Homes", status: "pendente", observacoes: "Separada da FAST Obras nesta revisão do organograma — mesma diretoria (Fabio Furtado) e mesma equipe comercial hoje, que ainda transita entre as duas frentes." },
+      { empresa: "FAST Obras", status: "pendente", observacoes: "Separada da FAST Homes nesta revisão do organograma — mesma diretoria (Fabio Furtado) e mesma equipe comercial hoje, que ainda transita entre as duas frentes." },
       { empresa: "Atacado para Franqueados", status: "pendente" },
       { empresa: "Comércio Digital", status: "pendente" },
       { empresa: "FAST Importação", status: "pendente", observacoes: "Modelo Embrionário, aguardando consolidação." },
+      { empresa: "Comercial Franquias", status: "pendente", observacoes: "Nova frente comercial para venda de novas unidades franqueadas; receita a ser registrada na FAST Franchising. Modelo Embrionário, aguardando consolidação." },
     ],
   },
   {

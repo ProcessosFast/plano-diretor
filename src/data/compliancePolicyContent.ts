@@ -25,7 +25,7 @@ export const COMPLIANCE_POLICY_PARTS: PolicyPart[] = [
           "Governança: Conselho Consultivo, CEO e Diretoria Executiva.",
           "Holdings: holdings controladoras responsáveis pelo controle societário e políticas corporativas.",
           "Empresas Operacionais: MaxSteel, FAST Importação, SUPPLY-LMS (atacado), DCS/CM — Casa do Montador (varejo) e filiais.",
-          "Empresas Comerciais (Front Office): FAST Atacado, FAST Varejo, FAST Obras, FAST Homes, FAST Franchising e Comércio Digital.",
+          "Empresas Comerciais (Front Office): FAST Atacado, FAST Varejo, FAST Obras, FAST Homes, FAST Franchising, Comércio Digital e Comercial Franquias.",
           "Empresas Especializadas (Back Office / CSC): Centro de Serviços Compartilhados, Engenharia, Log Express e Unity Company.",
           "Rede de franquias: Steel Conecta e demais franqueados, observadas as diretrizes previstas em seus contratos.",
         ],

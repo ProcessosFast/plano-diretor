@@ -29,10 +29,12 @@ const OPERACIONAIS_TABS = [
 const FRONTOFFICE_TABS = [
   { id: "atacado", label: "FAST Atacado" },
   { id: "varejo", label: "FAST Varejo" },
-  { id: "obras", label: "FAST Obras & Homes" },
+  { id: "homes", label: "FAST Homes" },
+  { id: "obras", label: "FAST Obras" },
   { id: "atacado-franqueados", label: "Atacado p/ Franqueados" },
   { id: "digital", label: "Comércio Digital" },
   { id: "importacao", label: "FAST Importação" },
+  { id: "comercial-franquias", label: "Comercial Franquias" },
 ]
 
 const BACKOFFICE_TABS = [
@@ -56,10 +58,12 @@ export const POLICY_STATUS: Record<string, boolean> = {
   importacao: false,
   atacado: true,
   varejo: false,
-  obras: true,
+  homes: true,
+  obras: false,
   franquias: false,
   "atacado-franqueados": false,
   digital: false,
+  "comercial-franquias": false,
   csc: true,
   unity: true,
   engenharia: true,
@@ -149,7 +153,13 @@ export function PoliticasInternas() {
       {active === "varejo" && (
         <EmptyDocPlaceholder title="FAST Varejo" description="Aguardando o documento de política interna desta empresa." />
       )}
-      {active === "obras" && <FastHomesComercialPolicy />}
+      {active === "homes" && <FastHomesComercialPolicy />}
+      {active === "obras" && (
+        <EmptyDocPlaceholder title="FAST Obras" description="Separada da FAST Homes nesta revisão do organograma — mesma diretoria (Fabio Furtado) e mesma equipe comercial hoje. Aguardando o documento de política interna específico desta empresa." />
+      )}
+      {active === "comercial-franquias" && (
+        <EmptyDocPlaceholder title="Comercial Franquias" description="Front office comercial responsável pela venda de novas unidades franqueadas da rede; a receita é registrada na FAST Franchising. Modelo embrionário, aguardando consolidação e documento de política interna." />
+      )}
       {active === "franquias" && (
         <EmptyDocPlaceholder title="FAST Franchising" description="Aguardando o documento de política interna desta empresa." />
       )}
