@@ -216,8 +216,14 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
   const atas = meeting.atas ?? []
 
   function submitAction() {
-    if (!desc.trim()) return
-    addActionItem(meeting.id, { description: desc, responsible, deadline, status: "pendente" })
+    const items = desc
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean)
+    if (items.length === 0) return
+    items.forEach((description) => {
+      addActionItem(meeting.id, { description, responsible, deadline, status: "pendente" })
+    })
     setDesc("")
     setResponsible("")
     setDeadline("")
@@ -343,7 +349,12 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
 
         {addingAction && (
           <div className="mt-2 border border-line rounded-lg p-3 bg-soft/40 space-y-2">
-            <Input placeholder="Descrição do item de ação" value={desc} onChange={(e) => setDesc(e.target.value)} />
+            <Textarea
+              placeholder={"Descrição do item de ação — uma por linha para adicionar vários de uma vez"}
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+              rows={3}
+            />
             <div className="grid grid-cols-2 gap-2">
               <Input placeholder="Responsável" value={responsible} onChange={(e) => setResponsible(e.target.value)} />
               <Input type="date" value={deadline} onChange={(e) => setDeadline(e.target.value)} />
