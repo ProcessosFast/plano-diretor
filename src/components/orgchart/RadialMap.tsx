@@ -181,7 +181,7 @@ export function RadialMap({ onOpenCompany }: RadialMapProps) {
 
           {/* front/back clusters */}
           {[
-            { S: FRONT, leafW: 150 },
+            { S: FRONT, leafW: 138 },
             { S: BACK, leafW: 158 },
           ].map(({ S, leafW }) => {
             const [hx, hy] = pol(S.hubR, S.hubAng)

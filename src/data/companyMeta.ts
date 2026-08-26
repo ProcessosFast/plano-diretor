@@ -120,8 +120,8 @@ export const FRONT: ClusterMeta = {
       d: "Diretoria Comercial de Franquias. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising. Observação: formação embrionária, em implementação.",
     },
   ],
-  angs: [6, 23, 40, 57, 74, 91, 108],
-  radii: [385, 438, 492, 385, 438, 492, 385],
+  angs: [6, 20, 34, 48, 62, 76, 90],
+  radii: [368, 430, 492, 368, 430, 492, 368],
 }
 
 export const BACK: ClusterMeta = {
