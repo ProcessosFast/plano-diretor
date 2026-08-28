@@ -158,6 +158,24 @@ export const useMeetingsStore = create<MeetingsState>()(
           ),
         })),
     }),
-    { name: "fastPortalMeetings" }
+    {
+      name: "fastPortalMeetings",
+      // Navegadores que já tinham dados salvos não recebem automaticamente novas atas
+      // adicionadas ao SEED_MEETINGS (o localStorage persistido prevalece). Este merge
+      // reintroduz qualquer reunião "seed" que ainda não exista no estado salvo do
+      // usuário, preservando tudo o que ele já criou/editou.
+      merge: (persistedState, currentState) => {
+        const persisted = persistedState as Partial<MeetingsState> | undefined
+        const persistedMeetings = persisted?.meetings ?? []
+        const missingSeeds = SEED_MEETINGS.filter(
+          (seed) => !persistedMeetings.some((m) => m.id === seed.id)
+        )
+        return {
+          ...currentState,
+          ...persisted,
+          meetings: [...missingSeeds, ...persistedMeetings],
+        }
+      },
+    }
   )
 )
