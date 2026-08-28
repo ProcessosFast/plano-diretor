@@ -420,7 +420,7 @@ function SignaturesSection({ meeting }: { meeting: Meeting }) {
             <div className="flex-1 min-w-0">
               <div className="text-xs font-bold text-ink truncate">{sig.name}</div>
               <div className="text-[10.5px] text-muted mt-0.5">
-                {sig.signedAt ? `Assinado em ${formatDate(sig.signedAt.slice(0, 10))}` : "Aguardando assinatura"}
+                {sig.signedAt ? `Assinado em ${formatDateTime(sig.signedAt)}` : "Aguardando assinatura"}
               </div>
             </div>
             <button
