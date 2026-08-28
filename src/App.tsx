@@ -6,6 +6,7 @@ import { PoliticasInternas } from "@/pages/PoliticasInternas"
 import { MatrizAlcadas } from "@/pages/MatrizAlcadas"
 import { PlanoDiretor } from "@/pages/PlanoDiretor"
 import { ReunioesComite } from "@/pages/ReunioesComite"
+import { AssinarAta } from "@/pages/AssinarAta"
 import { ContratosInternos } from "@/pages/ContratosInternos"
 import { ContratosSocietarios } from "@/pages/ContratosSocietarios"
 import { MatrizRiscos } from "@/pages/MatrizRiscos"
@@ -26,6 +27,7 @@ function App() {
           <Route path="/alcadas" element={<MatrizAlcadas />} />
           <Route path="/plano-diretor" element={<PlanoDiretor />} />
           <Route path="/reunioes" element={<ReunioesComite />} />
+          <Route path="/assinar/:meetingId/:token" element={<AssinarAta />} />
           <Route path="/contratos-internos" element={<ContratosInternos />} />
           <Route path="/contratos-societarios" element={<ContratosSocietarios />} />
           <Route path="/matriz-riscos" element={<MatrizRiscos />} />

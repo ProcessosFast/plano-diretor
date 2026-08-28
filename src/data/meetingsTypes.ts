@@ -17,6 +17,13 @@ export interface Ata {
   observacao: string
 }
 
+export interface Signature {
+  id: string
+  name: string
+  token: string
+  signedAt: string | null
+}
+
 export interface Meeting {
   id: string
   date: string
@@ -27,6 +34,7 @@ export interface Meeting {
   decisions: string
   actionItems: ActionItem[]
   atas: Ata[]
+  signatures: Signature[]
 }
 
 export const ACTION_STATUS_LABEL: Record<ActionStatus, string> = {

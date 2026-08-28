@@ -14,7 +14,22 @@ import { useMeetingsStore } from "@/store/useMeetingsStore"
 import { useApprovalHistoryStore } from "@/store/useApprovalHistoryStore"
 import { ACTION_STATUS_LABEL, type ActionItem, type ActionStatus, type Meeting } from "@/data/meetingsTypes"
 import { cn } from "@/lib/utils"
-import { Plus, Trash2, X, Pencil, FileText, Link as LinkIcon, Check, RotateCcw, ClipboardCheck, ListChecks, GripVertical } from "lucide-react"
+import {
+  Plus,
+  Trash2,
+  X,
+  Pencil,
+  FileText,
+  Link as LinkIcon,
+  Check,
+  RotateCcw,
+  ClipboardCheck,
+  ListChecks,
+  GripVertical,
+  PenLine,
+  Copy,
+  CheckCircle2,
+} from "lucide-react"
 
 const statusBadgeClass: Record<ActionStatus, string> = {
   pendente: "bg-[#FFF8E8] text-warn border-[#EFD9A6]",
@@ -341,6 +356,120 @@ function ActionItemRow({
   )
 }
 
+function SignaturesSection({ meeting }: { meeting: Meeting }) {
+  const addSignature = useMeetingsStore((s) => s.addSignature)
+  const removeSignature = useMeetingsStore((s) => s.removeSignature)
+  const revokeSignature = useMeetingsStore((s) => s.revokeSignature)
+  const [adding, setAdding] = useState(false)
+  const [name, setName] = useState("")
+  const [copiedId, setCopiedId] = useState<string | null>(null)
+  const signatures = meeting.signatures ?? []
+
+  function submit() {
+    if (!name.trim()) return
+    addSignature(meeting.id, name.trim())
+    setName("")
+    setAdding(false)
+  }
+
+  function linkFor(token: string) {
+    return `${window.location.origin}/assinar/${meeting.id}/${token}`
+  }
+
+  async function copyLink(id: string, token: string) {
+    try {
+      await navigator.clipboard.writeText(linkFor(token))
+      setCopiedId(id)
+      setTimeout(() => setCopiedId((c) => (c === id ? null : c)), 2000)
+    } catch {
+      window.prompt("Copie o link:", linkFor(token))
+    }
+  }
+
+  return (
+    <div className="mt-4 pt-3 border-t border-line">
+      <div className="flex items-center justify-between mb-2">
+        <div className="text-[10px] font-extrabold uppercase tracking-wide text-muted">
+          Assinaturas · aprovação da ata
+        </div>
+        {!adding && (
+          <button
+            onClick={() => setAdding(true)}
+            className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
+          >
+            <Plus size={12} /> assinante
+          </button>
+        )}
+      </div>
+
+      {signatures.length === 0 && !adding && (
+        <p className="text-xs text-muted italic">Nenhum assinante cadastrado ainda.</p>
+      )}
+
+      <div className="space-y-1.5">
+        {signatures.map((sig) => (
+          <div
+            key={sig.id}
+            className="flex items-center gap-2.5 border border-line rounded-lg px-3 py-2 bg-soft/40 group"
+          >
+            {sig.signedAt ? (
+              <CheckCircle2 size={16} className="shrink-0 text-back" />
+            ) : (
+              <PenLine size={16} className="shrink-0 text-muted" />
+            )}
+            <div className="flex-1 min-w-0">
+              <div className="text-xs font-bold text-ink truncate">{sig.name}</div>
+              <div className="text-[10.5px] text-muted mt-0.5">
+                {sig.signedAt ? `Assinado em ${formatDate(sig.signedAt.slice(0, 10))}` : "Aguardando assinatura"}
+              </div>
+            </div>
+            <button
+              onClick={() => copyLink(sig.id, sig.token)}
+              className="shrink-0 text-[10.5px] font-bold text-ink-2 hover:text-brand-red flex items-center gap-1 px-1.5"
+              title="Copiar link pessoal de assinatura"
+            >
+              <Copy size={12} /> {copiedId === sig.id ? "Copiado!" : "Copiar link"}
+            </button>
+            {sig.signedAt && (
+              <button
+                onClick={() => revokeSignature(meeting.id, sig.id)}
+                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-ink p-0.5"
+                title="Desfazer assinatura"
+              >
+                <RotateCcw size={13} />
+              </button>
+            )}
+            <button
+              onClick={() => removeSignature(meeting.id, sig.id)}
+              className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red p-0.5"
+              title="Remover assinante"
+            >
+              <X size={13} />
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {adding && (
+        <div className="mt-2 border border-line rounded-lg p-3 bg-soft/40 flex gap-2">
+          <Input
+            placeholder="Nome do participante"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && submit()}
+          />
+          <Button variant="outline" size="sm" onClick={() => setAdding(false)}>
+            Cancelar
+          </Button>
+          <Button size="sm" onClick={submit}>
+            Adicionar
+          </Button>
+        </div>
+      )}
+    </div>
+  )
+}
+
 function MeetingCard({ meeting }: { meeting: Meeting }) {
   const removeMeeting = useMeetingsStore((s) => s.removeMeeting)
   const addActionItem = useMeetingsStore((s) => s.addActionItem)
@@ -573,6 +702,8 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
           </div>
         )}
       </div>
+
+      <SignaturesSection meeting={meeting} />
 
       <EditMeetingDialog open={editOpen} onOpenChange={setEditOpen} meeting={meeting} />
     </div>

@@ -6,10 +6,16 @@ function uid() {
   return Math.random().toString(36).slice(2, 10)
 }
 
+// Token mais longo que o uid() padrão — é o único "segredo" que identifica
+// quem pode assinar por um participante específico (não há login no portal).
+function genToken() {
+  return uid() + uid()
+}
+
 interface MeetingsState {
   meetings: Meeting[]
-  addMeeting: (data: Omit<Meeting, "id" | "actionItems" | "atas">) => void
-  updateMeeting: (id: string, data: Partial<Omit<Meeting, "id" | "actionItems" | "atas">>) => void
+  addMeeting: (data: Omit<Meeting, "id" | "actionItems" | "atas" | "signatures">) => void
+  updateMeeting: (id: string, data: Partial<Omit<Meeting, "id" | "actionItems" | "atas" | "signatures">>) => void
   removeMeeting: (id: string) => void
   addActionItem: (meetingId: string, data: Omit<ActionItem, "id" | "order">) => void
   updateActionItem: (meetingId: string, itemId: string, data: Partial<Omit<ActionItem, "id">>) => void
@@ -18,6 +24,10 @@ interface MeetingsState {
   reorderActionItems: (meetingId: string, fromIndex: number, toIndex: number) => void
   addAta: (meetingId: string, data: Omit<Ata, "id">) => void
   removeAta: (meetingId: string, ataId: string) => void
+  addSignature: (meetingId: string, name: string) => void
+  removeSignature: (meetingId: string, signatureId: string) => void
+  signByToken: (meetingId: string, token: string) => boolean
+  revokeSignature: (meetingId: string, signatureId: string) => void
 }
 
 const SEED_MEETINGS: Meeting[] = [
@@ -64,6 +74,17 @@ const SEED_MEETINGS: Meeting[] = [
       { id: uid(), order: 12, description: "Definir cronograma de entrada em vigor das empresas Front Office", responsible: "", deadline: "", status: "pendente" },
     ],
     atas: [],
+    // Tokens fixos (não gerados via genToken()) — este é um seed de dados que roda a
+    // cada carregamento do app; um token aleatório aqui mudaria a cada reload e
+    // invalidaria qualquer link já compartilhado com os participantes.
+    signatures: [
+      { id: "sig-ata01-leticia", name: "Letícia Werneck", token: "lw2608a01x9f3k7q", signedAt: null },
+      { id: "sig-ata01-glauco", name: "Glauco de Andrade", token: "ga2608a01m4d8p2s", signedAt: null },
+      { id: "sig-ata01-leonardo", name: "Leonardo de Oliveira", token: "lo2608a01z6t1w5r", signedAt: null },
+      { id: "sig-ata01-joselio", name: "Josélio", token: "js2608a01h9c3n7v", signedAt: null },
+      { id: "sig-ata01-guilherme", name: "Guilherme", token: "gu2608a01k2b6y4u", signedAt: null },
+      { id: "sig-ata01-priscilla", name: "Priscilla", token: "pr2608a01f8e1j5o", signedAt: null },
+    ],
   },
   {
     id: "seed-1",
@@ -75,6 +96,7 @@ const SEED_MEETINGS: Meeting[] = [
     decisions: "",
     actionItems: [],
     atas: [],
+    signatures: [],
   },
 ]
 
@@ -85,7 +107,7 @@ export const useMeetingsStore = create<MeetingsState>()(
 
       addMeeting: (data) =>
         set((s) => ({
-          meetings: [{ id: uid(), actionItems: [], atas: [], ...data }, ...s.meetings],
+          meetings: [{ id: uid(), actionItems: [], atas: [], signatures: [], ...data }, ...s.meetings],
         })),
 
       updateMeeting: (id, data) =>
@@ -155,6 +177,57 @@ export const useMeetingsStore = create<MeetingsState>()(
         set((s) => ({
           meetings: s.meetings.map((m) =>
             m.id === meetingId ? { ...m, atas: (m.atas ?? []).filter((a) => a.id !== ataId) } : m
+          ),
+        })),
+
+      addSignature: (meetingId, name) =>
+        set((s) => ({
+          meetings: s.meetings.map((m) =>
+            m.id === meetingId
+              ? {
+                  ...m,
+                  signatures: [...(m.signatures ?? []), { id: uid(), name, token: genToken(), signedAt: null }],
+                }
+              : m
+          ),
+        })),
+
+      removeSignature: (meetingId, signatureId) =>
+        set((s) => ({
+          meetings: s.meetings.map((m) =>
+            m.id === meetingId
+              ? { ...m, signatures: (m.signatures ?? []).filter((sig) => sig.id !== signatureId) }
+              : m
+          ),
+        })),
+
+      signByToken: (meetingId, token) => {
+        let found = false
+        set((s) => ({
+          meetings: s.meetings.map((m) => {
+            if (m.id !== meetingId) return m
+            const signatures = (m.signatures ?? []).map((sig) => {
+              if (sig.token !== token) return sig
+              found = true
+              return sig.signedAt ? sig : { ...sig, signedAt: new Date().toISOString() }
+            })
+            return { ...m, signatures }
+          }),
+        }))
+        return found
+      },
+
+      revokeSignature: (meetingId, signatureId) =>
+        set((s) => ({
+          meetings: s.meetings.map((m) =>
+            m.id === meetingId
+              ? {
+                  ...m,
+                  signatures: (m.signatures ?? []).map((sig) =>
+                    sig.id === signatureId ? { ...sig, signedAt: null } : sig
+                  ),
+                }
+              : m
           ),
         })),
     }),
