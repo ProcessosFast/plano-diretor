@@ -35,18 +35,31 @@ interface MeetingsState {
 // SEED_MEETINGS não apaga o que já foi salvo no localStorage de quem já abriu o app.
 const REMOVED_SEED_IDS = ["seed-ata-01"]
 
+// Assinaturas fixas para a reunião "seed-1" (Reunião do Conselho Consultivo), que o
+// usuário já editou pela tela com a data/pauta reais da ata de 25/08/2026. Tokens
+// fixos (não gerados via genToken()) pelo mesmo motivo do ata-01: precisam ser
+// estáveis entre carregamentos para os links de assinatura não expirarem.
+const SEED1_SIGNATURES = [
+  { id: "sig-seed1-joselio", name: "Josélio", token: "js2508cc9k3m7q2x", signedAt: null },
+  { id: "sig-seed1-guilherme", name: "Guilherme", token: "gu2508cc4p8w1n6z", signedAt: null },
+  { id: "sig-seed1-priscila", name: "Priscila", token: "pr2508cc7t2d9v5b", signedAt: null },
+  { id: "sig-seed1-leticia", name: "Letícia", token: "lw2508cc1h6f3s8a", signedAt: null },
+  { id: "sig-seed1-glauco", name: "Glauco", token: "ga2508cc5r9j2k4d", signedAt: null },
+  { id: "sig-seed1-leonardo", name: "Leonardo", token: "lo2508cc6m1c8t3f", signedAt: null },
+]
+
 const SEED_MEETINGS: Meeting[] = [
   {
     id: "seed-1",
-    date: new Date().toISOString().slice(0, 10),
-    time: "11:00",
+    date: "2026-08-25",
+    time: "16:00",
     title: "Reunião do Conselho Consultivo",
-    participants: "Kleber, Josélio, Nicole, Guilherme, Priscila",
-    pauta: "Reunião regular de terça-feira, conforme ritual de governança do Plano Diretor (3.3/3.6).",
-    decisions: "",
+    participants: "Josélio, Guilherme, Priscila, Letícia, Glauco, Leonardo",
+    pauta: "Reunião regular de 15 em 15 dias do Conselho com comitê",
+    decisions: "Apresentação do Portal\nOrganograma empresarial\nFormato atual x plano",
     actionItems: [],
     atas: [],
-    signatures: [],
+    signatures: SEED1_SIGNATURES,
   },
 ]
 
@@ -189,9 +202,16 @@ export const useMeetingsStore = create<MeetingsState>()(
       // usuário, preservando tudo o que ele já criou/editou.
       merge: (persistedState, currentState) => {
         const persisted = persistedState as Partial<MeetingsState> | undefined
-        const persistedMeetings = (persisted?.meetings ?? []).filter(
-          (m) => !REMOVED_SEED_IDS.includes(m.id)
-        )
+        const persistedMeetings = (persisted?.meetings ?? [])
+          .filter((m) => !REMOVED_SEED_IDS.includes(m.id))
+          // Backfill: a reunião "seed-1" já editada pelo usuário na tela (data/pauta
+          // reais) ainda não tinha assinaturas — injeta as 6 fixas sem sobrescrever
+          // nada que o usuário já tenha cadastrado manualmente.
+          .map((m) =>
+            m.id === "seed-1" && (m.signatures ?? []).length === 0
+              ? { ...m, signatures: SEED1_SIGNATURES }
+              : m
+          )
         const missingSeeds = SEED_MEETINGS.filter(
           (seed) => !persistedMeetings.some((m) => m.id === seed.id)
         )
