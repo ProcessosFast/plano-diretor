@@ -162,6 +162,34 @@ export const BACK: ClusterMeta = {
   radii: [385, 470, 385, 470],
 }
 
+export interface Satellite {
+  fromAng: number
+  fromR: number
+  ang: number
+  r: number
+  label: string
+  sublabel: string
+  org: string | null
+  color: string
+  desc: string
+}
+
+// Empresas satélite ligadas a um nó específico (não ao hub central) — desenhadas
+// com linha tracejada, indicando vínculo de prestação de serviço, não societário.
+export const SATELLITES: Satellite[] = [
+  {
+    fromAng: 205,
+    fromR: R_OP,
+    ang: 223,
+    r: R_OP + 110,
+    label: "CCN",
+    sublabel: "CCN Serviços · prestadora interna",
+    org: null,
+    color: "#123A63",
+    desc: "CCN Serviços — prestadora de serviço interna ligada à MaxSteel. A linha tracejada indica vínculo de prestação de serviço, diferente do vínculo societário (linha sólida) das holdings.",
+  },
+]
+
 export const CORE = {
   tag: "Governança Corporativa",
   title: "Conselho · CEO · Diretoria Executiva",

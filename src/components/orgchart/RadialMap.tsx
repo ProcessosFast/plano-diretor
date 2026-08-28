@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { VERTICAIS, FRONT, BACK, CORE, R_HOLD, R_OP, type Leaf } from "@/data/companyMeta"
+import { VERTICAIS, FRONT, BACK, CORE, R_HOLD, R_OP, SATELLITES, type Leaf } from "@/data/companyMeta"
 import { companyStats } from "@/data/orgdata"
 import { useOrgStore } from "@/store/useOrgStore"
 import { cn } from "@/lib/utils"
@@ -93,6 +93,24 @@ export function RadialMap({ onOpenCompany }: RadialMapProps) {
             )
           })}
 
+          {/* conexões — satélites (prestação de serviço, tracejada) */}
+          {SATELLITES.map((sat, i) => {
+            const k = `sat${i}`
+            const [px, py] = pol(sat.fromR, sat.fromAng)
+            const [sx, sy] = pol(sat.r, sat.ang)
+            return (
+              <path
+                key={k}
+                d={`M ${px} ${py} L ${sx} ${sy}`}
+                stroke={sat.color}
+                strokeWidth={1.5}
+                strokeDasharray="6 5"
+                fill="none"
+                className={cn("transition-opacity", isDimmed(`sat-${i}`) && "opacity-[.05]")}
+              />
+            )
+          })}
+
           {/* conexões — clusters front/back */}
           {[FRONT, BACK].map((S) => {
             const [hx, hy] = pol(S.hubR, S.hubAng)
@@ -176,6 +194,46 @@ export function RadialMap({ onOpenCompany }: RadialMapProps) {
                   <CardInner title={v.op} subtitle={v.opsub} count={count} />
                 </Node>
               </g>
+            )
+          })}
+
+          {/* satélites (prestação de serviço) */}
+          {SATELLITES.map((sat, i) => {
+            const k = `sat-${i}`
+            const [sx, sy] = pol(sat.r, sat.ang)
+            const count = personCount(sat.org)
+            return (
+              <Node
+                key={k}
+                x={sx}
+                y={sy}
+                w={150}
+                h={sat.org ? 62 : 54}
+                fill={sat.color}
+                dimmed={isDimmed(k)}
+                onEnter={() =>
+                  handleEnter({
+                    tag: "Prestadora de serviço interna",
+                    title: sat.label,
+                    color: sat.color,
+                    desc: sat.desc,
+                    sector: k,
+                    org: sat.org,
+                  })
+                }
+                onClick={() =>
+                  handleClick({
+                    tag: "Prestadora de serviço interna",
+                    title: sat.label,
+                    color: sat.color,
+                    desc: sat.desc,
+                    sector: k,
+                    org: sat.org,
+                  })
+                }
+              >
+                <CardInner title={sat.label} subtitle={sat.sublabel} count={count} />
+              </Node>
             )
           })}
 
