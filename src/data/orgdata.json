@@ -1860,5 +1860,113 @@
     ]
    }
   ]
+ },
+ {
+  "id": "ccn",
+  "name": "CCN Serviços",
+  "sections": [
+   {
+    "title": "CCN",
+    "hint": "Diretoria: Thiago de Paula Vianna · prestadora de serviço interna ligada à MaxSteel",
+    "chief": {
+     "role": "Diretor",
+     "name": "Thiago de Paula Vianna"
+    },
+    "cols": [
+     {
+      "k": "CLT",
+      "s": "Produção, expedição e administrativo",
+      "accent": "#123A63",
+      "people": [
+       {
+        "role": "Líder de Expedição",
+        "name": "Luiz Claudio Rodrigues da Silva",
+        "lead": true
+       },
+       {
+        "role": "Assistente Administrativo",
+        "name": "Max da Silva Alves Coelho"
+       },
+       {
+        "role": "Aux. de Manutenção Industrial",
+        "name": "Vicente Alves Marins"
+       },
+       {
+        "role": "Motorista de Caminhão",
+        "name": "Wanderson Pereira das Neves"
+       },
+       {
+        "role": "Ajudante de Produção III",
+        "name": "Thawan da Silva Colares"
+       },
+       {
+        "role": "Ajudante de Produção III",
+        "name": "Michel de Souza"
+       },
+       {
+        "role": "Ajudante de Produção II",
+        "name": "Relly da Silva de Nazareth"
+       },
+       {
+        "role": "Ajudante de Produção II",
+        "name": "Vinicius Fernandes Rocha"
+       },
+       {
+        "role": "Operador I",
+        "name": "Carlos Henrique Naliato das Neves"
+       },
+       {
+        "role": "Operador I",
+        "name": "Leandro de Andrade Chagas"
+       },
+       {
+        "role": "Operador II",
+        "name": "Erasmo Barbosa Ananias"
+       },
+       {
+        "role": "Operador II",
+        "name": "Joilson da Silva Lima"
+       },
+       {
+        "role": "Operador II",
+        "name": "Rafael Gomes da Silveira Lima"
+       },
+       {
+        "role": "Operador III",
+        "name": "Rivelino Francisco da Silva"
+       }
+      ]
+     },
+     {
+      "k": "PJ",
+      "s": "Diretoria: Thiago de Paula Vianna",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Diretoria",
+        "name": "Thiago de Paula Vianna",
+        "lead": true
+       },
+       {
+        "role": "ADM",
+        "name": "Adriany Pinto Villaça"
+       },
+       {
+        "role": "Manutenção",
+        "name": "Bernardes Vinicius do Nascimento Fernandes"
+       },
+       {
+        "role": "Encarregado de Produção",
+        "name": "Jonas de Melo Pinheiro"
+       },
+       {
+        "role": "Refeitório",
+        "name": "Michele da Silva de Azevedo"
+       }
+      ]
+     }
+    ]
+   }
+  ]
  }
 ]

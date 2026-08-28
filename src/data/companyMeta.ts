@@ -184,7 +184,7 @@ export const SATELLITES: Satellite[] = [
     r: R_OP + 60,
     label: "CCN",
     sublabel: "CCN Serviços · prestadora interna",
-    org: null,
+    org: "ccn",
     color: "#123A63",
     desc: "CCN Serviços — prestadora de serviço interna ligada à MaxSteel. A linha tracejada indica vínculo de prestação de serviço, diferente do vínculo societário (linha sólida) das holdings.",
   },
