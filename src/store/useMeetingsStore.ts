@@ -42,7 +42,7 @@ const REMOVED_SEED_IDS = ["seed-ata-01"]
 const SEED1_SIGNATURES = [
   { id: "sig-seed1-joselio", name: "Josélio", token: "js2508cc9k3m7q2x", signedAt: null },
   { id: "sig-seed1-guilherme", name: "Guilherme", token: "gu2508cc4p8w1n6z", signedAt: null },
-  { id: "sig-seed1-priscila", name: "Priscila", token: "pr2508cc7t2d9v5b", signedAt: null },
+  { id: "sig-seed1-priscila", name: "Priscilla", token: "pr2508cc7t2d9v5b", signedAt: null },
   { id: "sig-seed1-leticia", name: "Letícia", token: "lw2508cc1h6f3s8a", signedAt: null },
   { id: "sig-seed1-glauco", name: "Glauco", token: "ga2508cc5r9j2k4d", signedAt: null },
   { id: "sig-seed1-leonardo", name: "Leonardo", token: "lo2508cc6m1c8t3f", signedAt: null },
@@ -54,7 +54,7 @@ const SEED_MEETINGS: Meeting[] = [
     date: "2026-08-25",
     time: "16:00",
     title: "Reunião do Conselho Consultivo",
-    participants: "Josélio, Guilherme, Priscila, Letícia, Glauco, Leonardo",
+    participants: "Josélio, Guilherme, Priscilla, Letícia, Glauco, Leonardo",
     pauta: "Reunião regular de 15 em 15 dias do Conselho com comitê",
     decisions: "Apresentação do Portal\nOrganograma empresarial\nFormato atual x plano",
     actionItems: [],
@@ -210,6 +210,21 @@ export const useMeetingsStore = create<MeetingsState>()(
           .map((m) =>
             m.id === "seed-1" && (m.signatures ?? []).length === 0
               ? { ...m, signatures: SEED1_SIGNATURES }
+              : m
+          )
+          // Correção de grafia: "Priscila" (CEO, já usado em outras partes do portal)
+          // era o nome errado para esta participante — o correto aqui é "Priscilla".
+          .map((m) =>
+            m.id === "seed-1"
+              ? {
+                  ...m,
+                  participants: m.participants.replace(/\bPriscila\b/g, "Priscilla"),
+                  signatures: (m.signatures ?? []).map((sig) =>
+                    sig.id === "sig-seed1-priscila" && sig.name === "Priscila"
+                      ? { ...sig, name: "Priscilla" }
+                      : sig
+                  ),
+                }
               : m
           )
         const missingSeeds = SEED_MEETINGS.filter(
