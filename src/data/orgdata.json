@@ -1952,7 +1952,8 @@
        },
        {
         "role": "Encarregado de Produção",
-        "name": "Jonas de Melo Pinheiro"
+        "name": "Jonas de Melo Pinheiro",
+        "lead": true
        },
        {
         "role": "Refeitório",
