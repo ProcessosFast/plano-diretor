@@ -180,8 +180,8 @@ export const SATELLITES: Satellite[] = [
   {
     fromAng: 205,
     fromR: R_OP,
-    ang: 195,
-    r: R_OP + 60,
+    ang: 198,
+    r: R_OP + 160,
     label: "CCN",
     sublabel: "CCN Serviços · prestadora interna",
     org: "ccn",
