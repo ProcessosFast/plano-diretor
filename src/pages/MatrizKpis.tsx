@@ -81,41 +81,43 @@ function KpiRow({ item, onRemove }: { item: KpiItem; onRemove?: () => void }) {
             </>
           ) : (
             <>
-              <button onClick={startEdit} className="text-[10.5px] font-bold text-brand-red flex items-center gap-1 hover:underline">
+              <Button variant="link" size="sm" onClick={startEdit} className="h-auto p-0 text-[10.5px] gap-1">
                 <Pencil size={11} /> editar
-              </button>
+              </Button>
               {aprovado ? (
                 <span className="inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase bg-[#E9F8F3] border border-[#BFE9DA] text-back rounded-full px-2 py-0.5">
                   <Check size={10} /> Aprovado
                 </span>
               ) : (
-                <button
+                <Button
+                  variant="ghost"
+                  size="sm"
                   onClick={() => setAprovado(item.id, true, item.indicador)}
                   disabled={!meta}
                   title={!meta ? "Preencha a meta antes de aprovar" : "Aprovar este KPI"}
                   className={cn(
-                    "inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
-                    meta
-                      ? "bg-white border-line text-ink-2 hover:bg-soft cursor-pointer"
-                      : "bg-soft border-line text-muted cursor-not-allowed opacity-60"
+                    "h-auto gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
+                    meta ? "bg-white border-line text-ink-2 hover:bg-soft" : "bg-soft border-line text-muted"
                   )}
                 >
                   <ThumbsUp size={10} /> Aprovar
-                </button>
+                </Button>
               )}
               {aprovado && (
-                <button
+                <Button
+                  variant="ghost"
+                  size="icon-sm"
                   onClick={() => setAprovado(item.id, false, item.indicador)}
-                  className="inline-flex items-center gap-1 text-[9.5px] font-bold text-muted hover:text-brand-red"
+                  className="gap-1 text-[9.5px] font-bold text-muted hover:text-brand-red w-auto"
                   title="Reabrir para edição"
                 >
                   <RotateCcw size={10} />
-                </button>
+                </Button>
               )}
               {onRemove && (
-                <button onClick={onRemove} className="text-muted hover:text-brand-red" title="Remover KPI">
+                <Button variant="ghost" size="icon-sm" onClick={onRemove} className="text-muted hover:text-brand-red" title="Remover KPI">
                   <Trash2 size={12} />
-                </button>
+                </Button>
               )}
             </>
           )}
@@ -175,12 +177,9 @@ function KpiAreaSection({ area, subtitulo, items }: { area: string; subtitulo: s
       <div className="flex items-center justify-between gap-2 mb-0.5">
         <h2 className="text-sm font-extrabold text-ink">{area}</h2>
         {!adding && (
-          <button
-            onClick={() => setAdding(true)}
-            className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
-          >
+          <Button variant="link" size="sm" onClick={() => setAdding(true)} className="h-auto p-0 text-[11px] gap-1">
             <Plus size={12} /> Adicionar KPI
-          </button>
+          </Button>
         )}
       </div>
       <p className="text-[11px] text-muted mb-3">{subtitulo}</p>

@@ -304,28 +304,31 @@ function ActionItemRow({
       {dnd && (
         <GripVertical size={14} className="shrink-0 text-muted/60 hover:text-muted cursor-grab active:cursor-grabbing" />
       )}
-      <button
+      <Button
+        variant="ghost"
+        size="icon-sm"
         onClick={toggleDone}
         className={cn(
-          "shrink-0 w-[18px] h-[18px] rounded-full border-2 flex items-center justify-center transition-colors",
-          done ? "bg-back border-back text-white" : "border-line hover:border-back"
+          "shrink-0 w-[18px] h-[18px] p-0 rounded-full border-2",
+          done ? "bg-back border-back text-white hover:bg-back" : "border-line hover:border-back hover:bg-transparent"
         )}
         title={done ? "Marcar como pendente" : "Marcar como concluído"}
       >
         {done && <Check size={12} strokeWidth={3} />}
-      </button>
-      <button
+      </Button>
+      <Button
+        variant="ghost"
+        size="sm"
         onClick={cycleStatus}
         disabled={done}
         className={cn(
-          "shrink-0 text-[9px] font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 border",
-          statusBadgeClass[item.status],
-          done && "opacity-60 cursor-default"
+          "shrink-0 h-auto font-extrabold uppercase tracking-wide rounded-full px-2 py-0.5 text-[9px] border hover:bg-transparent",
+          statusBadgeClass[item.status]
         )}
         title={done ? "Concluído" : "Clique para alternar Pendente / Em andamento"}
       >
         {ACTION_STATUS_LABEL[item.status]}
-      </button>
+      </Button>
       <div className="flex-1 min-w-0">
         <div className={cn("text-xs font-bold text-ink truncate", done && "line-through text-muted")}>
           {item.description}
@@ -341,16 +344,18 @@ function ActionItemRow({
         )}
       </div>
       <div className="shrink-0 flex items-center gap-0.5 opacity-0 group-hover:opacity-100">
-        <button onClick={openEdit} className="text-muted hover:text-ink p-0.5" title="Editar item">
+        <Button variant="ghost" size="icon-sm" onClick={openEdit} className="text-muted hover:text-ink" title="Editar item">
           <Pencil size={13} />
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="ghost"
+          size="icon-sm"
           onClick={() => removeActionItem(meetingId, item.id)}
-          className="text-muted hover:text-brand-red p-0.5"
+          className="text-muted hover:text-brand-red"
           title="Remover item"
         >
           <X size={13} />
-        </button>
+        </Button>
       </div>
     </div>
   )
@@ -393,12 +398,9 @@ function SignaturesSection({ meeting }: { meeting: Meeting }) {
           Assinaturas · aprovação da ata
         </div>
         {!adding && (
-          <button
-            onClick={() => setAdding(true)}
-            className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
-          >
+          <Button variant="link" size="sm" onClick={() => setAdding(true)} className="h-auto p-0 text-[11px] gap-1">
             <Plus size={12} /> assinante
-          </button>
+          </Button>
         )}
       </div>
 
@@ -423,29 +425,35 @@ function SignaturesSection({ meeting }: { meeting: Meeting }) {
                 {sig.signedAt ? `Assinado em ${formatDateTime(sig.signedAt)}` : "Aguardando assinatura"}
               </div>
             </div>
-            <button
+            <Button
+              variant="ghost"
+              size="sm"
               onClick={() => copyLink(sig.id, sig.token)}
-              className="shrink-0 text-[10.5px] font-bold text-ink-2 hover:text-brand-red flex items-center gap-1 px-1.5"
+              className="shrink-0 h-auto px-1.5 text-[10.5px] font-bold text-ink-2 hover:text-brand-red gap-1"
               title="Copiar link pessoal de assinatura"
             >
               <Copy size={12} /> {copiedId === sig.id ? "Copiado!" : "Copiar link"}
-            </button>
+            </Button>
             {sig.signedAt && (
-              <button
+              <Button
+                variant="ghost"
+                size="icon-sm"
                 onClick={() => revokeSignature(meeting.id, sig.id)}
-                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-ink p-0.5"
+                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-ink"
                 title="Desfazer assinatura"
               >
                 <RotateCcw size={13} />
-              </button>
+              </Button>
             )}
-            <button
+            <Button
+              variant="ghost"
+              size="icon-sm"
               onClick={() => removeSignature(meeting.id, sig.id)}
-              className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red p-0.5"
+              className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red"
               title="Remover assinante"
             >
               <X size={13} />
-            </button>
+            </Button>
           </div>
         ))}
       </div>
@@ -532,20 +540,24 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
           )}
         </div>
         <div className="flex items-center gap-1 shrink-0">
-          <button
+          <Button
+            variant="ghost"
+            size="icon-sm"
             onClick={() => setEditOpen(true)}
-            className="text-muted hover:text-ink p-1"
+            className="text-muted hover:text-ink"
             title="Editar reunião"
           >
             <Pencil size={15} />
-          </button>
-          <button
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon-sm"
             onClick={() => removeMeeting(meeting.id)}
-            className="text-muted hover:text-brand-red p-1"
+            className="text-muted hover:text-brand-red"
             title="Remover reunião"
           >
             <Trash2 size={15} />
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -567,12 +579,9 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
         <div className="flex items-center justify-between mb-2">
           <div className="text-[10px] font-extrabold uppercase tracking-wide text-muted">Plano de ação</div>
           {!addingAction && (
-            <button
-              onClick={() => setAddingAction(true)}
-              className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
-            >
+            <Button variant="link" size="sm" onClick={() => setAddingAction(true)} className="h-auto p-0 text-[11px] gap-1">
               <Plus size={12} /> item
-            </button>
+            </Button>
           )}
         </div>
 
@@ -636,12 +645,9 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
         <div className="flex items-center justify-between mb-2">
           <div className="text-[10px] font-extrabold uppercase tracking-wide text-muted">Atas da reunião</div>
           {!addingAta && (
-            <button
-              onClick={() => setAddingAta(true)}
-              className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
-            >
+            <Button variant="link" size="sm" onClick={() => setAddingAta(true)} className="h-auto p-0 text-[11px] gap-1">
               <Plus size={12} /> ata
-            </button>
+            </Button>
           )}
         </div>
 
@@ -673,12 +679,14 @@ function MeetingCard({ meeting }: { meeting: Meeting }) {
                 </div>
                 {ata.observacao && <p className="text-[11px] text-ink-2 mt-1 whitespace-pre-line">{ata.observacao}</p>}
               </div>
-              <button
+              <Button
+                variant="ghost"
+                size="icon-sm"
                 onClick={() => removeAta(meeting.id, ata.id)}
-                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red p-0.5"
+                className="shrink-0 opacity-0 group-hover:opacity-100 text-muted hover:text-brand-red"
               >
                 <X size={13} />
-              </button>
+              </Button>
             </div>
           ))}
         </div>

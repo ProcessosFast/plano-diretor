@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { NavLink } from "react-router-dom"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { FastMark } from "./FastMark"
 import { cn } from "@/lib/utils"
 
@@ -64,16 +65,18 @@ export function Sidenav() {
             <br />e Compliance
           </div>
         )}
-        <button
+        <Button
+          variant="ghost"
+          size="icon-sm"
           title="Recolher/expandir menu"
           onClick={() => persist(!collapsed)}
           className={cn(
-            "flex items-center justify-center h-6.5 w-6.5 rounded-md bg-white/10 hover:bg-white/20 shrink-0",
+            "h-6.5 w-6.5 rounded-md bg-white/10 hover:bg-white/20 text-white shrink-0",
             collapsed ? "mx-auto" : "ml-auto"
           )}
         >
           {collapsed ? <ChevronRight size={13} /> : <ChevronLeft size={13} />}
-        </button>
+        </Button>
       </div>
       <div className="flex-1 overflow-y-auto overflow-x-hidden px-2 py-2.5">
         {NAV_ITEMS.map((item) => (

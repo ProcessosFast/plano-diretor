@@ -66,29 +66,33 @@ function EditableField({
         </div>
         {!editing && (
           <div className="flex items-center gap-2">
-            <button onClick={start} className="text-[10.5px] font-bold text-brand-red flex items-center gap-1 hover:underline">
+            <Button variant="link" size="sm" onClick={start} className="h-auto p-0 text-[10.5px] gap-1">
               <Pencil size={10} /> {definido ? "editar" : "definir em reunião"}
-            </button>
+            </Button>
             {aprovado ? (
-              <button
+              <Button
+                variant="ghost"
+                size="icon-sm"
                 onClick={() => onApprove(false)}
-                className="inline-flex items-center gap-1 text-[9.5px] font-bold text-muted hover:text-brand-red"
+                className="gap-1 text-[9.5px] font-bold text-muted hover:text-brand-red w-auto"
                 title="Reabrir para edição"
               >
                 <RotateCcw size={10} />
-              </button>
+              </Button>
             ) : (
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={() => onApprove(true)}
                 disabled={!definido}
                 title={!definido ? "Preencha antes de aprovar" : "Aprovar"}
                 className={cn(
-                  "inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
-                  definido ? "bg-white border-line text-ink-2 hover:bg-soft cursor-pointer" : "bg-soft border-line text-muted cursor-not-allowed opacity-60"
+                  "h-auto gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
+                  definido ? "bg-white border-line text-ink-2 hover:bg-soft" : "bg-soft border-line text-muted"
                 )}
               >
                 <ThumbsUp size={10} /> Aprovar
-              </button>
+              </Button>
             )}
           </div>
         )}

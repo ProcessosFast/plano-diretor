@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { FastLogo } from "@/components/shared/FastLogo"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { PLANO_DIRETOR_PANELS, PLANO_DIRETOR_GROUPS, type PdBlock } from "@/data/planoDiretorContent"
 
@@ -87,11 +88,12 @@ export function PlanoDiretor() {
               {group.ids.map((id) => {
                 const p = PLANO_DIRETOR_PANELS.find((x) => x.id === id)!
                 return (
-                  <button
+                  <Button
                     key={id}
+                    variant="ghost"
                     onClick={() => setActiveId(id)}
                     className={cn(
-                      "flex items-center gap-1.5 w-full text-left rounded-md px-2 py-1.5 text-xs font-bold text-ink-2 mb-0.5",
+                      "h-auto justify-start gap-1.5 w-full text-left rounded-md px-2 py-1.5 text-xs font-bold text-ink-2 mb-0.5",
                       "hover:bg-soft",
                       activeId === id && "bg-ink text-white hover:bg-ink"
                     )}
@@ -105,7 +107,7 @@ export function PlanoDiretor() {
                       )}
                     />
                     {p.title}
-                  </button>
+                  </Button>
                 )
               })}
             </div>

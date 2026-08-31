@@ -98,12 +98,13 @@ export function CompanyOverlay({ companyId, onClose }: CompanyOverlayProps) {
                           ))}
                         </div>
                         {editing && (
-                          <button
+                          <Button
+                            variant="ghost"
                             onClick={() => addPerson(companyIdx, si, ci)}
-                            className="w-full text-center text-[10.5px] font-bold text-brand-red py-1.5 border-t border-dashed border-line hover:bg-soft/60 flex items-center justify-center gap-1"
+                            className="w-full h-auto rounded-none text-[10.5px] font-bold text-brand-red py-1.5 border-t border-dashed border-line hover:bg-soft/60 gap-1"
                           >
                             <Plus size={12} /> pessoa
-                          </button>
+                          </Button>
                         )}
                       </div>
                     ))}

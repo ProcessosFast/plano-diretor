@@ -1,4 +1,5 @@
 import { X } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useOrgStore } from "@/store/useOrgStore"
 import { cn } from "@/lib/utils"
@@ -73,13 +74,15 @@ export function PersonRow({ person: p, accent, companyIdx, sectionIdx, colIdx, p
         )}
       </div>
       {editing && (
-        <button
+        <Button
+          variant="ghost"
+          size="icon-sm"
           onClick={() => removePerson(companyIdx, sectionIdx, colIdx, personIdx)}
-          className="opacity-0 group-hover:opacity-100 shrink-0 text-muted hover:text-brand-red p-0.5"
+          className="opacity-0 group-hover:opacity-100 shrink-0 text-muted hover:text-brand-red"
           title="Remover"
         >
           <X size={14} />
-        </button>
+        </Button>
       )}
     </div>
   )

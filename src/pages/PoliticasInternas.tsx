@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
 import { EmptyDocPlaceholder } from "@/components/shared/EmptyDocPlaceholder"
 import { SignatureBlock } from "@/components/shared/SignatureBlock"
 import { FastLogo } from "@/components/shared/FastLogo"
@@ -87,15 +88,16 @@ export const POLICY_STATUS_CATEGORIES: StatusCategory[] = [
 
 function TabChip({ active, label, onClick }: { active: boolean; label: string; onClick: () => void }) {
   return (
-    <button
+    <Button
+      variant="ghost"
       onClick={onClick}
       className={cn(
-        "rounded-full border px-3.5 py-2 text-xs font-bold transition-colors",
-        active ? "bg-ink text-white border-ink" : "bg-white text-ink-2 border-line hover:bg-soft"
+        "h-auto rounded-full border px-3.5 py-2 text-xs font-bold",
+        active ? "bg-ink text-white border-ink hover:bg-ink" : "bg-white text-ink-2 border-line hover:bg-soft"
       )}
     >
       {label}
-    </button>
+    </Button>
   )
 }
 

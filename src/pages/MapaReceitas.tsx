@@ -389,26 +389,30 @@ function PendingTable() {
                       <span className="inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase bg-[#E9F8F3] border border-[#BFE9DA] text-back rounded-full px-2 py-0.5">
                         <Check size={10} /> Aprovado
                       </span>
-                      <button
+                      <Button
+                        variant="ghost"
+                        size="icon-sm"
                         onClick={() => setPendingAprovado(r.unidade, false, `${r.unidade} — comissão/royalty`)}
-                        className="text-muted hover:text-brand-red"
+                        className="text-muted hover:text-brand-red w-auto"
                         title="Reabrir para edição"
                       >
                         <RotateCcw size={11} />
-                      </button>
+                      </Button>
                     </div>
                   ) : (
-                    <button
+                    <Button
+                      variant="ghost"
+                      size="sm"
                       onClick={() => setPendingAprovado(r.unidade, true, `${r.unidade} — comissão/royalty`)}
                       disabled={!isDefined}
                       title={!isDefined ? "Preencha o percentual antes de aprovar" : "Aprovar"}
                       className={cn(
-                        "inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
-                        isDefined ? "bg-white border-line text-ink-2 hover:bg-soft cursor-pointer" : "bg-soft border-line text-muted cursor-not-allowed opacity-60"
+                        "h-auto gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
+                        isDefined ? "bg-white border-line text-ink-2 hover:bg-soft" : "bg-soft border-line text-muted"
                       )}
                     >
                       <ThumbsUp size={10} /> Aprovar
-                    </button>
+                    </Button>
                   )}
                 </TableCell>
               </TableRow>
@@ -506,32 +510,33 @@ function RateioCard({
           </div>
         ) : (
           <div className="flex items-center gap-2 flex-wrap">
-            <button
-              onClick={startEdit}
-              className="text-[11px] font-bold text-brand-red flex items-center gap-1 hover:underline"
-            >
+            <Button variant="link" size="sm" onClick={startEdit} className="h-auto p-0 text-[11px] gap-1">
               <Pencil size={12} /> {isDefined ? "Editar decisão" : "Registrar decisão da reunião"}
-            </button>
+            </Button>
             {aprovado ? (
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={() => setRateioAprovado(item, false, item)}
-                className="inline-flex items-center gap-1 text-[10px] font-bold text-muted hover:text-brand-red"
+                className="h-auto gap-1 text-[10px] font-bold text-muted hover:text-brand-red"
                 title="Reabrir para edição"
               >
                 <RotateCcw size={11} /> reabrir
-              </button>
+              </Button>
             ) : (
-              <button
+              <Button
+                variant="ghost"
+                size="sm"
                 onClick={() => setRateioAprovado(item, true, item)}
                 disabled={!isDefined}
                 title={!isDefined ? "Registre a decisão antes de aprovar" : "Aprovar"}
                 className={cn(
-                  "inline-flex items-center gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
-                  isDefined ? "bg-white border-line text-ink-2 hover:bg-soft cursor-pointer" : "bg-soft border-line text-muted cursor-not-allowed opacity-60"
+                  "h-auto gap-1 text-[9.5px] font-extrabold uppercase rounded-full px-2 py-0.5 border",
+                  isDefined ? "bg-white border-line text-ink-2 hover:bg-soft" : "bg-soft border-line text-muted"
                 )}
               >
                 <ThumbsUp size={10} /> Aprovar
-              </button>
+              </Button>
             )}
           </div>
         )}
