@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { FastMark } from "./FastMark"
 import { cn } from "@/lib/utils"
+import { useSyncStatus } from "@/lib/sharedState"
 
 const STORAGE_KEY = "fastPortalSidenavCollapsed"
 
@@ -21,6 +22,28 @@ const NAV_ITEMS = [
   { to: "/contratos-societarios", label: "Contratos Societários", ic: "CS" },
   { to: "/plano-diretor", label: "Plano Diretor", ic: "PD" },
 ]
+
+const SYNC_LABEL = {
+  carregando: { text: "Sincronizando…", dot: "bg-amber-400" },
+  online: { text: "Salvo para todos", dot: "bg-emerald-400" },
+  offline: { text: "Sem conexão — salvo só aqui", dot: "bg-red-400" },
+}
+
+function SyncIndicator({ collapsed }: { collapsed: boolean }) {
+  const { text, dot } = SYNC_LABEL[useSyncStatus()]
+  return (
+    <div
+      title={text}
+      className={cn(
+        "flex items-center gap-2 border-t border-white/10 px-3.5 py-3 text-[10.5px] font-bold text-[#B7C0CC] whitespace-nowrap shrink-0",
+        collapsed && "justify-center"
+      )}
+    >
+      <span className={cn("h-2 w-2 rounded-full shrink-0", dot)} />
+      {!collapsed && text}
+    </div>
+  )
+}
 
 export function Sidenav() {
   const [collapsed, setCollapsed] = useState(false)
@@ -103,6 +126,7 @@ export function Sidenav() {
           </NavLink>
         ))}
       </div>
+      <SyncIndicator collapsed={collapsed} />
     </nav>
   )
 }

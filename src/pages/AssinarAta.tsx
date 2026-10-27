@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useParams } from "react-router-dom"
 import { useMeetingsStore } from "@/store/useMeetingsStore"
+import { useSyncStatus } from "@/lib/sharedState"
 import { FastLogo } from "@/components/shared/FastLogo"
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, XCircle, FileText } from "lucide-react"
@@ -21,6 +22,7 @@ export function AssinarAta() {
   const meetings = useMeetingsStore((s) => s.meetings)
   const signByToken = useMeetingsStore((s) => s.signByToken)
   const [justSigned, setJustSigned] = useState(false)
+  const syncStatus = useSyncStatus()
 
   const meeting = meetings.find((m) => m.id === meetingId)
   const signature = meeting?.signatures?.find((sig) => sig.token === token)
@@ -29,6 +31,11 @@ export function AssinarAta() {
     if (!meetingId || !token) return
     const ok = signByToken(meetingId, token)
     if (ok) setJustSigned(true)
+  }
+
+  // Quem abre o link num navegador novo ainda não tem a reunião localmente.
+  if ((!meeting || !signature) && syncStatus === "carregando") {
+    return <div className="max-w-lg mx-auto my-16 px-4 text-center text-sm text-muted">Carregando ata…</div>
   }
 
   if (!meeting || !signature) {

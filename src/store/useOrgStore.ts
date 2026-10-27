@@ -1,4 +1,5 @@
 import { create } from "zustand"
+import { persist } from "zustand/middleware"
 import { COMPANIES as INITIAL_COMPANIES, type Company } from "@/data/orgdata"
 
 interface OrgState {
@@ -31,61 +32,66 @@ function download(filename: string, content: string, mime: string) {
   URL.revokeObjectURL(url)
 }
 
-export const useOrgStore = create<OrgState>((set, get) => ({
-  companies: structuredClone(INITIAL_COMPANIES),
-  editing: false,
+export const useOrgStore = create<OrgState>()(
+  persist(
+    (set, get) => ({
+      companies: structuredClone(INITIAL_COMPANIES),
+      editing: false,
 
-  toggleEditing: () => set((s) => ({ editing: !s.editing })),
+      toggleEditing: () => set((s) => ({ editing: !s.editing })),
 
-  setPersonField: (companyIdx, sectionIdx, colIdx, personIdx, field, value) =>
-    set((s) => {
-      const companies = structuredClone(s.companies)
-      const person = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]?.people[personIdx]
-      if (person) person[field] = value
-      return { companies }
-    }),
+      setPersonField: (companyIdx, sectionIdx, colIdx, personIdx, field, value) =>
+        set((s) => {
+          const companies = structuredClone(s.companies)
+          const person = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]?.people[personIdx]
+          if (person) person[field] = value
+          return { companies }
+        }),
 
-  addPerson: (companyIdx, sectionIdx, colIdx) =>
-    set((s) => {
-      const companies = structuredClone(s.companies)
-      const col = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]
-      if (col) col.people.push({ role: "A definir", name: "Novo colaborador", todo: true })
-      return { companies }
-    }),
+      addPerson: (companyIdx, sectionIdx, colIdx) =>
+        set((s) => {
+          const companies = structuredClone(s.companies)
+          const col = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]
+          if (col) col.people.push({ role: "A definir", name: "Novo colaborador", todo: true })
+          return { companies }
+        }),
 
-  removePerson: (companyIdx, sectionIdx, colIdx, personIdx) =>
-    set((s) => {
-      const companies = structuredClone(s.companies)
-      const col = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]
-      if (col) col.people.splice(personIdx, 1)
-      return { companies }
-    }),
+      removePerson: (companyIdx, sectionIdx, colIdx, personIdx) =>
+        set((s) => {
+          const companies = structuredClone(s.companies)
+          const col = companies[companyIdx]?.sections[sectionIdx]?.cols[colIdx]
+          if (col) col.people.splice(personIdx, 1)
+          return { companies }
+        }),
 
-  exportJson: () => {
-    download("orgdata.json", JSON.stringify(get().companies, null, 1), "application/json")
-  },
+      exportJson: () => {
+        download("orgdata.json", JSON.stringify(get().companies, null, 1), "application/json")
+      },
 
-  exportCsv: () => {
-    const rows: string[] = ["Unidade;Diretoria;Area;Nome;Cargo;Situacao"]
-    const q = (v: string) => `"${(v || "").replace(/"/g, '""')}"`
-    for (const c of get().companies) {
-      for (const sec of c.sections || []) {
-        const dir = sec.chief?.name ?? c.chief?.name ?? ""
-        for (const col of sec.cols || []) {
-          for (const p of col.people || []) {
-            if (!p.name) continue
-            const situacao = p.ref
-              ? "Apoio"
-              : /contratar/i.test(p.name)
-                ? "Vaga"
-                : p.todo
-                  ? "Cargo a definir"
-                  : "Ativo"
-            rows.push([c.name, dir, col.k, p.name, p.role || "", situacao].map(q).join(";"))
+      exportCsv: () => {
+        const rows: string[] = ["Unidade;Diretoria;Area;Nome;Cargo;Situacao"]
+        const q = (v: string) => `"${(v || "").replace(/"/g, '""')}"`
+        for (const c of get().companies) {
+          for (const sec of c.sections || []) {
+            const dir = sec.chief?.name ?? c.chief?.name ?? ""
+            for (const col of sec.cols || []) {
+              for (const p of col.people || []) {
+                if (!p.name) continue
+                const situacao = p.ref
+                  ? "Apoio"
+                  : /contratar/i.test(p.name)
+                    ? "Vaga"
+                    : p.todo
+                      ? "Cargo a definir"
+                      : "Ativo"
+                rows.push([c.name, dir, col.k, p.name, p.role || "", situacao].map(q).join(";"))
+              }
+            }
           }
         }
-      }
-    }
-    download("organograma.csv", "﻿" + rows.join("\n"), "text/csv;charset=utf-8")
-  },
-}))
+        download("organograma.csv", "﻿" + rows.join("\n"), "text/csv;charset=utf-8")
+      },
+    }),
+    { name: "fastPortalOrg", partialize: (s) => ({ companies: s.companies }) }
+  )
+)
