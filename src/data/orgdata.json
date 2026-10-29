@@ -173,6 +173,11 @@
       ],
       "people": [
        {
+        "role": "Liderança de Faturamento do Atacado; analista administrativo júnior",
+        "name": "Lidiane Lais Domingues Amaro",
+        "lead": true
+       },
+       {
         "role": "Assistente de faturamento",
         "name": "Beatriz de Andrade Carvalho"
        },
@@ -200,6 +205,11 @@
        "Ponto Focal DCS Mogi"
       ],
       "people": [
+       {
+        "role": "Coordenadora",
+        "name": "Maria Priscilla Andrade da Silva de Lacerda",
+        "lead": true
+       },
        {
         "role": "Auxiliar administrativo",
         "name": "Caio Felipe Alves Novaes"
