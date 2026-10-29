@@ -63,7 +63,7 @@ export function RadialMap({ onOpenCompany }: RadialMapProps) {
         className="relative w-full rounded-2xl border border-line bg-white shadow-card overflow-hidden"
         onMouseLeave={() => setFocusSector(null)}
       >
-        <svg viewBox="-68 48 1116 968" preserveAspectRatio="xMidYMid meet" className="w-full h-[640px]">
+        <svg viewBox="-68 48 1116 1016" preserveAspectRatio="xMidYMid meet" className="w-full h-[640px]">
           <defs>
             <radialGradient id="coreg" cx="50%" cy="36%" r="72%">
               <stop offset="0%" stopColor="#2c3a4e" />

@@ -132,8 +132,8 @@ export const FRONT: ClusterMeta = {
       d: "Diretoria Comercial de Franquias — Leandro Correa Martins, com gerência comercial de Robert Nascimento Duarte. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising.",
     },
   ],
-  angs: [-14, 0, 14, 27, 41, 55, 69, 82, 96],
-  radii: [350, 410, 480, 350, 410, 480, 350, 410, 480],
+  angs: [-2, 9, 20, 30, 41, 52, 63, 73, 84],
+  radii: [360, 420, 500, 360, 420, 500, 360, 420, 500],
 }
 
 export const BACK: ClusterMeta = {
