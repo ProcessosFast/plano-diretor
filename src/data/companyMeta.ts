@@ -92,14 +92,26 @@ export const FRONT: ClusterMeta = {
     {
       t: "FAST Homes",
       u: "Fabio Furtado",
-      org: "obras",
-      d: "Diretoria Comercial FAST Homes. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Separada da FAST Obras nesta revisão; a equipe comercial ainda transita entre as duas frentes.",
+      org: "homes",
+      d: "Diretoria Comercial FAST Homes. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Equipe própria, gerida por Erly Amorim Rocha Junior; operações e faturamento atendem também a FAST Obras.",
     },
     {
       t: "FAST Obras",
       u: "Fabio Furtado",
       org: "obras",
-      d: "Diretoria Comercial FAST Obras. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Separada da FAST Homes nesta revisão; a equipe comercial ainda transita entre as duas frentes.",
+      d: "Diretoria Comercial FAST Obras. Responde também pela Diretoria Técnica da Steel Conecta — treinamento, certificação e padrões (Cap. 5.5 / 5.7). Gerida por Julia Pitombo; operações e faturamento compartilhados com a FAST Homes.",
+    },
+    {
+      t: "Fast Aço",
+      u: "Fabio Furtado",
+      org: "aco",
+      d: "Fast Aço — frente comercial de aço da Diretoria de Fabio Furtado, gerida por Vagner Goltara.",
+    },
+    {
+      t: "Steel Conecta",
+      u: "Rede de mão de obra",
+      org: "steelconecta",
+      d: "Steel Conecta — rede de mão de obra certificada. Gerência de Fernanda Barreto Andrade (reporta ao Glauco, Engenharia) e liderança comercial de Thayna Cristina de Souza Nunes (reporta ao Fabio Furtado).",
     },
     {
       t: "Comércio Digital",
@@ -120,8 +132,8 @@ export const FRONT: ClusterMeta = {
       d: "Diretoria Comercial de Franquias. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising. Observação: formação embrionária, em implementação.",
     },
   ],
-  angs: [6, 20, 34, 48, 62, 76, 90],
-  radii: [368, 430, 492, 368, 430, 492, 368],
+  angs: [-14, 0, 14, 27, 41, 55, 69, 82, 96],
+  radii: [350, 410, 480, 350, 410, 480, 350, 410, 480],
 }
 
 export const BACK: ClusterMeta = {

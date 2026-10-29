@@ -1070,12 +1070,12 @@
   ]
  },
  {
-  "id": "obras",
-  "name": "FAST Homes & FAST Obras",
+  "id": "homes",
+  "name": "FAST Homes",
   "sections": [
    {
-    "title": "Comercial",
-    "hint": "Diretoria: Fabio Furtado · FAST Homes, FAST Obras, Fast Aço e Steel Conecta (comercial)",
+    "title": "FAST Homes",
+    "hint": "Diretoria: Fabio Furtado · Gerência: Erly Amorim Rocha Junior",
     "chief": {
      "role": "Diretor comercial · Contratante: RUCHE DESIGN LTDA",
      "name": "Fabio Furtado"
@@ -1109,6 +1109,51 @@
       ]
      },
      {
+      "k": "OPERAÇÕES",
+      "s": "Atende FAST Homes e FAST Obras",
+      "accent": "#123A63",
+      "ops": [
+       "FAST Homes",
+       "FAST Obras"
+      ],
+      "people": [
+       {
+        "role": "Gerente de operações · Contratante: RUCHE DESIGN LTDA",
+        "name": "Gabriel Prado",
+        "emp": "RUCHE DESIGN LTDA",
+        "lead": true
+       }
+      ]
+     },
+     {
+      "k": "ADMINISTRATIVO",
+      "s": "Atende FAST Homes e FAST Obras",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Assistente de faturamento · Contratante: RUCHE DESIGN LTDA",
+        "name": "Maria Izabel Franco de Oliveira Souza",
+        "emp": "RUCHE DESIGN LTDA"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "obras",
+  "name": "FAST Obras",
+  "sections": [
+   {
+    "title": "FAST Obras",
+    "hint": "Diretoria: Fabio Furtado · Gerência: Julia Pitombo",
+    "chief": {
+     "role": "Diretor comercial · Contratante: RUCHE DESIGN LTDA",
+     "name": "Fabio Furtado"
+    },
+    "cols": [
+     {
       "k": "FAST OBRAS",
       "s": "Gerência: Julia Pitombo",
       "accent": "#d71920",
@@ -1121,6 +1166,39 @@
        }
       ]
      },
+     {
+      "k": "APOIO COMPARTILHADO",
+      "s": "Equipe da FAST Homes que também atende a FAST Obras",
+      "accent": "#123A63",
+      "people": [
+       {
+        "role": "Gerente de operações (conta na FAST Homes)",
+        "name": "Gabriel Prado",
+        "ref": true
+       },
+       {
+        "role": "Assistente de faturamento (conta na FAST Homes)",
+        "name": "Maria Izabel Franco de Oliveira Souza",
+        "ref": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "aco",
+  "name": "Fast Aço",
+  "sections": [
+   {
+    "title": "Fast Aço",
+    "hint": "Diretoria: Fabio Furtado · Gerência: Vagner Goltara",
+    "chief": {
+     "role": "Diretor comercial · Contratante: RUCHE DESIGN LTDA",
+     "name": "Fabio Furtado"
+    },
+    "cols": [
      {
       "k": "FAST AÇO",
       "s": "Gerência: Vagner Goltara",
@@ -1149,43 +1227,39 @@
         "name": "Raphael Souza Iche"
        }
       ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "steelconecta",
+  "name": "Steel Conecta",
+  "sections": [
+   {
+    "title": "Steel Conecta",
+    "hint": "Rede de mão de obra · Gerência: Fernanda Barreto Andrade (Engenharia — Glauco) · Comercial: Thayna Cristina de Souza Nunes (Fabio Furtado)",
+    "cols": [
+     {
+      "k": "GERÊNCIA",
+      "s": "Rede de mão de obra",
+      "accent": "#d71920",
+      "people": [
+       {
+        "role": "Gerente Steel Conecta · reporta ao Glauco Jorge de Andrade Oliveira (Engenharia)",
+        "name": "Fernanda Barreto Andrade",
+        "lead": true
+       }
+      ]
      },
      {
-      "k": "STEEL CONECTA",
-      "s": "Comercial da rede",
+      "k": "COMERCIAL",
+      "s": "Liderança comercial",
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Líder comercial da Steel Conecta · Contratante: RUCHE DESIGN LTDA",
+        "role": "Líder comercial da Steel Conecta · reporta ao Fabio Furtado · Contratante: RUCHE DESIGN LTDA",
         "name": "Thayna Cristina de Souza Nunes",
-        "emp": "RUCHE DESIGN LTDA"
-       }
-      ]
-     },
-     {
-      "k": "ADMINISTRATIVO",
-      "s": "Apoio à diretoria",
-      "accent": "#c2751a",
-      "people": [
-       {
-        "role": "Assistente de faturamento · Contratante: RUCHE DESIGN LTDA",
-        "name": "Maria Izabel Franco de Oliveira Souza",
-        "emp": "RUCHE DESIGN LTDA"
-       }
-      ]
-     },
-     {
-      "k": "OPERAÇÕES",
-      "s": "Transita nas frentes",
-      "accent": "#123A63",
-      "ops": [
-       "FAST Homes",
-       "FAST Obras"
-      ],
-      "people": [
-       {
-        "role": "Gerente de operações · Contratante: RUCHE DESIGN LTDA",
-        "name": "Gabriel Prado",
         "emp": "RUCHE DESIGN LTDA",
         "lead": true
        }
@@ -2218,18 +2292,6 @@
        {
         "role": "Técnico de edificações",
         "name": "Luan da Rosa Pinto"
-       }
-      ]
-     },
-     {
-      "k": "STEEL CONECTA",
-      "s": "Rede de mão de obra",
-      "accent": "#d71920",
-      "people": [
-       {
-        "role": "Gerente Steel Conecta",
-        "name": "Fernanda Barreto Andrade",
-        "lead": true
        }
       ]
      },
