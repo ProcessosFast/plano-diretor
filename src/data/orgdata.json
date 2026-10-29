@@ -1750,7 +1750,8 @@
        {
         "role": "Consultora de processos; mesma autonomia de Ariene",
         "name": "Leticia Macedo Werneck Risso",
-        "emp": "CSC"
+        "emp": "CSC",
+        "lead": true
        },
        {
         "role": "Estagiário",
