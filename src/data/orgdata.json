@@ -1735,6 +1735,30 @@
   ]
  },
  {
+  "id": "paraguai",
+  "name": "FAST Paraguai",
+  "sections": [
+   {
+    "title": "FAST Paraguai",
+    "hint": "Unidade do Paraguai · Liderança: Edgar Anibal Zelaya",
+    "cols": [
+     {
+      "k": "DIRETORIA",
+      "s": "Unidade do Paraguai",
+      "accent": "#C4161C",
+      "people": [
+       {
+        "role": "Diretor da unidade do Paraguai",
+        "name": "Edgar Anibal Zelaya",
+        "lead": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "unity",
   "name": "Unity Company",
   "sections": [

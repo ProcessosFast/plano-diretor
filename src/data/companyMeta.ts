@@ -131,9 +131,15 @@ export const FRONT: ClusterMeta = {
       org: "comercialfranquias",
       d: "Diretoria Comercial de Franquias — Leandro Correa Martins, com gerência comercial de Robert Nascimento Duarte. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising.",
     },
+    {
+      t: "FAST Paraguai",
+      u: "Edgar Anibal Zelaya",
+      org: "paraguai",
+      d: "FAST Paraguai — unidade do Paraguai, liderada por Edgar Anibal Zelaya, Diretor da unidade.",
+    },
   ],
-  angs: [-2, 9, 20, 30, 41, 52, 63, 73, 84],
-  radii: [360, 420, 500, 360, 420, 500, 360, 420, 500],
+  angs: [-2, 8, 19, 29, 40, 50, 61, 71, 82, 92],
+  radii: [360, 430, 500, 360, 430, 500, 360, 430, 500, 360],
 }
 
 export const BACK: ClusterMeta = {
