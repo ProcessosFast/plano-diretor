@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { VERTICAIS, FRONT, BACK, CORE, R_HOLD, R_OP, SATELLITES, type Leaf } from "@/data/companyMeta"
-import { companyStats } from "@/data/orgdata"
+import { companyStats, ecosystemTotal } from "@/data/orgdata"
 import { useOrgStore } from "@/store/useOrgStore"
 import { cn } from "@/lib/utils"
 
@@ -298,6 +298,12 @@ export function RadialMap({ onOpenCompany }: RadialMapProps) {
             )
           })}
         </svg>
+
+        <div className="absolute bottom-4 left-4 rounded-xl border border-line bg-white/95 px-4 py-2.5 shadow-card">
+          <div className="text-[10px] font-bold uppercase tracking-wide text-muted">Total de funcionários</div>
+          <div className="text-2xl font-black text-ink leading-tight">{ecosystemTotal(companies)}</div>
+          <div className="text-[10px] text-muted">todas as empresas · cada pessoa contada uma vez</div>
+        </div>
       </div>
 
       {/* painel de detalhe */}

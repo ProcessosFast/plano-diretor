@@ -24,6 +24,7 @@ export interface Col {
 export interface ChiefInfo {
   role: string
   name: string
+  vago?: boolean
 }
 
 export interface Section {
@@ -79,4 +80,27 @@ export function companyStats(c: Company): CompanyStats {
     }
   }
   return { total, vagas, lideres, todo }
+}
+
+/** Total de pessoas do ecossistema: conta cada nome uma vez, mesmo que apareça em mais de uma empresa. */
+export function ecosystemTotal(companies: Company[]): number {
+  const names = new Set<string>()
+  const add = (name?: string) => {
+    if (!name || /contratar|a definir/i.test(name)) return
+    names.add(name.replace(/\s+—\s+CEO$/, "").trim().toLowerCase())
+  }
+  for (const c of companies) {
+    if (c.chief && !c.chief.vago) add(c.chief.name)
+    for (const sec of c.sections || []) {
+      if (sec.chief && !sec.chief.vago) add(sec.chief.name)
+      if (sec.subchief && !sec.subchief.vago) add(sec.subchief.name)
+      for (const col of sec.cols || []) {
+        for (const p of col.people || []) {
+          if (p.ref || p.vago) continue
+          add(p.name)
+        }
+      }
+    }
+  }
+  return names.size
 }
