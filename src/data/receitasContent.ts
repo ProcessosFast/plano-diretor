@@ -31,6 +31,12 @@ export const FRONT_OFFICE_CARDS: RevenueCard[] = [
     { label: "Registra em", value: "Operacional do canal atendido" },
     { label: "Remuneração", value: "Comissão sobre a receita da venda" },
   ]},
+  { title: "Fast Aço", subtitle: "Diretoria: Fabio Furtado · Gerência: Vagner Goltara", accent: "front", kv: [
+    { label: "Canal", value: "Aço" },
+    { label: "Receita gerada", value: "Venda de aço" },
+    { label: "Registra em", value: "SUPPLY-LMS — operacional atacadista" },
+    { label: "Remuneração", value: "Comissão sobre a receita da venda" },
+  ]},
   { title: "Comercial Franqueados", subtitle: "Diretoria: Leandro — frente B", accent: "front", kv: [
     { label: "Canal", value: "Franquias" },
     { label: "Receita gerada", value: "Venda de produtos ao franqueado" },
@@ -64,7 +70,7 @@ export const OPERACIONAIS_CARDS: RevenueCard[] = [
   ]},
   { title: "SUPPLY-LMS", subtitle: "Operação atacadista nacional", accent: "oper", kv: [
     { label: "Receita", value: "Todas as vendas do canal atacado" },
-    { label: "Observação", value: "Recebe demanda de FAST Atacado e do Comercial Franqueados" },
+    { label: "Observação", value: "Recebe demanda de FAST Atacado, do Comercial Franqueados e da Fast Aço" },
   ]},
   { title: "DCS-CM — Casa do Montador", subtitle: "Operação de varejo — lojas e balcão", accent: "oper", kv: [
     { label: "Receita", value: "Todas as vendas do canal varejo" },
@@ -128,6 +134,7 @@ export const PENDING_ROWS: PendingRow[] = [
   { unidade: "FAST Obras / Homes", percentual: "A definir", base: "Receita do projeto", validacao: "Controladoria" },
   { unidade: "Comércio Digital", percentual: "A definir", base: "Receita digital", validacao: "Controladoria" },
   { unidade: "Comercial Franqueados", percentual: "A definir", base: "Receita SUPPLY-LMS", validacao: "Controladoria" },
+  { unidade: "Fast Aço", percentual: "A definir", base: "Receita SUPPLY-LMS", validacao: "Controladoria" },
   { unidade: "FAST Importação", percentual: "A definir", base: "A definir", validacao: "Conselho / Fiscal" },
   { unidade: "FAST Franchising", percentual: "A definir", base: "Faturamento da rede", validacao: "Controladoria" },
   { unidade: "CSC · Unity · Engenharia · Log Express", percentual: "A definir", base: "Rateio (Item 10)", validacao: "Holding" },
@@ -204,6 +211,7 @@ export interface FlowNode {
 export const FLOW_LEFT: FlowNode[] = [
   { id: "fl-atacado", title: "FAST Atacado", subtitle: "Poliana" },
   { id: "fl-franq", title: "Comercial Franqueados", subtitle: "Leandro · frente B" },
+  { id: "fl-aco", title: "Fast Aço", subtitle: "Fabio Furtado · Vagner Goltara" },
   { id: "fl-varejo", title: "FAST Varejo", subtitle: "Denise" },
   { id: "fl-digital", title: "Comércio Digital", subtitle: "Auren" },
   { id: "fl-obras", title: "FAST Obras", subtitle: "Fabio Furtado" },
@@ -223,6 +231,7 @@ export const FLOW_RIGHT: FlowNode[] = [
 export const FLOW_LINKS: [string, string, string, boolean][] = [
   ["fl-atacado", "fr-supply", "#D62828", false],
   ["fl-franq", "fr-supply", "#D62828", false],
+  ["fl-aco", "fr-supply", "#D62828", false],
   ["fl-varejo", "fr-dcs", "#D62828", false],
   ["fl-digital", "fr-canal", "#D62828", false],
   ["fl-obras", "fr-canal", "#D62828", false],
