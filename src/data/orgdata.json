@@ -1280,23 +1280,7 @@
      "role": "Diretor de Franquias",
      "name": "Leandro Correa Martins"
     },
-    "subchief": {
-     "role": "Gerente comercial",
-     "name": "Robert Nascimento Duarte"
-    },
     "cols": [
-     {
-      "k": "GERÊNCIA",
-      "s": "Gestão da unidade",
-      "accent": "#7c4dff",
-      "people": [
-       {
-        "role": "Gerente comercial",
-        "name": "Robert Nascimento Duarte",
-        "lead": true
-       }
-      ]
-     },
      {
       "k": "EXPANSÃO",
       "s": "Liderança: Pedro Viana Lima Rodrigues Neto",
@@ -1321,6 +1305,54 @@
       ]
      },
      {
+      "k": "ADMINISTRATIVO",
+      "s": "Financeiro e faturamento",
+      "accent": "#c2751a",
+      "people": [
+       {
+        "role": "Auxiliar financeiro · Contratante: CSC",
+        "name": "Iago do Espirito Santo Sandonato",
+        "emp": "CSC"
+       },
+       {
+        "role": "Auxiliar de faturamento",
+        "name": "Juliana Rodrigues Bezerra"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "comercialfranquias",
+  "name": "Comercial Franquias",
+  "sections": [
+   {
+    "title": "Comercial Franquias",
+    "hint": "Diretoria: Leandro Correa Martins · Gerência: Robert Nascimento Duarte",
+    "chief": {
+     "role": "Diretor de Franquias",
+     "name": "Leandro Correa Martins"
+    },
+    "subchief": {
+     "role": "Gerente comercial",
+     "name": "Robert Nascimento Duarte"
+    },
+    "cols": [
+     {
+      "k": "GERÊNCIA",
+      "s": "Gestão comercial",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Robert Nascimento Duarte",
+        "lead": true
+       }
+      ]
+     },
+     {
       "k": "COMERCIAL",
       "s": "Gerência: Robert Nascimento Duarte",
       "accent": "#2563eb",
@@ -1336,22 +1368,6 @@
        {
         "role": "Promotor interno",
         "name": "Jucier Pereira de Oliveira"
-       }
-      ]
-     },
-     {
-      "k": "ADMINISTRATIVO",
-      "s": "Financeiro e faturamento",
-      "accent": "#c2751a",
-      "people": [
-       {
-        "role": "Auxiliar financeiro · Contratante: CSC",
-        "name": "Iago do Espirito Santo Sandonato",
-        "emp": "CSC"
-       },
-       {
-        "role": "Auxiliar de faturamento",
-        "name": "Juliana Rodrigues Bezerra"
        }
       ]
      }

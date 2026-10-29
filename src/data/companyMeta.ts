@@ -127,9 +127,9 @@ export const FRONT: ClusterMeta = {
     },
     {
       t: "Comercial Franquias",
-      u: "A definir",
-      org: null,
-      d: "Diretoria Comercial de Franquias. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising. Observação: formação embrionária, em implementação.",
+      u: "Leandro Correa Martins",
+      org: "comercialfranquias",
+      d: "Diretoria Comercial de Franquias — Leandro Correa Martins, com gerência comercial de Robert Nascimento Duarte. Promove e vende novas unidades franqueadas da rede; a receita é registrada na FAST Franchising.",
     },
   ],
   angs: [-14, 0, 14, 27, 41, 55, 69, 82, 96],
