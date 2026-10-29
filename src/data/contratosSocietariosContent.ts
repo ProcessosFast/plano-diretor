@@ -140,7 +140,7 @@ export const SOCIETARIO_CATEGORIES: SocietarioCategory[] = [
       { empresa: "FAST Varejo", status: "pendente" },
       { empresa: "FAST Homes", status: "pendente", observacoes: "Separada da FAST Obras nesta revisão do organograma — mesma diretoria (Fabio Furtado) e mesma equipe comercial hoje, que ainda transita entre as duas frentes." },
       { empresa: "FAST Obras", status: "pendente", observacoes: "Separada da FAST Homes nesta revisão do organograma — mesma diretoria (Fabio Furtado) e mesma equipe comercial hoje, que ainda transita entre as duas frentes." },
-      { empresa: "Atacado para Franqueados", status: "pendente" },
+      { empresa: "Comercial Franqueados", status: "pendente" },
       { empresa: "Comércio Digital", status: "pendente" },
       { empresa: "FAST Importação", status: "pendente", observacoes: "Modelo Embrionário, aguardando consolidação." },
       { empresa: "Comercial Franquias", status: "pendente", observacoes: "Nova frente comercial para venda de novas unidades franqueadas; receita a ser registrada na FAST Franchising. Modelo Embrionário, aguardando consolidação." },

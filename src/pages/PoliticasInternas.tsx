@@ -32,7 +32,7 @@ const FRONTOFFICE_TABS = [
   { id: "varejo", label: "FAST Varejo" },
   { id: "homes", label: "FAST Homes" },
   { id: "obras", label: "FAST Obras" },
-  { id: "atacado-franqueados", label: "Atacado p/ Franqueados" },
+  { id: "atacado-franqueados", label: "Comercial Franqueados" },
   { id: "digital", label: "Comércio Digital" },
   { id: "importacao", label: "FAST Importação" },
   { id: "comercial-franquias", label: "Comercial Franquias" },
@@ -148,7 +148,7 @@ export function PoliticasInternas() {
         <EmptyDocPlaceholder title="FAST Importação" description="Unidade de negócio comercial de desenvolvimento internacional de fornecedores; as importações são executadas pelas operacionais (MaxSteel, DCS/CM e LMS/SUPPLY). Aguardando o documento de política interna. Observação: Modelo Embrionário, aguardando consolidação." />
       )}
       {active === "atacado-franqueados" && (
-        <EmptyDocPlaceholder title="Atacado para Franqueados" description="Abastecimento comercial das unidades franqueadas (frente B da Diretoria de Leandro). Aguardando o documento de política interna." />
+        <EmptyDocPlaceholder title="Comercial Franqueados" description="Abastecimento comercial das unidades franqueadas (frente B da Diretoria de Leandro). Aguardando o documento de política interna." />
       )}
       {active === "csc" && <CscPolicy />}
       {active === "atacado" && <AtacadoPolicy />}

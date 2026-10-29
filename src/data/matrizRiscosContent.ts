@@ -161,7 +161,7 @@ export const RISKS: Risk[] = [
     id: "r10",
     categoria: "Financeiro",
     risco: "Percentuais de comissão e royalty por unidade comercial não definidos",
-    causa: "As unidades comerciais (Atacado, Varejo, Obras/Homes, Digital, Atacado p/ Franqueados, Importação) seguem sem percentual de comissão aprovado no Mapa de Receitas — cada uma promove e vende, mas a régua de remuneração ainda não foi fechada pela Diretoria/Holding.",
+    causa: "As unidades comerciais (Atacado, Varejo, Obras/Homes, Digital, Comercial Franqueados, Importação) seguem sem percentual de comissão aprovado no Mapa de Receitas — cada uma promove e vende, mas a régua de remuneração ainda não foi fechada pela Diretoria/Holding.",
     fonte: "Plano Diretor · Item 11 · Mapa de Receitas (Campos a Preencher)",
     probabilidade: 7,
     impacto: 6,
