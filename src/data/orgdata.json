@@ -5,118 +5,124 @@
   "sections": [
    {
     "title": "Comercial",
-    "hint": "Gestão: Poliana Alves",
+    "hint": "Gestão: Poliana Alves dos Santos",
     "chief": {
-     "role": "Gestão do Atacado · Comercial",
-     "name": "Poliana Alves"
+     "role": "Diretora comercial de Atacado",
+     "name": "Poliana Alves dos Santos"
     },
     "cols": [
      {
       "k": "TELEVENDAS",
-      "s": "Gestão: Poliana Alves",
+      "s": "Coordenação: Juliana Marcico de Lima",
       "accent": "#d71920",
       "people": [
        {
-        "role": "Vendedora Líder",
-        "name": "Juliana Marcico",
-        "lead": true
-       },
-       {
-        "role": "Representante Comercial",
-        "name": "Thales Oliveira",
+        "role": "Coordenadora comercial",
+        "name": "Juliana Marcico de Lima",
         "lead": true
        },
        {
         "role": "Vendedor",
-        "name": "Antonio Junior"
+        "name": "Antonio Alves de Jesus Junior"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Eliziane Cristina da Silva"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Gabriella Regina dos Santos"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Gessica de Sena Gomes"
+       },
+       {
+        "role": "Promotor interno",
+        "name": "Jefferson Paulo Campos"
        },
        {
         "role": "Vendedor",
-        "name": "Pedro Guiot"
+        "name": "Jonathas de Souza Daniel"
+       },
+       {
+        "role": "Vendedora líder",
+        "name": "Letícia Vitoria da Silva Peixoto"
        },
        {
         "role": "Vendedora",
-        "name": "Eliziane Silva"
-       },
-       {
-        "role": "Vendedora",
-        "name": "Letícia Vitória"
-       },
-       {
-        "role": "Vendedora",
-        "name": "Jessica Ramalho"
-       },
-       {
-        "role": "Vendedora",
-        "name": "Géssica Gomes"
+        "name": "Nidia Silva Fujihara"
        },
        {
         "role": "Vendedor",
-        "name": "Jonathas Daniel"
+        "name": "Pedro Guiot da Costa"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Priscilla Breder Monteiro de Barros"
        },
        {
         "role": "Vendedor",
-        "name": "Wellington Gomes"
+        "name": "Vitor Ribeiro Camargo da Silva"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Wellington Gomes Nepomuceno"
        }
       ]
      },
      {
       "k": "B2B",
-      "s": "Líder: Osmar Júnior",
+      "s": "Coordenação: Osmar Oliveira Ramos Júnior",
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Vendedor Líder",
-        "name": "Osmar Júnior",
+        "role": "Coordenador comercial",
+        "name": "Osmar Oliveira Ramos Júnior",
         "lead": true
        },
        {
-        "role": "Executivo B2B",
-        "name": "Nadia Pereira"
+        "role": "Vendedora (atua na DCS Mogi)",
+        "name": "Camila Silva Campos"
        },
        {
-        "role": "Executivo B2B",
-        "name": "Nidia Fujihara"
+        "role": "Executivo de vendas",
+        "name": "Diego Bonfatti"
        },
        {
-        "role": "Executivo B2B (também listada na equipe DCS)",
-        "name": "Camila Campos"
+        "role": "Vendedor líder (atua na DCS Mogi)",
+        "name": "Michel Martins da Costa"
        },
        {
-        "role": "Executivo B2B",
-        "name": "Ricardo Faria"
+        "role": "Executiva de vendas",
+        "name": "Nadia Cleci de Araujo Pereira"
        },
        {
-        "role": "Executivo B2B",
+        "role": "Executivo de vendas",
+        "name": "Ricardo Honorato Faria"
+       },
+       {
+        "role": "Auxiliar de serviços gerais (atua na DCS Mogi)",
+        "name": "Roberta Souza Baratino"
+       },
+       {
+        "role": "Executivo de vendas",
         "name": "Weider Fusco"
-       },
-       {
-        "role": "Executivo B2B",
-        "name": "Gabriella Santos"
-       },
-       {
-        "role": "Executivo B2B (também listado na equipe DCS)",
-        "name": "Michel Costa"
        }
       ]
      },
      {
       "k": "ATACADO NORDESTE",
-      "s": "Gestão: à contratar",
+      "s": "Gestão: à contratar · reportam direto à Poliana",
       "accent": "#0f9d6b",
       "people": [
        {
-        "role": "Vendedor Atacado",
-        "name": "Nivia Porto"
+        "role": "Vendedor",
+        "name": "Antonio Ramon Carvalho dos Santos"
        },
        {
-        "role": "Vendedor Atacado",
-        "name": "Bruno Jesus"
-       },
-       {
-        "role": "Vendedor Atacado",
-        "name": "A contratar",
-        "vago": true
+        "role": "Vendedor",
+        "name": "Bruno Miranda de Jesus"
        },
        {
         "role": "Vendedor Atacado",
@@ -142,11 +148,11 @@
       "people": [
        {
         "role": "Lojas RJ",
-        "name": "Francianne Lago"
+        "name": "Francianne Lago Lopes"
        },
        {
         "role": "Lojas Outros Estados",
-        "name": "Carlos Júnior"
+        "name": "Carlos Marcelo da Costa Machado Junior"
        }
       ]
      }
@@ -155,11 +161,10 @@
    {
     "title": "Administrativo do Atacado",
     "hint": "Dois times de coordenação",
-    "adm": true,
     "cols": [
      {
       "k": "COORDENAÇÃO",
-      "s": "Lidiane Amaro",
+      "s": "Lidiane Lais Domingues Amaro",
       "accent": "#0f766e",
       "ops": [
        "Atacado B2B",
@@ -168,22 +173,26 @@
       ],
       "people": [
        {
-        "role": "Administrativo · ADM",
-        "name": "Beatriz"
+        "role": "Assistente de faturamento",
+        "name": "Beatriz de Andrade Carvalho"
        },
        {
-        "role": "Administrativo · ADM",
-        "name": "Caio"
+        "role": "Auxiliar de faturamento",
+        "name": "Caio Guimaraes Detrano da Silva"
        },
        {
-        "role": "Faturamento · FAT",
-        "name": "Luiz"
+        "role": "Auxiliar administrativo",
+        "name": "Luiz Philipe Ramos Privat"
+       },
+       {
+        "role": "Analista de faturamento júnior",
+        "name": "Thayane Carvalho Martins da Silva"
        }
       ]
      },
      {
       "k": "COORDENAÇÃO",
-      "s": "Maria Priscilla",
+      "s": "Maria Priscilla Andrade da Silva de Lacerda",
       "accent": "#c2751a",
       "ops": [
        "Televendas",
@@ -192,29 +201,16 @@
       ],
       "people": [
        {
-        "role": "Administrativo · ADM",
-        "name": "Jefferson"
+        "role": "Auxiliar administrativo",
+        "name": "Caio Felipe Alves Novaes"
        },
        {
-        "role": "Administrativo · ADM",
-        "name": "Caio Felipe"
-       },
-       {
-        "role": "Estágio · EST",
-        "name": "Luisa"
-       },
-       {
-        "role": "Faturamento · FAT",
-        "name": "Thayane"
+        "role": "Auxiliar administrativo",
+        "name": "Yllan Victor da Silva"
        }
       ]
      }
-    ],
-    "focal": {
-     "role": "Administrativo · ADM — Ponto Focal DCS Mogi",
-     "name": "Yllan",
-     "tagline": "Apoio transversal a todo o ADM"
-    }
+    ]
    }
   ]
  },
@@ -222,8 +218,8 @@
   "id": "varejo",
   "name": "FAST Varejo",
   "chief": {
-   "role": "Diretora Nacional de Varejo",
-   "name": "Denise"
+   "role": "Diretora comercial de Varejo",
+   "name": "Denise Regina da Silva Moura"
   },
   "sections": [
    {
@@ -236,13 +232,13 @@
       "accent": "#C4161C",
       "people": [
        {
-        "role": "Gerente Regional · Lojas Rio",
-        "name": "Franciane",
+        "role": "Gerente comercial regional · Lojas Rio",
+        "name": "Francianne Lago Lopes",
         "lead": true
        },
        {
-        "role": "Gerente Regional · Lojas fora do Rio",
-        "name": "Carlos",
+        "role": "Gerente regional · Lojas fora do Rio",
+        "name": "Carlos Marcelo da Costa Machado Junior",
         "lead": true
        }
       ]
@@ -259,7 +255,7 @@
       "accent": "#C4161C",
       "people": [
        {
-        "role": "Gerente",
+        "role": "Gerente comercial",
         "name": "Gleisy Kelly Santela da Silva",
         "lead": true
        },
@@ -268,28 +264,28 @@
         "name": "Carlos Eduardo Moraes Camargo"
        },
        {
-        "role": "Ajudante de Expedição",
-        "name": "Cláudio Henrique Aparecido da Silva"
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Claudio Henrique Aparecido"
        },
        {
         "role": "Vendedor",
         "name": "Faedes Guardiano Silveira"
        },
        {
-        "role": "Conferente de Expedição",
-        "name": "José Carlos Costa Bruno"
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Franklin Tatsho Leonardo Tamanaha"
+       },
+       {
+        "role": "Conferente · matricial: Josiel Dias da Silva",
+        "name": "Jose Carlos Costa Bruno"
        },
        {
         "role": "Vendedor",
-        "name": "José Carlos Ibanhez de Miranda"
+        "name": "Jose Carlos Ibanhez de Mirada"
        },
        {
-        "role": "Ajudante de Expedição",
-        "name": "Kauai Felipe Zeballos Genovez"
-       },
-       {
-        "role": "Operador de Empilhadeira · intermitente (cobertura de férias do conferente José Carlos Costa Bruno)",
-        "name": "Franklin"
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Kauai Felipe Zaballos"
        }
       ]
      }
@@ -297,7 +293,7 @@
    },
    {
     "title": "Loja Campo Grande — RJ",
-    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: RETRIBUIÇÃO COMÉRCIO DE MATERIAIS DE CONSTRUÇÃO LTDA",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Contratante: RETRIBUIÇÃO COMÉRCIO DE MATERIAIS DE CONSTRUÇÃO LTDA · sem gerente: equipe reporta direto à regional Francianne",
     "cols": [
      {
       "k": "LOJA CAMPO GRANDE · RJ",
@@ -310,16 +306,20 @@
         "vago": true
        },
        {
-        "role": "Ajudante de Galpão",
-        "name": "Juan"
-       },
-       {
-        "role": "Vendedor",
-        "name": "Felipe"
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "Juan Sales Rodrigues Pereira"
        },
        {
         "role": "Vendedora",
-        "name": "Thamires"
+        "name": "Monalis Rodrigues da Silva"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Robson Luiz Nascimento Nogueira Junior"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Wellington de Araujo Carneiro"
        }
       ]
      }
@@ -336,59 +336,42 @@
       "wide": true,
       "people": [
        {
-        "role": "Gerente",
-        "name": "Tayane",
+        "role": "Gerente comercial júnior",
+        "name": "Tayane dos Santos Oliveira",
         "lead": true
        },
        {
-        "role": "A definir",
-        "name": "Allan Santos Mota",
-        "todo": true
+        "role": "Operador de empilhadeira · matricial: Josiel Dias da Silva",
+        "name": "Belmiro Fiel do Carmo"
        },
        {
-        "role": "A definir",
-        "name": "Belmiro Fiel do Carmo",
-        "todo": true
+        "role": "Conferente · matricial: Josiel Dias da Silva",
+        "name": "Brendo Costa de Andrade"
        },
        {
-        "role": "A definir",
-        "name": "Brendo Costa de Andrade",
-        "todo": true
+        "role": "Vendedor",
+        "name": "Flavio Santos da Silva"
        },
        {
-        "role": "A definir",
-        "name": "Claudemiro Rodrigues de Carvalho",
-        "todo": true
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Icaro Wanderley Silva Cerqueira"
        },
        {
-        "role": "A definir",
-        "name": "Flávio Santos da Silva",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Ícaro Wanderley Silva Cerqueira",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Ítalo Leonardo Neto Borges",
-        "todo": true
+        "role": "Vendedor",
+        "name": "Italo Leonardo Neto Borges"
        },
        {
         "role": "Venda de obras (FAST Obras — time de Fabio Furtado)",
-        "name": "Julia Katlen da Silva Pitombo de Mesquita",
+        "name": "Julia Pitombo",
         "ref": true
        },
        {
-        "role": "A definir",
-        "name": "Keile Ferreira Almeida",
-        "todo": true
+        "role": "Vendedora",
+        "name": "Keile Ferreira Almeida"
        },
        {
-        "role": "A definir",
-        "name": "Luis Caetano Monteiro Barros",
-        "todo": true
+        "role": "Vendedor",
+        "name": "Luis Caetano Monteiro Barros"
        }
       ]
      }
@@ -480,7 +463,7 @@
    },
    {
     "title": "Loja São João de Meriti — RJ",
-    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Franciane (lojas Rio) · Contratante: INFLUÊNCIA",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Contratante: INFLUÊNCIA",
     "cols": [
      {
       "k": "LOJA SÃO JOÃO DE MERITI · RJ",
@@ -488,41 +471,37 @@
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Gerente",
-        "name": "Elaine",
+        "role": "Gerente comercial",
+        "name": "Elaine da Silva Dias",
         "lead": true
        },
        {
-        "role": "Vendedor",
-        "name": "Douglas"
+        "role": "Vendedora",
+        "name": "Alessandra Aparecida da Costa Rocha"
        },
        {
-        "role": "Vendedora",
-        "name": "Luana"
+        "role": "Vendedora líder",
+        "name": "Alessandra Vanessa Valença"
        },
        {
-        "role": "Vendedora",
-        "name": "Alessandra Rocha"
-       },
-       {
-        "role": "Vendedora",
-        "name": "Alessandra Vanessa"
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Bruno dos Santos de Souza"
        },
        {
         "role": "Vendedor",
-        "name": "Guilherme"
+        "name": "Guilherme Jose Fonseca dos Santos"
        },
        {
-        "role": "Conferente · Galpão",
-        "name": "Marcos"
+        "role": "Vendedora",
+        "name": "Luana Monteiro Teles"
        },
        {
-        "role": "Ajudante · Galpão",
-        "name": "Bruno"
+        "role": "Conferente · matricial: Wagner Soares de Medeiros",
+        "name": "Marcos Maia"
        },
        {
-        "role": "Operador de Empilhadeira · Galpão",
-        "name": "Renan"
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Renan Mateus Ramos da Silva"
        }
       ]
      }
@@ -554,13 +533,47 @@
    },
    {
     "title": "Loja Curitiba — PR",
-    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: A definir",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Contratante: DCS",
     "cols": [
      {
       "k": "LOJA CURITIBA · PR",
-      "s": "Cargos a definir",
+      "s": "Gerência: Marcos Antonio Quiterio · antiga equipe DCS Curitiba",
       "accent": "#0f9d6b",
-      "people": []
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Marcos Antonio Quiterio",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Carlos Eduardo de Moraes"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Adriano Vieira de Santana",
+        "name": "Daniel de Souza"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Fabiana de Lima dos Santos"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Adriano Vieira de Santana",
+        "name": "Jedison Luis Toso"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Joao Paulo Cavaleiro do Amaral"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Mario Agostini Carara"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Adriano Vieira de Santana",
+        "name": "Willian Cordeiro de Paula"
+       }
+      ]
      }
     ]
    },
@@ -575,6 +588,484 @@
       "people": []
      }
     ]
+   },
+   {
+    "title": "Loja a identificar — Camila Cristina",
+    "hint": "Reporta direto à Diretoria Nacional de Varejo — Denise (sem regional) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · CAMILA CRISTINA",
+      "s": "Gerência: Camila Cristina de Oliveira Estevão · loja a identificar",
+      "accent": "#C4161C",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Camila Cristina de Oliveira Estevão",
+        "lead": true
+       },
+       {
+        "role": "Vendedora",
+        "name": "Ana Clara Silva de Farias"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Calini Miranda Vidal Teixeira Carvalho"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Lucas Batista Trindade"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Maria Eduarda Moura de Almeida"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Elmarques Dionisio",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · ELMARQUES DIONISIO",
+      "s": "Gerência: Elmarques Dionisio Vieira · loja a identificar",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Elmarques Dionisio Vieira",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Dhemis Fernandes Quintino da Silva"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Elizandra Silva de Oliveira"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Josiel Dias da Silva",
+        "name": "Gutemberg Silva de Souza"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Luan Cajá Ricardo"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Josiel Dias da Silva",
+        "name": "Robson Lima Filho"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Kate Mendes",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · KATE MENDES",
+      "s": "Gerência: Kate Mendes da Silva Pitta · loja a identificar",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Kate Mendes da Silva Pitta",
+        "lead": true
+       },
+       {
+        "role": "Conferente · matricial: Adriano Vieira de Santana",
+        "name": "Diogenes Rodrigues da Silva"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Adriano Vieira de Santana",
+        "name": "Fabricio Alves Abade Souza"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Adriano Vieira de Santana",
+        "name": "Idael Andrade de Sousa"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Josie Ramos da Silva"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Adriano Vieira de Santana",
+        "name": "Josimar Santos Silva"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Nivia Helena Santos Porto"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Adriano Vieira de Santana",
+        "name": "Ruan Estrela dos Santos"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Marco Antonio",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Carlos (lojas fora do Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · MARCO ANTONIO",
+      "s": "Gerência: Marco Antonio Tavares de Quinhoes · loja a identificar",
+      "accent": "#0f9d6b",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Marco Antonio Tavares de Quinhoes",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Flavio de Oliveira Souza"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Adriano Vieira de Santana",
+        "name": "Joaquim Lino da Silva"
+       },
+       {
+        "role": "Conferente · matricial: Adriano Vieira de Santana",
+        "name": "Josinei de Oliveira Santos"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Mayara Aparecida Layer"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Rafael Conrado de Oliveira"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Adriano Vieira de Santana",
+        "name": "Windsor Crispim da Silva"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Deisiane Benevento",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · DEISIANE BENEVENTO",
+      "s": "Gerência: Deisiane Benevento Pereira · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Deisiane Benevento Pereira",
+        "lead": true
+       },
+       {
+        "role": "Vendedor sênior",
+        "name": "Cleber Duarte de Sousa"
+       },
+       {
+        "role": "Vendedor líder",
+        "name": "Eddylamar Pereira da Silva"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Henrique Santos do Carmo"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "João Augusto Andrade da Silva"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Paulo Cesar de Oliveira Filho"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Pedro Henrique Oliveira Viana"
+       },
+       {
+        "role": "Encarregado de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Valcir Mariano Dias"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Wendell Cesar Ferreira da Silva"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Leonardo Pinheiro",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · LEONARDO PINHEIRO",
+      "s": "Gerência: Leonardo Pinheiro Pereira · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Leonardo Pinheiro Pereira",
+        "lead": true
+       },
+       {
+        "role": "Vendedor",
+        "name": "Fernando Amorim de Moraes"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "João Gabriel Ferreira Cardoso"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Leonardo Barbosa Saraiva"
+       },
+       {
+        "role": "Conferente · matricial: Wagner Soares de Medeiros",
+        "name": "Matheus Ramaciote Barbosa dos Santos"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Pablo Oliveira Lubanco"
+       },
+       {
+        "role": "Vendedor líder",
+        "name": "Patrick Pires da Silva"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Victor Hugo da Silva de Medeiros"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Leticia Bezerra",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · LETICIA BEZERRA",
+      "s": "Gerência: Leticia Bezerra de Almeida · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Vendedora líder; referência local",
+        "name": "Leticia Bezerra de Almeida",
+        "lead": true
+       },
+       {
+        "role": "Auxiliar de almoxarifado · matricial: Wagner Soares de Medeiros",
+        "name": "Alan Pereira Siqueira"
+       },
+       {
+        "role": "Vendedor líder",
+        "name": "Carlos Eduardo Pereira Braga"
+       },
+       {
+        "role": "Encarregado de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Daniel de Souza Suzano"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Luan dos Santos Rodrigues"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "Lucas Lago Lopes"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Maria Eduarda Gomes Freires"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Marina Sales de Oliveira"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Ronald Felipe Emilio Nogueira"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Thiago Luiz Guimarães"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Vitor Artur dos Santos Oliveira"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Washington Jorge Alves Junior"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Priscila Freitas",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · PRISCILA FREITAS",
+      "s": "Gerência: Priscila Freitas Velloso · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Priscila Freitas Velloso",
+        "lead": true
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Gabriel de Oliveira Laurindo"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Isadora de Brito Rabello"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Jheniffer Nathalia da Silva Lauriano"
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "Leonardo Rodrigues Neto"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Luiz Filipe da Costa Meirelles"
+       },
+       {
+        "role": "Vendedora líder",
+        "name": "Thayanne Pinto Belizario"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Stefany Vieira",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · STEFANY VIEIRA",
+      "s": "Gerência: Stefany Vieira da Silva · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Stefany Vieira da Silva",
+        "lead": true
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Alexander Max William de Lima"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Daniela Cristina da Silva Videira"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Joao Batista da Silva Martins"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Steffani Oliveira Alves"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Thiago de",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · THIAGO DE",
+      "s": "Gerência: Thiago de Mendonça Peixoto · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial",
+        "name": "Thiago de Mendonça Peixoto",
+        "lead": true
+       },
+       {
+        "role": "Operador de empilhadeira · matricial: Wagner Soares de Medeiros",
+        "name": "Alex Sandro Barbosa da Cunha"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Bruno Rock Santana Froes"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Gabriel Sousa de Oliveira"
+       },
+       {
+        "role": "Vendedora líder",
+        "name": "Lucia Helena Lima Mendes"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loja a identificar — Vanessa Nunes",
+    "hint": "Reporta à Diretoria Nacional de Varejo — Denise · Regional: Francianne (lojas Rio) · Loja a identificar",
+    "cols": [
+     {
+      "k": "LOJA · VANESSA NUNES",
+      "s": "Gerência: Vanessa Nunes Eugenio · loja a identificar",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Gerente comercial júnior",
+        "name": "Vanessa Nunes Eugenio",
+        "lead": true
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Aldo Michel Silva de Ramos"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Carlos Henrique Campelo Silva"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Davi Alves da Cunha"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Igor de Oliveira Nascimento"
+       },
+       {
+        "role": "Ajudante de galpão · matricial: Wagner Soares de Medeiros",
+        "name": "Luciano Jose de Sousa da Silva"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Patricia Rodrigues Figueira Ferraz"
+       },
+       {
+        "role": "Vendedor",
+        "name": "Rafael de Araujo Silva Leão"
+       },
+       {
+        "role": "Vendedora líder",
+        "name": "Sabrina Queiroz da Silva"
+       }
+      ]
+     }
+    ]
    }
   ]
  },
@@ -584,87 +1075,89 @@
   "sections": [
    {
     "title": "Comercial",
-    "hint": "Diretoria: Fabio Furtado · FAST Homes e FAST Obras são duas empresas comerciais (Front Office) separadas nesta revisão; a equipe abaixo ainda é única e transita entre as duas frentes.",
+    "hint": "Diretoria: Fabio Furtado · FAST Homes, FAST Obras, Fast Aço e Steel Conecta (comercial)",
     "chief": {
-     "role": "Diretor Comercial · Contratante: RUCHE DESIGN LTDA",
+     "role": "Diretor comercial · Contratante: RUCHE DESIGN LTDA",
      "name": "Fabio Furtado"
     },
     "cols": [
      {
-      "k": "LÍDER COMERCIAL",
-      "s": "Transita nas duas frentes",
-      "accent": "#7c4dff",
-      "ops": [
-       "FAST Homes",
-       "FAST Obras"
-      ],
-      "people": [
-       {
-        "role": "Líder Comercial · volante · Contratante: RUCHE DESIGN LTDA",
-        "name": "Erly Junior",
-        "lead": true,
-        "emp": "RUCHE DESIGN LTDA"
-       }
-      ]
-     },
-     {
       "k": "FAST HOMES",
-      "s": "Vendas",
+      "s": "Gerência: Erly Amorim Rocha Junior",
       "accent": "#0f9d6b",
       "people": [
        {
-        "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
-        "name": "Fabrício",
-        "emp": "RUCHE DESIGN LTDA"
+        "role": "Gerente da Fast Homes — comercial · Contratante: RUCHE DESIGN LTDA",
+        "name": "Erly Amorim Rocha Junior",
+        "emp": "RUCHE DESIGN LTDA",
+        "lead": true
        },
        {
         "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
-        "name": "Wanderson",
+        "name": "Fabricio Rocha de Oliveira",
+        "emp": "RUCHE DESIGN LTDA"
+       },
+       {
+        "role": "Vendedora",
+        "name": "Lumma Cordeiro Martins"
+       },
+       {
+        "role": "Vendedora · Contratante: RUCHE DESIGN LTDA",
+        "name": "Mirian da Silva Carmo",
         "emp": "RUCHE DESIGN LTDA"
        }
       ]
      },
      {
       "k": "FAST OBRAS",
-      "s": "Vendas por região",
+      "s": "Gerência: Julia Pitombo",
       "accent": "#d71920",
       "people": [
        {
-        "role": "Venda de obras — Norte, Nordeste e Centro-Oeste (também na Loja Camaçari — BA) · Contratante: GYPMASTER",
-        "name": "Júlia",
+        "role": "Gerente da Fast Obras — comercial (também na Loja Camaçari — BA) · Contratante: GYPMASTER",
+        "name": "Julia Pitombo",
+        "lead": true,
         "emp": "GYPMASTER"
-       },
-       {
-        "role": "Venda de obras — Sul · Contratante: RUCHE DESIGN LTDA",
-        "name": "Barreto",
-        "emp": "RUCHE DESIGN LTDA"
-       },
-       {
-        "role": "Vendedora · Contratante: RUCHE DESIGN LTDA",
-        "name": "Mirian",
-        "emp": "RUCHE DESIGN LTDA"
-       },
-       {
-        "role": "Vendedora · Contratante: RUCHE DESIGN LTDA",
-        "name": "Thayná",
-        "emp": "RUCHE DESIGN LTDA"
        }
       ]
      },
      {
-      "k": "NOVA METÁLICA",
-      "s": "Gerência: Wagner",
+      "k": "FAST AÇO",
+      "s": "Gerência: Vagner Goltara",
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Gerente Comercial · Contratante: MAXSTEEL",
-        "name": "Wagner",
+        "role": "Gerente comercial da Fast Aço · Contratante: MAXSTEEL",
+        "name": "Vagner Goltara",
         "lead": true,
         "emp": "MAXSTEEL"
        },
        {
-        "role": "Vendedor · Contratante: RUCHE DESIGN LTDA",
-        "name": "Wallace",
+        "role": "Executivo de vendas",
+        "name": "Diogo Martins Silva"
+       },
+       {
+        "role": "BDR",
+        "name": "Lays Oliveira da Rocha"
+       },
+       {
+        "role": "Executivo de vendas",
+        "name": "Leonardo Souza Costa"
+       },
+       {
+        "role": "Executivo de vendas",
+        "name": "Raphael Souza Iche"
+       }
+      ]
+     },
+     {
+      "k": "STEEL CONECTA",
+      "s": "Comercial da rede",
+      "accent": "#7c4dff",
+      "people": [
+       {
+        "role": "Líder comercial da Steel Conecta · Contratante: RUCHE DESIGN LTDA",
+        "name": "Thayna Cristina de Souza Nunes",
         "emp": "RUCHE DESIGN LTDA"
        }
       ]
@@ -675,15 +1168,15 @@
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Assistente Administrativo · Contratante: RUCHE DESIGN LTDA",
-        "name": "Maria Izabel",
+        "role": "Assistente de faturamento · Contratante: RUCHE DESIGN LTDA",
+        "name": "Maria Izabel Franco de Oliveira Souza",
         "emp": "RUCHE DESIGN LTDA"
        }
       ]
      },
      {
-      "k": "OPERAÇÕES SUL",
-      "s": "Transita nas duas frentes",
+      "k": "OPERAÇÕES",
+      "s": "Transita nas frentes",
       "accent": "#123A63",
       "ops": [
        "FAST Homes",
@@ -691,10 +1184,10 @@
       ],
       "people": [
        {
-        "role": "Diretor de Operações Sul · Contratante: RUCHE DESIGN LTDA",
-        "name": "Gabriel",
-        "lead": true,
-        "emp": "RUCHE DESIGN LTDA"
+        "role": "Gerente de operações · Contratante: RUCHE DESIGN LTDA",
+        "name": "Gabriel Prado",
+        "emp": "RUCHE DESIGN LTDA",
+        "lead": true
        }
       ]
      }
@@ -708,14 +1201,14 @@
   "sections": [
    {
     "title": "Franquias",
-    "hint": "Diretoria: Leandro Martins",
+    "hint": "Diretoria: Leandro Correa Martins",
     "chief": {
-     "role": "Diretor",
-     "name": "Leandro Martins"
+     "role": "Diretor de Franquias",
+     "name": "Leandro Correa Martins"
     },
     "subchief": {
-     "role": "Gerente",
-     "name": "Robert Duarte"
+     "role": "Gerente comercial",
+     "name": "Robert Nascimento Duarte"
     },
     "cols": [
      {
@@ -724,63 +1217,67 @@
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Gerente",
-        "name": "Robert Duarte",
+        "role": "Gerente comercial",
+        "name": "Robert Nascimento Duarte",
         "lead": true
        }
       ]
      },
      {
-      "k": "IMPLANTAÇÃO",
-      "s": "Onboarding de franquias",
+      "k": "EXPANSÃO",
+      "s": "Liderança: Pedro Viana Lima Rodrigues Neto",
       "accent": "#0f9d6b",
       "people": [
        {
-        "role": "Coordenador de Implantação · Contratante: FAST DRYWALL FRANCHISING LTDA",
-        "name": "Pedro",
+        "role": "Líder de Expansão · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Pedro Viana Lima Rodrigues Neto",
         "lead": true,
+        "emp": "FAST DRYWALL FRANCHISING LTDA"
+       },
+       {
+        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Moises Oliveira Ferreira",
+        "emp": "FAST DRYWALL FRANCHISING LTDA"
+       },
+       {
+        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
+        "name": "Ygor Baioco Nascimento",
         "emp": "FAST DRYWALL FRANCHISING LTDA"
        }
       ]
      },
      {
       "k": "COMERCIAL",
-      "s": "Prospecção e vendas",
+      "s": "Gerência: Robert Nascimento Duarte",
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
-        "name": "Ygor",
-        "emp": "FAST DRYWALL FRANCHISING LTDA"
+        "role": "Vendedora",
+        "name": "Beatriz Madeira Guedes"
        },
        {
-        "role": "Closer · Contratante: FAST DRYWALL FRANCHISING LTDA",
-        "name": "Moisés",
-        "emp": "FAST DRYWALL FRANCHISING LTDA"
+        "role": "Promotora interna",
+        "name": "Gabriella de Souza Silva"
        },
        {
-        "role": "Consultor Comercial",
-        "name": "Jucier"
-       },
-       {
-        "role": "Consultora Comercial",
-        "name": "Gabriela"
-       },
-       {
-        "role": "Consultora Comercial",
-        "name": "Beatriz"
+        "role": "Promotor interno",
+        "name": "Jucier Pereira de Oliveira"
        }
       ]
      },
      {
       "k": "ADMINISTRATIVO",
-      "s": "Faturamento e ADM",
+      "s": "Financeiro e faturamento",
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Auxiliar de Faturamento · ADM · Contratante: CSC",
-        "name": "Yago",
+        "role": "Auxiliar financeiro · Contratante: CSC",
+        "name": "Iago do Espirito Santo Sandonato",
         "emp": "CSC"
+       },
+       {
+        "role": "Auxiliar de faturamento",
+        "name": "Juliana Rodrigues Bezerra"
        }
       ]
      }
@@ -796,8 +1293,8 @@
     "title": "Operações",
     "hint": "Setor de Compras",
     "chief": {
-     "role": "Diretor",
-     "name": "Josiel"
+     "role": "Diretor de Logística e Expedição",
+     "name": "Josiel Dias da Silva"
     },
     "cols": [
      {
@@ -806,18 +1303,18 @@
       "accent": "#0f766e",
       "people": [
        {
-        "role": "Analista Administrativo",
+        "role": "Analista de compras",
         "name": "Gabriel Silva dos Anjos",
         "lead": true,
         "emp": "Supply Chain Serviços LTDA"
        },
        {
-        "role": "Assistente Administrativo",
+        "role": "Assistente de compras",
         "name": "Bruno da Rocha Tamer",
         "emp": "Supply Chain Serviços LTDA"
        },
        {
-        "role": "Assistente Administrativo",
+        "role": "Assistente de compras",
         "name": "Caine Ruffo Torres Cabral Azevedo",
         "emp": "Supply Chain Serviços LTDA"
        }
@@ -833,32 +1330,26 @@
   "sections": [
    {
     "title": "Operações do Varejo",
-    "hint": "Diretoria: Josiel",
+    "hint": "Diretoria: Josiel Dias da Silva · matricial: Joselio Soares Rodrigues Junior",
     "chief": {
-     "role": "Diretor",
-     "name": "Josiel"
+     "role": "Diretor de Logística e Expedição",
+     "name": "Josiel Dias da Silva"
     },
     "cols": [
      {
       "k": "ABASTECIMENTO LOJAS",
-      "s": "Setor de abastecimento das lojas",
+      "s": "Setor de abastecimento das lojas · equipe compartilhada do DCS RJ",
       "accent": "#161C26",
       "people": [
        {
-        "role": "Analista de Estoque · Contratante: Influência",
-        "name": "Wellington Lima",
+        "role": "Analista de estoque júnior · liderança compartilhada: Tiago e Antônio · Contratante: Influência",
+        "name": "Wellington Lima Franca",
         "emp": "Influência",
         "hl": true
        },
        {
-        "role": "Estagiário · Contratante: MASTERSTEEL",
-        "name": "Gabriel Nicácio",
-        "emp": "MASTERSTEEL",
-        "hl": true
-       },
-       {
-        "role": "Assistente ADM · Contratante: Influência",
-        "name": "Bruna Odilon",
+        "role": "Assistente administrativo · liderança compartilhada: Tiago e Antônio · Contratante: Influência",
+        "name": "Bruna Odilon Lanceloti",
         "emp": "Influência",
         "hl": true
        }
@@ -866,103 +1357,29 @@
      },
      {
       "k": "GERÊNCIA",
-      "s": "Operações",
+      "s": "Expedição",
       "accent": "#123A63",
       "people": [
        {
-        "role": "Gerente de Operações",
+        "role": "Gerente de Expedição",
         "name": "Adriano Vieira de Santana",
+        "lead": true
+       },
+       {
+        "role": "Gerente de Expedição · matricial das equipes de galpão das lojas RJ",
+        "name": "Wagner Soares de Medeiros",
         "lead": true
        }
       ]
      },
      {
       "k": "EQUIPE",
-      "s": "Cargos a definir",
+      "s": "Equipe de Adriano Vieira de Santana",
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "A definir",
-        "name": "Franklin Tatsho Leonardo Tamanaha",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "João Paulo Cavalheiro do Amaral",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Leonardo Gomes Santos",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Luiz Gustavo de Oliveira",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Renan Inácio de Souza",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Ruan Estrela dos Santos",
-        "todo": true
-       },
-       {
-        "role": "A definir",
-        "name": "Wagner Ricardo Paulino Viana de Oliveira",
-        "todo": true
-       }
-      ],
-      "wide": true
-     },
-     {
-      "k": "DCS CURITIBA",
-      "s": "Filial Curitiba · Contratante: DCS",
-      "accent": "#2c8659",
-      "people": [
-       {
-        "role": "Conferente · Contratante: DCS",
-        "name": "Irian Antony Mattos Amantino",
-        "emp": "DCS"
-       },
-       {
-        "role": "Operador de Empilhadeira · Contratante: DCS",
-        "name": "Jedison Luis Toso",
-        "emp": "DCS"
-       },
-       {
-        "role": "Auxiliar de Galpão · Contratante: DCS",
-        "name": "Daniel de Souza",
-        "emp": "DCS"
-       },
-       {
-        "role": "Auxiliar de Galpão · Contratante: DCS",
-        "name": "Willian Cordeiro de Paula",
-        "emp": "DCS"
-       },
-       {
-        "role": "Comercial · Contratante: DCS",
-        "name": "Marcos",
-        "emp": "DCS"
-       },
-       {
-        "role": "Comercial · Contratante: DCS",
-        "name": "Carlos Eduardo de Moraes",
-        "emp": "DCS"
-       },
-       {
-        "role": "Comercial · Contratante: DCS",
-        "name": "Fabiana de Lima dos Santos",
-        "emp": "DCS"
-       },
-       {
-        "role": "Comercial · Contratante: DCS",
-        "name": "Mário Agostini Carara",
-        "emp": "DCS"
+        "role": "Ajudante de galpão",
+        "name": "Luiz Gustavo de Oliveira"
        }
       ]
      },
@@ -972,23 +1389,23 @@
       "accent": "#7a4b9e",
       "people": [
        {
-        "role": "Encarregado · Contratante: DCS",
-        "name": "Eder",
-        "lead": true,
-        "emp": "DCS"
+        "role": "Encarregado de galpão · Contratante: DCS",
+        "name": "Eder Albuquerque Gonçalves",
+        "emp": "DCS",
+        "lead": true
        },
        {
-        "role": "Operador de Empilhadeira · Contratante: DCS",
+        "role": "Operador de empilhadeira · Contratante: DCS",
         "name": "Gabryell Oliveira Ferreira",
         "emp": "DCS"
        },
        {
-        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "role": "Ajudante de galpão · Contratante: DCS",
         "name": "Paulo Ricardo Vigel Menezes Junior",
         "emp": "DCS"
        },
        {
-        "role": "Auxiliar de Galpão · Contratante: DCS",
+        "role": "Ajudante de galpão · Contratante: DCS",
         "name": "Adilson Roberto Ribeiro",
         "emp": "DCS"
        }
@@ -1000,110 +1417,99 @@
       "accent": "#d71920",
       "people": [
        {
-        "role": "Encarregado de Galpão · Contratante: DCS",
-        "name": "Raphael Aragão Silva",
-        "lead": true,
-        "emp": "DCS"
+        "role": "Encarregado de galpão · Contratante: DCS",
+        "name": "Raphael Aragao Silva",
+        "emp": "DCS",
+        "lead": true
        },
        {
-        "role": "Ajudante de Galpão · Contratante: DCS",
+        "role": "Ajudante de galpão · Contratante: DCS",
         "name": "Deivison Brendo da Silva Anjos",
         "emp": "DCS"
        },
        {
-        "role": "Ajudante de Galpão · Contratante: DCS",
+        "role": "Ajudante de galpão · Contratante: DCS",
         "name": "Matheus Lima Pereira",
         "emp": "DCS"
        },
        {
-        "role": "Operador de Empilhadeira · Contratante: DCS",
+        "role": "Operador de empilhadeira · Contratante: DCS",
         "name": "Luciano de Oliveira",
         "emp": "DCS"
        },
        {
-        "role": "Vendedora B2B (time Front Office — Poliana Alves)",
+        "role": "Vendedora B2B (time Atacado — Osmar Júnior)",
         "name": "Camila Silva Campos",
         "ref": true
        },
        {
-        "role": "Vendedor B2B (time Front Office — Poliana Alves)",
+        "role": "Vendedor B2B (time Atacado — Osmar Júnior)",
         "name": "Michel Martins da Costa",
         "ref": true
        },
        {
-        "role": "Auxiliar de Serviços Gerais · Contratante: DCS",
-        "name": "Roberta Souza Barasino",
-        "emp": "DCS"
+        "role": "Auxiliar de serviços gerais (time Atacado — Osmar Júnior)",
+        "name": "Roberta Souza Baratino",
+        "ref": true
        }
       ]
      },
      {
       "k": "DCS JAPERI",
-      "s": "Filial Japeri · Contratante: MASTERSTEEL",
+      "s": "Equipe compartilhada do DCS RJ · Liderança: Tiago e Antônio · Contratante: MASTERSTEEL",
       "accent": "#c2751a",
       "wide": true,
       "people": [
        {
-        "role": "Supervisor · Contratante: MASTERSTEEL",
-        "name": "Tiago da Costa",
-        "lead": true,
-        "emp": "MASTERSTEEL"
+        "role": "Supervisor de Expedição · Contratante: MASTERSTEEL",
+        "name": "Tiago da Costa Martins",
+        "emp": "MASTERSTEEL",
+        "lead": true
        },
        {
-        "role": "Encarregado · Contratante: MASTERSTEEL",
-        "name": "Antonio Frias",
-        "lead": true,
-        "emp": "MASTERSTEEL"
+        "role": "Encarregado de galpão · Contratante: MASTERSTEEL",
+        "name": "Antonio Ferreira Frias Neto",
+        "emp": "MASTERSTEEL",
+        "lead": true
        },
        {
-        "role": "Encarregado · Contratante: MASTERSTEEL",
-        "name": "Alex Levoni",
-        "lead": true,
+        "role": "Encarregado de galpão · Contratante: MASTERSTEEL",
+        "name": "Alex Levoni da Costa",
         "emp": "MASTERSTEEL"
        },
        {
         "role": "Conferente · Contratante: MASTERSTEEL",
-        "name": "Ryan Mateus",
+        "name": "Ryan Mateus Ramos da Silva",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Operador de Empilhadeira · Contratante: MASTERSTEEL",
-        "name": "Reginaldo Sampaio",
+        "role": "Operador de empilhadeira · Contratante: MASTERSTEEL",
+        "name": "Reginaldo Sampaio Gomes",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Operador de Empilhadeira · Contratante: MASTERSTEEL",
-        "name": "Thiago Bezerra",
+        "role": "Operador de empilhadeira · Contratante: MASTERSTEEL",
+        "name": "Thiago Bezerra Justino",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Auxiliar de Almoxarifado · Contratante: MASTERSTEEL",
-        "name": "Magno Ramos",
+        "role": "Ajudante de galpão · Contratante: MASTERSTEEL",
+        "name": "Magno Roberto Ramos Figueiredo",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Ajudante · Contratante: MASTERSTEEL",
-        "name": "Marcos Vinicius",
+        "role": "Ajudante de galpão · Contratante: MASTERSTEEL",
+        "name": "Marcos Vinicius Gomes Ribeiro",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Ajudante · Contratante: MASTERSTEEL",
-        "name": "Marcio Ramos",
+        "role": "Ajudante de galpão · Contratante: MASTERSTEEL",
+        "name": "Julio Cesar Ferreira da Silva",
         "emp": "MASTERSTEEL"
        },
        {
-        "role": "Ajudante · Contratante: MASTERSTEEL",
-        "name": "Julio Cesar",
-        "emp": "MASTERSTEEL"
-       },
-       {
-        "role": "Ajudante · Contratante: MASTERSTEEL",
-        "name": "Carlos Henrique",
-        "emp": "MASTERSTEEL"
-       },
-       {
-        "role": "Auxiliar de Serviços Gerais · Contratante: MASTERSTEEL",
-        "name": "Lucimar",
+        "role": "Auxiliar de serviços gerais · Contratante: MASTERSTEEL",
+        "name": "Lucimar da Silva Santos Antonio",
         "emp": "MASTERSTEEL"
        }
       ]
@@ -1118,10 +1524,10 @@
   "sections": [
    {
     "title": "MaxSteel",
-    "hint": "Diretoria: Thiago de Paula Vianna",
+    "hint": "Diretoria: Thiago de Paula Viana · matricial: Joselio Soares Rodrigues Junior",
     "chief": {
-     "role": "Diretor",
-     "name": "Thiago de Paula Vianna"
+     "role": "Diretor das fábricas",
+     "name": "Thiago de Paula Viana"
     },
     "cols": [
      {
@@ -1130,12 +1536,16 @@
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Analista Senior",
+        "role": "Analista sênior",
         "name": "Mayra Thayane Souza do Couto"
        },
        {
-        "role": "Jovem Aprendiz Administrativo",
+        "role": "Jovem aprendiz administrativo",
         "name": "Ana Clara da Conceicao Pacheco"
+       },
+       {
+        "role": "Auxiliar administrativo júnior",
+        "name": "Geiciane dos Santos Guimaraes"
        }
       ]
      },
@@ -1146,52 +1556,53 @@
       "wide": true,
       "people": [
        {
-        "role": "Encarregado de Produção",
+        "role": "Encarregado de produção",
         "name": "Diego Melo de Oliveira",
         "lead": true
        },
        {
-        "role": "Auxiliar de Produção",
+        "role": "Auxiliar de produção",
         "name": "Charles Eduardo Soares Cardoso"
        },
        {
-        "role": "Operador de Máquinas I",
+        "role": "Auxiliar de produção II",
         "name": "Gabriel da Silva Sobrinho"
        },
        {
-        "role": "Operador de Empilhadeira",
+        "role": "Operador de empilhadeira",
         "name": "Gustavo Douglas de Souza Carvalho"
        },
        {
-        "role": "Operador de Máquinas I",
-        "name": "Leandro Silva de Souza",
-        "hl": true
+        "role": "Auxiliar de produção",
+        "name": "Leandro Silva de Souza"
        },
        {
-        "role": "Auxiliar de Produção",
+        "role": "Auxiliar de produção",
         "name": "Leilson Batista Santa Barbara"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
+        "role": "Auxiliar de serviços gerais",
         "name": "Luciano Felizardo da Silva"
        },
        {
-        "role": "Operador de Empilhadeira",
-        "name": "Mario Jose Ramos da Silva",
-        "hl": true
+        "role": "Auxiliar de serviços gerais",
+        "name": "Marco Antonio Blese da Silva"
        },
        {
-        "role": "Oficial de Pedreiro",
+        "role": "Auxiliar de produção",
+        "name": "Mario Jose Ramos da Silva"
+       },
+       {
+        "role": "Oficial de pedreiro",
         "name": "Osias Geraldo de Oliveira Silva"
        },
        {
-        "role": "Operador de Máquinas I",
+        "role": "Operador de máquinas",
         "name": "Rafael Antonio Santos Mota"
        },
        {
-        "role": "Operador de Máquinas II",
-        "name": "Renan da Silva",
-        "hl": true
+        "role": "Operador de máquinas",
+        "name": "Renan da Silva"
        }
       ]
      }
@@ -1213,8 +1624,8 @@
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Vendedor · Contratante: EMPATIA",
-        "name": "Ericki",
+        "role": "Líder de vendas · na equipe de Marketing (Nicole) · matricial: Joselio e Priscilla · Contratante: EMPATIA",
+        "name": "Ericki Xavier Santos",
         "emp": "EMPATIA"
        }
       ]
@@ -1229,10 +1640,10 @@
   "sections": [
    {
     "title": "Unity Company",
-    "hint": "Diretoria: Nicole",
+    "hint": "Diretoria: Nicole Rodrigues · matricial: Priscilla",
     "chief": {
-     "role": "Diretora",
-     "name": "Nicole"
+     "role": "Diretoria de Marketing",
+     "name": "Nicole Rodrigues"
     },
     "cols": [
      {
@@ -1241,13 +1652,13 @@
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Supervisora de MKT",
+        "role": "Supervisora de Marketing",
         "name": "Ana Teresa Borges",
-        "lead": true,
-        "emp": "Unity Company"
+        "emp": "Unity Company",
+        "lead": true
        },
        {
-        "role": "Assistente de MKT",
+        "role": "Assistente de Marketing",
         "name": "Gabriel Innocencio",
         "emp": "Unity Company"
        },
@@ -1272,30 +1683,13 @@
         "emp": "Unity Company"
        },
        {
-        "role": "Gestor de Tráfego Junior",
+        "role": "Gestor de tráfego júnior",
         "name": "Wallace Proença",
         "emp": "Unity Company"
        },
        {
-        "role": "Organizadora de Eventos",
+        "role": "Organizadora de eventos",
         "name": "Manuela Araújo",
-        "emp": "Unity Company"
-       }
-      ]
-     },
-     {
-      "k": "PRÉ-VENDAS",
-      "s": "Contratados pela Unity",
-      "accent": "#0891b2",
-      "people": [
-       {
-        "role": "Pré-vendas",
-        "name": "Tatiana Rodrigues",
-        "emp": "Unity Company"
-       },
-       {
-        "role": "Pré-vendas",
-        "name": "Naiara Marques",
         "emp": "Unity Company"
        }
       ]
@@ -1307,13 +1701,17 @@
  {
   "id": "csc",
   "name": "CSC",
+  "chief": {
+   "role": "Diretoria do CSC · provisória",
+   "name": "Priscilla — CEO"
+  },
   "sections": [
    {
     "title": "Direção Executiva",
-    "hint": "CEO Priscila · Diretoria do CSC provisória",
+    "hint": "CEO Priscilla · Diretoria do CSC provisória",
     "chief": {
      "role": "CEO · Diretoria do CSC (provisória)",
-     "name": "Priscila"
+     "name": "Priscilla"
     },
     "cols": [
      {
@@ -1322,8 +1720,8 @@
       "accent": "#161C26",
       "people": [
        {
-        "role": "Assistente · ligada diretamente à CEO Priscila",
-        "name": "Vitória",
+        "role": "Assistente da CEO",
+        "name": "Vitoria Maria do Vale Silva",
         "emp": "CSC"
        }
       ]
@@ -1332,43 +1730,31 @@
    },
    {
     "title": "Governança e Tecnologia",
-    "hint": "Diretoria: Guilherme",
+    "hint": "Diretoria: Guilherme Rodrigues · matricial: Priscilla",
     "chief": {
-     "role": "Diretor de Governança e Tecnologia",
-     "name": "Guilherme"
+     "role": "Diretor de Tecnologia e Governança",
+     "name": "Guilherme Rodrigues"
     },
     "cols": [
-     {
-      "k": "ASSESSORIA DIRETA",
-      "s": "Ligação direta com a liderança",
-      "accent": "#161C26",
-      "people": [
-       {
-        "role": "Assistente · ligado diretamente a Guilherme",
-        "name": "Eric",
-        "emp": "CSC"
-       }
-      ]
-     },
      {
       "k": "PROCESSOS",
       "s": "Gestão de processos",
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Gerente de Processos",
-        "name": "Ariene",
-        "lead": true,
-        "emp": "CSC"
+        "role": "Gerente de processos",
+        "name": "Ariene Barbosa dos Santos",
+        "emp": "CSC",
+        "lead": true
        },
        {
-        "role": "Consultora de Processos",
-        "name": "Letícia",
+        "role": "Consultora de processos; mesma autonomia de Ariene",
+        "name": "Leticia Macedo Werneck Risso",
         "emp": "CSC"
        },
        {
         "role": "Estagiário",
-        "name": "Tiago",
+        "name": "Thiago Augusto Sá dos Santos",
         "emp": "CSC"
        }
       ]
@@ -1379,67 +1765,67 @@
       "accent": "#d71920",
       "people": [
        {
-        "role": "Gerente de Projeto",
-        "name": "Marcelo Lopes",
-        "lead": true,
-        "emp": "CSC"
+        "role": "Gerente de projetos · matricial: Plinio Ribeiro Bellas",
+        "name": "Marcelo Lourenço Lopes",
+        "emp": "CSC",
+        "lead": true
        },
        {
-        "role": "Desenvolvedor Júnior",
-        "name": "Aleph",
-        "emp": "CSC"
-       },
-       {
-        "role": "Desenvolvedor",
-        "name": "David",
+        "role": "Desenvolvedor web júnior",
+        "name": "Aleph Silva Ramos",
         "emp": "CSC"
        },
        {
         "role": "Desenvolvedor",
-        "name": "Heitor",
+        "name": "David Dias Borges",
+        "emp": "CSC"
+       },
+       {
+        "role": "Desenvolvedor",
+        "name": "Heitor de Castro Teixeira e Martins",
         "emp": "CSC"
        },
        {
         "role": "Estagiário",
-        "name": "Pedro",
+        "name": "Pedro Henrique Gonçalves Bastos",
         "emp": "CSC"
        },
        {
-        "role": "Assistente de Desenvolvimento em IA",
-        "name": "Clara",
+        "role": "Auxiliar de desenvolvimento",
+        "name": "Anna Clara Barbosa",
         "emp": "CSC"
        }
       ]
      },
      {
       "k": "T.I.",
-      "s": "Gerência: Plínio",
+      "s": "Gerência: Plinio Ribeiro Bellas",
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Gerente de T.I.",
-        "name": "Plínio",
+        "role": "Gerente de TI",
+        "name": "Plinio Ribeiro Bellas",
         "lead": true
        },
        {
-        "role": "Analista de T.I.",
-        "name": "Cristian"
+        "role": "Analista de TI",
+        "name": "Christian Wyterlin Silveira"
        },
        {
-        "role": "Analista de T.I.",
-        "name": "Wiclem"
+        "role": "Analista de TI",
+        "name": "Wiclem Antonio da Silva Lopes"
        },
        {
-        "role": "Assistente",
-        "name": "Marcos"
+        "role": "Assistente de TI júnior",
+        "name": "Marcos Renan da Silva Barros"
        },
        {
-        "role": "Auxiliar de T.I.",
-        "name": "Beatriz"
+        "role": "Auxiliar de TI",
+        "name": "Ana Beatriz Basilio da Silva Borges"
        },
        {
         "role": "Estagiário",
-        "name": "Tiago"
+        "name": "Tiago da Silva Gomes"
        }
       ]
      },
@@ -1449,63 +1835,55 @@
       "accent": "#0f766e",
       "people": [
        {
-        "role": "Gerente de Auditoria",
-        "name": "Gilberto",
-        "lead": true,
-        "emp": "CSC"
+        "role": "Gerente de auditoria",
+        "name": "Gilberto Fagner de Souza",
+        "emp": "CSC",
+        "lead": true
        },
        {
         "group": "Inventário"
        },
        {
-        "role": "Supervisor de Inventário",
-        "name": "Davidson Alves",
-        "emp": "CSC"
+        "role": "Encarregado de inventários; liderança principal",
+        "name": "Davidson Alves Melo",
+        "emp": "CSC",
+        "lead": true
        },
        {
-        "role": "Auxiliar de Inventário",
-        "name": "Cleyton Silva",
+        "role": "Líder de inventários",
+        "name": "Cleiton da Silva Praça",
         "emp": "CSC"
        },
        {
         "group": "Auditoria"
        },
        {
-        "role": "Analista de Auditoria",
-        "name": "Priscila",
+        "role": "Auxiliar de auditoria",
+        "name": "Arthur Anjos Soares Villarde",
         "emp": "CSC"
        },
        {
-        "role": "Auxiliar de Auditoria",
-        "name": "Arthur",
+        "role": "Auxiliar administrativo",
+        "name": "Gustavo da Silva",
         "emp": "CSC"
        },
        {
-        "role": "Auxiliar de Auditoria (Fretes)",
-        "name": "Gustavo",
-        "emp": "CSC"
+        "role": "Cargo a completar",
+        "name": "Thauan",
+        "emp": "CSC",
+        "todo": true
        },
        {
         "group": "Estágio"
        },
        {
-        "role": "Estagiário",
-        "name": "Caio",
-        "emp": "CSC"
-       },
-       {
-        "role": "Estagiário",
-        "name": "Rodrigo",
-        "emp": "CSC"
-       },
-       {
         "role": "Estagiária",
-        "name": "Maria Julia",
+        "name": "Lorraine Silva Paulo",
         "emp": "CSC"
        },
        {
-        "role": "Estagiária",
-        "name": "Lorrayne",
+        "role": "Estagiário",
+        "name": "Rodrigo Faria Fernandes Mosores",
         "emp": "CSC"
        }
       ]
@@ -1515,220 +1893,255 @@
    {
     "title": "Financeiro, Contábil e Fiscal",
     "hint": "Diretoria: Leonardo",
+    "chief": {
+     "role": "CFO — Diretor Financeiro",
+     "name": "Leonardo"
+    },
     "cols": [
      {
       "k": "FINANCEIRO",
-      "s": "Gerência: Arícia",
+      "s": "Gerência: Aricia dos Santos Gomes",
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Gerente Financeiro",
-        "name": "Arícia",
+        "role": "Gerente financeira",
+        "name": "Aricia dos Santos Gomes",
         "lead": true
        },
        {
-        "role": "Analista Financeiro Júnior",
-        "name": "Layne"
+        "role": "Analista financeiro júnior",
+        "name": "Jonathan Alves Evangelista"
        },
        {
-        "role": "Analista Financeiro Júnior",
-        "name": "Milena"
+        "role": "Analista financeiro júnior",
+        "name": "Layne da Silva Conceicao"
        },
        {
-        "role": "Analista Financeiro Júnior",
-        "name": "Rodrigo"
+        "role": "Analista financeiro júnior",
+        "name": "Milena da Silva Canuto"
        },
        {
-        "role": "Analista de Cobrança Sênior",
-        "name": "Valéria"
+        "role": "Analista financeiro júnior",
+        "name": "Rejane Marinho da Silva"
        },
        {
-        "role": "Assistente Financeiro Jr",
-        "name": "Mateus"
+        "role": "Analista financeiro júnior",
+        "name": "Rodrigo Crisostomo de Oliveira"
        },
        {
-        "role": "Estagiário Financeiro",
-        "name": "Robinson"
+        "role": "Analista de cobrança sênior",
+        "name": "Valeria de Oliveira Pinto"
+       },
+       {
+        "role": "Assistente financeiro pleno",
+        "name": "Thiago da Silva Manoel"
+       },
+       {
+        "role": "Assistente financeiro júnior",
+        "name": "Matheus Felipe Candido da Silva"
+       },
+       {
+        "role": "Assistente financeiro júnior",
+        "name": "Raquel Martins Oliveira"
+       },
+       {
+        "role": "Auxiliar financeiro",
+        "name": "Robinson Santos Tournour"
        }
       ]
      },
      {
       "k": "CONTABILIDADE E FISCAL",
-      "s": "Gerência: Cleiton",
+      "s": "Liderança: Clayton Marcos da Silva",
       "accent": "#0f766e",
       "people": [
        {
-        "role": "Gerente de Contabilidade",
-        "name": "Cleiton",
+        "role": "Contador; liderança Contábil e Fiscal",
+        "name": "Clayton Marcos da Silva",
         "lead": true
        },
        {
-        "role": "Assistente Contábil Pleno",
-        "name": "Michael"
+        "role": "Assistente contábil",
+        "name": "Michael Johnson de Souza da Silva"
        }
       ]
      },
      {
       "k": "FATURAMENTO",
-      "s": "Liderança: Bruno Brasil",
+      "s": "Liderança: Bruno do Brazil Silva",
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Líder de Faturamento",
-        "name": "Bruno Brasil",
+        "role": "Analista contábil; liderança de Faturamento",
+        "name": "Bruno do Brazil Silva",
         "lead": true
        },
        {
-        "role": "Assistente de Faturamento",
-        "name": "Paloma"
+        "role": "Assistente de faturamento",
+        "name": "Paloma Arruda Fernandes Fonseca"
        },
        {
-        "role": "Assistente de Faturamento",
-        "name": "William"
+        "role": "Assistente de faturamento",
+        "name": "William Santos da Rocha Quintela"
        },
        {
-        "role": "Auxiliar de Faturamento",
-        "name": "Kassiane"
+        "role": "Auxiliar de faturamento",
+        "name": "Kassiane Costa dos Santos Silva"
+       },
+       {
+        "role": "Auxiliar de faturamento",
+        "name": "Mariana Almeira da Silva"
        },
        {
         "role": "Estagiária",
-        "name": "Mariana"
-       },
-       {
-        "role": "Estagiária",
-        "name": "Ana Letícia"
+        "name": "Ana Leticia Costa Inocencio da Silva"
        }
       ]
      }
-    ],
-    "chief": {
-     "role": "CFO — Diretor Financeiro",
-     "name": "Leonardo"
-    }
+    ]
    },
    {
     "title": "Gente e Gestão",
-    "hint": "Diretoria: a contratar",
+    "hint": "Gestão: Bruna Mega Novais",
     "chief": {
-     "role": "Diretoria de Gente e Gestão",
-     "name": "A contratar",
-     "vago": true
+     "role": "Gerente geral de RH",
+     "name": "Bruna Mega Novais"
     },
     "cols": [
      {
       "k": "RH",
-      "s": "Gerência: Barbara",
+      "s": "Coordenação: Karina Moura Salles",
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Gerente de RH",
-        "name": "Barbara",
+        "role": "Coordenadora de RH",
+        "name": "Karina Moura Salles",
         "lead": true
        },
        {
-        "role": "Coordenadora de R&S",
-        "name": "Karina",
+        "role": "Assistente de RH pleno",
+        "name": "Giovanna Pereira da Silva"
+       },
+       {
+        "role": "Assistente de RH pleno",
+        "name": "Julia Gonçalves da Silva"
+       },
+       {
+        "role": "Estagiária",
+        "name": "Giulia de Lima Cabral"
+       }
+      ]
+     },
+     {
+      "k": "TREINAMENTO E DESENVOLVIMENTO",
+      "s": "Liderança: Barbara Alessandra de Oliveira Garcone",
+      "accent": "#0891b2",
+      "people": [
+       {
+        "role": "Líder de Treinamento e Desenvolvimento",
+        "name": "Barbara Alessandra de Oliveira Garcone",
         "lead": true
        },
        {
-        "role": "Assistente de RH Pleno",
-        "name": "Giovanna"
-       },
-       {
-        "role": "Assistente de RH Pleno",
-        "name": "Julia"
+        "role": "Estagiária",
+        "name": "Sandy Vieira da Cruz"
        }
       ]
      },
      {
       "k": "DEPARTAMENTO PESSOAL",
-      "s": "Gerência: Diego",
+      "s": "Gerência: Diego Rodrigo Laranjeira dos Santos",
       "accent": "#2563eb",
       "people": [
        {
         "role": "Gerente de DP",
-        "name": "Diego",
+        "name": "Diego Rodrigo Laranjeira dos Santos",
         "lead": true
        },
        {
-        "role": "Assistente de DP",
-        "name": "Natanyele Medeiros"
+        "role": "Analista de DP júnior",
+        "name": "Natanyele Antenor Mendes Medeiros"
        },
        {
-        "role": "Auxiliar de Departamento Pessoal",
-        "name": "Karine"
+        "role": "Auxiliar de DP",
+        "name": "Karine Cristina de Souza Claudino"
        },
        {
-        "role": "Auxiliar de Departamento Pessoal",
-        "name": "Rayssa"
+        "role": "Auxiliar de DP",
+        "name": "Rayssa dos Santos Pereira"
        }
       ]
      },
      {
       "k": "ADMINISTRATIVO",
-      "s": "Gerência: Diego",
+      "s": "Gerência: Diego Rodrigo Laranjeira dos Santos",
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Gerente Administrativo",
-        "name": "Diego",
+        "role": "Responsável pelo Administrativo",
+        "name": "Diego Rodrigo Laranjeira dos Santos",
         "lead": true
        },
        {
-        "role": "Analista Administrativo",
-        "name": "Lucas"
+        "role": "Auxiliar administrativo",
+        "name": "Joyce Milena de Melo Vianna"
        },
        {
-        "role": "Auxiliar Administrativo",
-        "name": "Joyce Milena"
+        "role": "Auxiliar de serviços administrativos",
+        "name": "Cleber Mendonça Belo"
        },
        {
         "group": "Manutenção"
        },
        {
+        "role": "Líder de manutenção",
+        "name": "Antonio Carlos Bernardo Leite",
+        "lead": true
+       },
+       {
+        "role": "Assistente de manutenção",
+        "name": "Gabriel Santana Franco"
+       },
+       {
         "role": "Eletricista",
-        "name": "Jonathan"
+        "name": "Jonathan Fellipe de Lima Carvalho"
        },
        {
-        "role": "Auxiliar de Manutenção",
-        "name": "Gabriel"
+        "role": "Auxiliar de manutenção",
+        "name": "Joao Carlos Santos da Cruz"
        },
        {
-        "role": "Auxiliar de Manutenção",
-        "name": "João Carlos"
+        "role": "Auxiliar de manutenção",
+        "name": "Leandro Mota Barbosa"
        },
        {
         "group": "Serviços Gerais"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
-        "name": "Marcia"
+        "role": "Auxiliar de serviços gerais",
+        "name": "Jaqueline Cordeiro Rosa"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
-        "name": "Raissa"
+        "role": "Auxiliar de serviços gerais",
+        "name": "Marcia Gonçalves Neves"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
-        "name": "Tatiana"
+        "role": "Auxiliar de serviços gerais",
+        "name": "Raissa Maria Mota Costa"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
-        "name": "Vitória"
+        "role": "Auxiliar de serviços gerais",
+        "name": "Tatiana da Silva Andre"
        },
        {
-        "role": "Auxiliar de Serviços Gerais",
-        "name": "Jaqueline"
+        "role": "Auxiliar de serviços gerais",
+        "name": "Vitoria da Silva Castro"
        }
       ]
      }
     ]
    }
-  ],
-  "chief": {
-   "role": "Diretoria do CSC · provisória",
-   "name": "Priscila — CEO"
-  }
+  ]
  },
  {
   "id": "engenharia",
@@ -1736,10 +2149,10 @@
   "sections": [
    {
     "title": "Engenharia",
-    "hint": "Diretoria: Glauco Andrade · Contratante: Ruche Design LTDA ME",
+    "hint": "Diretoria: Glauco Jorge de Andrade Oliveira · Contratante: Ruche Design LTDA ME",
     "chief": {
-     "role": "Diretor de Engenharia",
-     "name": "Glauco Andrade"
+     "role": "Diretor técnico",
+     "name": "Glauco Jorge de Andrade Oliveira"
     },
     "cols": [
      {
@@ -1748,9 +2161,12 @@
       "accent": "#7c4dff",
       "people": [
        {
-        "role": "Gerente de Projetos Jr",
-        "name": "Claudia",
-        "lead": true
+        "role": "Gerente de projetos júnior",
+        "name": "Claudia de Menezes Soares da Silva"
+       },
+       {
+        "role": "Assistente de projetos",
+        "name": "Samara Analeide Gonçalves Santos"
        }
       ]
      },
@@ -1760,13 +2176,12 @@
       "accent": "#2563eb",
       "people": [
        {
-        "role": "Arquiteta Jr",
-        "name": "Karla Carvalho",
-        "lead": true
+        "role": "Arquiteta júnior",
+        "name": "Karla Carvalho de Souza"
        },
        {
-        "role": "Assistente de Arquitetura",
-        "name": "Milena"
+        "role": "Arquiteta júnior",
+        "name": "Milena Tiburi"
        }
       ]
      },
@@ -1777,12 +2192,15 @@
       "people": [
        {
         "role": "Calculista",
-        "name": "A contratar",
-        "vago": true
+        "name": "Jhonatan Matheus de Lima Soczek"
        },
        {
-        "role": "Analista de Projetos",
-        "name": "Larysseh"
+        "role": "Engenheiro",
+        "name": "Walter Gabriel Bareiro"
+       },
+       {
+        "role": "Analista de projetos",
+        "name": "Larysseh Miky Hinata"
        },
        {
         "role": "Estagiário",
@@ -1793,33 +2211,12 @@
      },
      {
       "k": "PROJETOS E ORÇAMENTOS",
-      "s": "Liderança: Luan da Rosa",
+      "s": "Orçamentos",
       "accent": "#c2751a",
       "people": [
        {
-        "role": "Téc. em Edificações · Supervisor de Orçamentos",
-        "name": "Luan da Rosa",
-        "lead": true
-       },
-       {
-        "role": "Técnico em Edificações",
-        "name": "Ana Valentina"
-       },
-       {
-        "role": "Estagiário de Engenharia",
-        "name": "Bernardo Dutra"
-       },
-       {
-        "role": "Estagiário de Engenharia",
-        "name": "Gabriel Marques"
-       },
-       {
-        "role": "Estagiário de Engenharia",
-        "name": "Pablo Vitor Medeiros"
-       },
-       {
-        "role": "Estagiário de Engenharia",
-        "name": "Matheus dos Santos"
+        "role": "Técnico de edificações",
+        "name": "Luan da Rosa Pinto"
        }
       ]
      },
@@ -1829,31 +2226,117 @@
       "accent": "#d71920",
       "people": [
        {
-        "role": "Gerente",
-        "name": "A contratar",
-        "vago": true
+        "role": "Gerente Steel Conecta",
+        "name": "Fernanda Barreto Andrade",
+        "lead": true
        }
       ]
      },
      {
       "k": "OPERAÇÕES FAST HOMES E OBRAS",
-      "s": "Coordenação: Renata",
+      "s": "Gerência: Renata Helena Faria Costa",
       "accent": "#0f9d6b",
       "people": [
        {
-        "role": "Coordenadora",
-        "name": "Renata",
+        "role": "Gerente operacional",
+        "name": "Renata Helena Faria Costa",
         "lead": true
        },
        {
-        "role": "Auxiliar",
-        "name": "A contratar",
-        "vago": true
+        "role": "Assistente administrativo júnior",
+        "name": "Marcelle Cassimiro da Cunha"
        },
        {
         "role": "Apoio · Gerenciamento de Projetos",
-        "name": "Claudia",
+        "name": "Claudia de Menezes Soares da Silva",
         "ref": true
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "logexpress",
+  "name": "Log Express",
+  "sections": [
+   {
+    "title": "Logística",
+    "hint": "Diretoria: Josiel Dias da Silva (Logística e Expedição) · Gerência: Marcio Pires Machado · matricial: Priscilla",
+    "chief": {
+     "role": "Gerente de Logística",
+     "name": "Marcio Pires Machado"
+    },
+    "cols": [
+     {
+      "k": "TRANSPORTE",
+      "s": "Frota própria",
+      "accent": "#123A63",
+      "people": [
+       {
+        "role": "Motorista carreteiro",
+        "name": "Carlos Alberto Azeredo de Andrade"
+       },
+       {
+        "role": "Motorista carreteiro",
+        "name": "Wellington de Souza Barros"
+       },
+       {
+        "role": "Motorista de caminhão",
+        "name": "Davidson Filadelfo Rodrigues"
+       },
+       {
+        "role": "Motorista de caminhão",
+        "name": "Erivaldo Farias dos Santos"
+       },
+       {
+        "role": "Motorista de caminhão",
+        "name": "Haroldo de Paula Fernandes"
+       }
+      ]
+     },
+     {
+      "k": "OPERAÇÃO LOGÍSTICA",
+      "s": "Planejamento, fretes e apoio",
+      "accent": "#0f766e",
+      "wide": true,
+      "people": [
+       {
+        "role": "Analista de transporte pleno",
+        "name": "Joanna de Souza Pinto Mesquita"
+       },
+       {
+        "role": "Analista de logística pleno",
+        "name": "Jose Luiz Dionizio"
+       },
+       {
+        "role": "Analista de logística júnior",
+        "name": "Laiz Pangracio Paiva Marinho"
+       },
+       {
+        "role": "Assistente de logística",
+        "name": "Itacira Pereira Fernandes"
+       },
+       {
+        "role": "Assistente de logística",
+        "name": "Lorrayne Elizabeth Lopes de Jesus Amorim"
+       },
+       {
+        "role": "Assistente de logística",
+        "name": "Milena Casais Lima de Souza"
+       },
+       {
+        "role": "Auxiliar de logística",
+        "name": "Juan Carlos Monteiro de Brito"
+       },
+       {
+        "role": "Auxiliar de logística",
+        "name": "Marianna Rangel Gomes"
+       },
+       {
+        "role": "Auxiliar de logística",
+        "name": "Sidney Shelldon Scrilli Nobre"
        }
       ]
      }
@@ -1867,10 +2350,10 @@
   "sections": [
    {
     "title": "CCN",
-    "hint": "Diretoria: Thiago de Paula Vianna · prestadora de serviço interna ligada à MaxSteel",
+    "hint": "Diretoria: Thiago de Paula Viana · prestadora de serviço interna ligada à MaxSteel",
     "chief": {
-     "role": "Diretor",
-     "name": "Thiago de Paula Vianna"
+     "role": "Diretor das fábricas",
+     "name": "Thiago de Paula Viana"
     },
     "cols": [
      {
@@ -1879,84 +2362,92 @@
       "accent": "#123A63",
       "people": [
        {
-        "role": "Líder de Expedição",
+        "role": "Líder de expedição",
         "name": "Luiz Claudio Rodrigues da Silva",
         "lead": true
        },
        {
-        "role": "Assistente Administrativo",
+        "role": "Assistente administrativo",
         "name": "Max da Silva Alves Coelho"
        },
        {
-        "role": "Aux. de Manutenção Industrial",
+        "role": "Auxiliar de manutenção industrial",
         "name": "Vicente Alves Marins"
        },
        {
-        "role": "Motorista de Caminhão",
+        "role": "Motorista de caminhão",
         "name": "Wanderson Pereira das Neves"
        },
        {
-        "role": "Ajudante de Produção III",
+        "role": "Auxiliar de produção III",
         "name": "Thawan da Silva Colares"
        },
        {
-        "role": "Ajudante de Produção III",
+        "role": "Auxiliar de produção III",
         "name": "Michel de Souza"
        },
        {
-        "role": "Ajudante de Produção II",
-        "name": "Relly da Silva de Nazareth"
+        "role": "Auxiliar de produção II",
+        "name": "Relly da Silva Nazareth"
        },
        {
-        "role": "Ajudante de Produção II",
+        "role": "Auxiliar de produção II",
         "name": "Vinicius Fernandes Rocha"
        },
        {
-        "role": "Operador I",
+        "role": "Auxiliar de produção",
+        "name": "Fabio Felix da Conceicao Mendenca"
+       },
+       {
+        "role": "Auxiliar de produção",
+        "name": "Rai Santos Chagas"
+       },
+       {
+        "role": "Operador de máquinas I",
         "name": "Carlos Henrique Naliato das Neves"
        },
        {
-        "role": "Operador I",
+        "role": "Operador de máquinas I",
         "name": "Leandro de Andrade Chagas"
        },
        {
-        "role": "Operador II",
+        "role": "Operador de máquinas II",
+        "name": "Eduardo de Jesus Freire"
+       },
+       {
+        "role": "Operador de máquinas II",
         "name": "Erasmo Barbosa Ananias"
        },
        {
-        "role": "Operador II",
+        "role": "Operador de máquinas II",
         "name": "Joilson da Silva Lima"
        },
        {
-        "role": "Operador II",
-        "name": "Rafael Gomes da Silveira Lima"
-       },
-       {
-        "role": "Operador III",
+        "role": "Operador de máquinas III",
         "name": "Rivelino Francisco da Silva"
        }
       ]
      },
      {
       "k": "PJ",
-      "s": "Diretoria: Thiago de Paula Vianna",
+      "s": "Diretoria: Thiago de Paula Viana",
       "accent": "#c2751a",
       "people": [
        {
-        "role": "ADM",
-        "name": "Adriany Pinto Villaça"
+        "role": "Assistente administrativo",
+        "name": "Adriany Pinto Villaca"
        },
        {
-        "role": "Manutenção",
+        "role": "Mecânico de manutenção industrial",
         "name": "Bernardes Vinicius do Nascimento Fernandes"
        },
        {
-        "role": "Encarregado de Produção",
+        "role": "Gerente de produção",
         "name": "Jonas de Melo Pinheiro",
         "lead": true
        },
        {
-        "role": "Refeitório",
+        "role": "Cozinheira",
         "name": "Michele da Silva de Azevedo"
        }
       ]

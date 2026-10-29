@@ -154,7 +154,7 @@ export const BACK: ClusterMeta = {
     {
       t: "Log Express",
       u: "Logística e distribuição",
-      org: null,
+      org: "logexpress",
       d: "Log Express — Serviço de logística: transporte e distribuição para as empresas do Ecossistema (Cap. 5.4).",
     },
   ],
